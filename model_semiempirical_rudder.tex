@@ -66,6 +66,11 @@ The lift coefficient $C_L$ is calculated with \autoref{eq:C_L_semiempirical}, wh
     \label{eq:alpha_semiempirical}
     \input{equations/mathematical_model_kinetics.alpha_semiempirical}
 \end{equation}
+%
+\begin{equation}
+    \label{eq:C_N_semiempirical}
+    \input{equations/mathematical_model_kinetics.C_N_semiempirical}
+\end{equation}
 The lift slope of the rudder $\frac{\partial C_L}{\partial \alpha}$ is calculated with \autoref{eq:dC_L_dalpha_semiempirical} where the effective aspect ratio of the rudder $AR_e$ can be obtained from \autoref{eq:AR_e_semiempirical}. $AR_e$ is the geometrical aspect ratio $AR_g$ (\autoref{eq:AR_g_semiempirical}) with a correction for a potential gap between the upper part of the rudder and the rudder horn for larger rudder angles.
 $a_0$ is the section lift curve slope (\autoref{eq:a_0_semiempirical}) and $\Omega$ is the sweep angle of the quarter chord line \citep{lewis_principles_1989}.
 \begin{equation}
@@ -186,30 +191,18 @@ $V_{xcorr}$ is used to calculate the lift diminished factor $\lambda_R$ together
     \label{eq:c_semiempirical}
     \input{equations/mathematical_model_kinetics.c_semiempirical}
 \end{equation}
-%
+
+\subsubsection{Rudder drag}
+\label{sec:rudder_drag}
+The total rudder drag $D_R$ is calculated as a sum of the contributions from the parts covered and uncovered by the propeller as seen in \autoref{eq:D_R_semiempirical}.
 \begin{equation}
     \label{eq:D_R_semiempirical}
     \input{equations/mathematical_model_kinetics.D_R_semiempirical}
 \end{equation}
-%
+The drag coefficients for covered $C_{DC}$ and uncovered $C_{DU}$ are calculated with the similar equations \autoref{eq:C_D_C_semiempirical} and \autoref{eq:C_D_U_semiempirical} where $C_{D0C}$ (\autoref{eq:C_D0_C_semiempirical}) and $C_{D0U}$ (\autoref{eq:C_D0_U_semiempirical}) are the drag at zero rudder angle  and $e_0 = 0.9$ is the Oswald efficiency factor. 
 \begin{equation}
     \label{eq:C_D_C_semiempirical}
     \input{equations/mathematical_model_kinetics.C_D_C_semiempirical}
-\end{equation}
-%
-\begin{equation}
-    \label{eq:C_D0_C_semiempirical}
-    \input{equations/mathematical_model_kinetics.C_D0_C_semiempirical}
-\end{equation}
-%
-\begin{equation}
-    \label{eq:C_F_C_semiempirical}
-    \input{equations/mathematical_model_kinetics.C_F_C_semiempirical}
-\end{equation}
-%
-\begin{equation}
-    \label{eq:Re_F_C_semiempirical}
-    \input{equations/mathematical_model_kinetics.Re_F_C_semiempirical}
 \end{equation}
 %
 \begin{equation}
@@ -218,8 +211,33 @@ $V_{xcorr}$ is used to calculate the lift diminished factor $\lambda_R$ together
 \end{equation}
 %
 \begin{equation}
-    \label{eq:C_N_semiempirical}
-    \input{equations/mathematical_model_kinetics.C_N_semiempirical}
+    \label{eq:C_D0_C_semiempirical}
+    \input{equations/mathematical_model_kinetics.C_D0_C_semiempirical}
+\end{equation}
+%
+\begin{equation}
+    \label{eq:C_D0_U_semiempirical}
+    \input{equations/mathematical_model_kinetics.C_D0_U_semiempirical}
+\end{equation}
+$C_{D0C}$ and $C_{D0U}$ will be different due to different Reynolds number $Re$ as seen in \autoref{eq:C_F_C_semiempirical} to \autoref{eq:Re_F_U_semiempirical}.
+\begin{equation}
+    \label{eq:C_F_C_semiempirical}
+    \input{equations/mathematical_model_kinetics.C_F_C_semiempirical}
+\end{equation}
+%
+\begin{equation}
+    \label{eq:C_F_U_semiempirical}
+    \input{equations/mathematical_model_kinetics.C_F_U_semiempirical}
+\end{equation}
+%
+\begin{equation}
+    \label{eq:Re_F_C_semiempirical}
+    \input{equations/mathematical_model_kinetics.Re_F_C_semiempirical}
+\end{equation}
+%
+\begin{equation}
+    \label{eq:Re_F_U_semiempirical}
+    \input{equations/mathematical_model_kinetics.Re_F_U_semiempirical}
 \end{equation}
 %
 \begin{equation}
@@ -242,20 +260,7 @@ $V_{xcorr}$ is used to calculate the lift diminished factor $\lambda_R$ together
     \input{equations/mathematical_model_kinetics.u_s_semiempirical}
 \end{equation}
 %
-\begin{equation}
-    \label{eq:C_D0_U_semiempirical}
-    \input{equations/mathematical_model_kinetics.C_D0_U_semiempirical}
-\end{equation}
-%
-\begin{equation}
-    \label{eq:C_F_U_semiempirical}
-    \input{equations/mathematical_model_kinetics.C_F_U_semiempirical}
-\end{equation}
-%
-\begin{equation}
-    \label{eq:Re_F_U_semiempirical}
-    \input{equations/mathematical_model_kinetics.Re_F_U_semiempirical}
-\end{equation}
+
 %
 \begin{equation}
     \label{eq:kappa_r_tot_semiempirical}
