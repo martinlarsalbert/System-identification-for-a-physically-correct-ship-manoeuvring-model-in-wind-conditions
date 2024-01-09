@@ -51,7 +51,7 @@ The lift forces are calculated with the lift coefficient $C_L$ as seen in \autor
     \input{equations/mathematical_model_kinetics.L_R_C_semiempirical}
 \end{equation}
 
-The lift coefficient $C_L$ is calculated with \autoref{eq:C_L_semiempirical}, which contains two separate expressions for angle of attack $\alpha$ below or above a critical stalling angle $\alpha_s$ (\autoref{eq:alpha_s_semiempirical}).
+The lift coefficient $C_L$ is calculated with \autoref{eq:C_L_semiempirical}, which contains two separate expressions for angle of attack $\alpha$ (\autoref{eq:alpha_semiempirical}) below or above a critical stalling angle $\alpha_s$ (\autoref{eq:alpha_s_semiempirical}).
 \begin{equation}
     \label{eq:C_L_semiempirical}
     \input{equations/mathematical_model_kinetics.C_L_semiempirical}
@@ -60,6 +60,11 @@ The lift coefficient $C_L$ is calculated with \autoref{eq:C_L_semiempirical}, wh
 \begin{equation}
     \label{eq:alpha_s_semiempirical}
     \input{equations/mathematical_model_kinetics.alpha_s_semiempirical}
+\end{equation}
+%
+\begin{equation}
+    \label{eq:alpha_semiempirical}
+    \input{equations/mathematical_model_kinetics.alpha_semiempirical}
 \end{equation}
 The lift slope of the rudder $\frac{\partial C_L}{\partial \alpha}$ is calculated with \autoref{eq:dC_L_dalpha_semiempirical} where the effective aspect ratio of the rudder $AR_e$ can be obtained from \autoref{eq:AR_e_semiempirical}. $AR_e$ is the geometrical aspect ratio $AR_g$ (\autoref{eq:AR_g_semiempirical}) with a correction for a potential gap between the upper part of the rudder and the rudder horn for larger rudder angles.
 $a_0$ is the section lift curve slope (\autoref{eq:a_0_semiempirical}) and $\Omega$ is the sweep angle of the quarter chord line \citep{lewis_principles_1989}.
@@ -92,7 +97,24 @@ There is also a small nonlinear part to $C_L$ called $C_{Dcrossflow}$ which is c
     \label{eq:lambda__semiempirical}
     \input{equations/mathematical_model_kinetics.lambda__semiempirical}
 \end{equation}
-\subsubsection{Propeller induced velocity}
+\subsubsection{Velocity outside the propeller slip stream}
+\label{sec:propeller_uncovered}
+The axial velocity outside the propeller slip stream $V_{xU}$ equals the apparent velocity (\autoref{eq:V_x_U_semiempirical}). A small contribution from the yaw rate is also added for twin screw ships (\autoref{eq:V_R_x_U_semiempirical}) so that the velocity outside the slip stream can be calculated with \autoref{eq:V_R_U_semiempirical}.
+\begin{equation}
+    \label{eq:V_x_U_semiempirical}
+    \input{equations/mathematical_model_kinetics.V_x_U_semiempirical}
+\end{equation}
+%
+\begin{equation}
+    \label{eq:V_R_x_U_semiempirical}
+    \input{equations/mathematical_model_kinetics.V_R_x_U_semiempirical}
+\end{equation}
+%
+\begin{equation}
+    \label{eq:V_R_U_semiempirical}
+    \input{equations/mathematical_model_kinetics.V_R_U_semiempirical}
+\end{equation}
+\subsubsection{Velocity in the propeller slip stream}
 \label{sec:propeller_induced_velocity}
 According to momentum theory the mean axial flow velocity far downstream of the propeller $V_{\infty}$ is given by \autoref{eq:V_infty_semiempirical} \cite{brix_manoeuvring_1993} where the thrust coefficient $C_{Th}$ is calculated with \autoref{eq:C_Th_semiempirical} where $r_0$ is the propeller radius and the apparent velocity $V_A$ is given by \autoref{eq:V_A_semiempirical}.
 \begin{equation}
@@ -115,13 +137,37 @@ The radius of the propeller slipstream far behind the propeller is given by \aut
     \label{eq:r_infty_semiempirical}
     \input{equations/mathematical_model_kinetics.r_infty_semiempirical}
 \end{equation}
-
+The velocity and the radius of the propeller slipstream at the position of the rudder can be calculated with \autoref{eq:V_x_C_semiempirical} and \autoref{eq:r_p_semiempirical} where $x$ is the distance between the propeller and the rudder.
+\begin{equation}
+    \label{eq:V_x_C_semiempirical}
+    \input{equations/mathematical_model_kinetics.V_x_C_semiempirical}
+\end{equation}
+%
 \begin{equation}
     \label{eq:r_p_semiempirical}
     \input{equations/mathematical_model_kinetics.r_p_semiempirical}
 \end{equation}
-
+For a twin screw ship a small contribution from the yaw rate is also added to the velocity as seen in \autoref{eq:V_R_x_C_semiempirical}.
+\begin{equation}
+    \label{eq:V_R_x_C_semiempirical}
+    \input{equations/mathematical_model_kinetics.V_R_x_C_semiempirical}
+\end{equation}
+The velocity for the covered part of the rudder is obtained by \autoref{eq:V_R_C_semiempirical}.
+\begin{equation}
+    \label{eq:V_R_C_semiempirical}
+    \input{equations/mathematical_model_kinetics.V_R_C_semiempirical}
+\end{equation}
+Turbulent mixing of the slipstream and the surrounding flow will increase the radius by $r_\Delta$(\autoref{eq:r_Delta_semiempirical}) so that a corrected axial velocity $V_{xcorr}$ can be calculated according to \autoref{eq:V_x_corr_semiempirical}.
+\begin{equation}
+    \label{eq:r_Delta_semiempirical}
+    \input{equations/mathematical_model_kinetics.r_Delta_semiempirical}
+\end{equation}
 %
+\begin{equation}
+    \label{eq:V_x_corr_semiempirical}
+    \input{equations/mathematical_model_kinetics.V_x_corr_semiempirical}
+\end{equation}
+$V_{xcorr}$ is used to calculate the lift diminished factor $\lambda_R$ together with the expressions in  \autoref{eq:lambda_R_semiempirical} to \autoref{eq:c_semiempirical}.
 \begin{equation}
     \label{eq:lambda_R_semiempirical}
     \input{equations/mathematical_model_kinetics.lambda_R_semiempirical}
@@ -136,15 +182,9 @@ The radius of the propeller slipstream far behind the propeller is given by \aut
     \label{eq:d_semiempirical}
     \input{equations/mathematical_model_kinetics.d_semiempirical}
 \end{equation}
-%
 \begin{equation}
-    \label{eq:V_x_corr_semiempirical}
-    \input{equations/mathematical_model_kinetics.V_x_corr_semiempirical}
-\end{equation}
-%
-\begin{equation}
-    \label{eq:r_Delta_semiempirical}
-    \input{equations/mathematical_model_kinetics.r_Delta_semiempirical}
+    \label{eq:c_semiempirical}
+    \input{equations/mathematical_model_kinetics.c_semiempirical}
 \end{equation}
 %
 \begin{equation}
@@ -170,11 +210,6 @@ The radius of the propeller slipstream far behind the propeller is given by \aut
 \begin{equation}
     \label{eq:Re_F_C_semiempirical}
     \input{equations/mathematical_model_kinetics.Re_F_C_semiempirical}
-\end{equation}
-%
-\begin{equation}
-    \label{eq:V_R_C_semiempirical}
-    \input{equations/mathematical_model_kinetics.V_R_C_semiempirical}
 \end{equation}
 %
 \begin{equation}
@@ -208,11 +243,6 @@ The radius of the propeller slipstream far behind the propeller is given by \aut
 \end{equation}
 %
 \begin{equation}
-    \label{eq:alpha_semiempirical}
-    \input{equations/mathematical_model_kinetics.alpha_semiempirical}
-\end{equation}
-%
-\begin{equation}
     \label{eq:C_D0_U_semiempirical}
     \input{equations/mathematical_model_kinetics.C_D0_U_semiempirical}
 \end{equation}
@@ -228,21 +258,6 @@ The radius of the propeller slipstream far behind the propeller is given by \aut
 \end{equation}
 %
 \begin{equation}
-    \label{eq:V_R_U_semiempirical}
-    \input{equations/mathematical_model_kinetics.V_R_U_semiempirical}
-\end{equation}
-%
-\begin{equation}
-    \label{eq:V_R_x_U_semiempirical}
-    \input{equations/mathematical_model_kinetics.V_R_x_U_semiempirical}
-\end{equation}
-%
-\begin{equation}
-    \label{eq:V_x_U_semiempirical}
-    \input{equations/mathematical_model_kinetics.V_x_U_semiempirical}
-\end{equation}
-%
-\begin{equation}
     \label{eq:kappa_r_tot_semiempirical}
     \input{equations/mathematical_model_kinetics.kappa_r_tot_semiempirical}
 \end{equation}
@@ -255,22 +270,5 @@ The radius of the propeller slipstream far behind the propeller is given by \aut
 \begin{equation}
     \label{eq:gamma_g_semiempirical}
     \input{equations/mathematical_model_kinetics.gamma_g_semiempirical}
-\end{equation}
-%
-\begin{equation}
-    \label{eq:V_R_x_C_semiempirical}
-    \input{equations/mathematical_model_kinetics.V_R_x_C_semiempirical}
-\end{equation}
-%
-\begin{equation}
-    \label{eq:V_x_C_semiempirical}
-    \input{equations/mathematical_model_kinetics.V_x_C_semiempirical}
-\end{equation}
-%
-
-%
-\begin{equation}
-    \label{eq:c_semiempirical}
-    \input{equations/mathematical_model_kinetics.c_semiempirical}
 \end{equation}
 %
