@@ -57,6 +57,7 @@ The lift coefficient $C_L$ is calculated with \autoref{eq:C_L_semiempirical}, wh
     \input{equations/mathematical_model_kinetics.C_L_semiempirical}
 \end{equation}
 The lift slope of the rudder $\frac{\partial C_L}{\partial \alpha}$ is calculated with \autoref{eq:dC_L_dalpha_semiempirical} where the effective aspect ratio of the rudder $AR_e$ can be obtained from \autoref{eq:AR_e_semiempirical}. $AR_e$ is the geometrical aspect ratio $AR_g$ (\autoref{eq:AR_g_semiempirical}) with a correction for a potential gap between the upper part of the rudder and the rudder horn for larger rudder angles.
+$a_0$ is the section lift curve slope (\autoref{eq:a_0_semiempirical}) and $\Omega$ is the sweep angle of the quarter chord line.
 \begin{equation}
     \label{eq:dC_L_dalpha_semiempirical}
     \input{equations/mathematical_model_kinetics.dC_L_dalpha_semiempirical}
@@ -70,6 +71,11 @@ The lift slope of the rudder $\frac{\partial C_L}{\partial \alpha}$ is calculate
 \begin{equation}
     \label{eq:AR_g_semiempirical}
     \input{equations/mathematical_model_kinetics.AR_g_semiempirical}
+\end{equation}
+%
+\begin{equation}
+    \label{eq:a_0_semiempirical}
+    \input{equations/mathematical_model_kinetics.a_0_semiempirical}
 \end{equation}
 There is also a small nonlinear part to $C_L$ called $C_{Dcrossflow}$ which is calculated for a rudder with squared tip using \autoref{eq:C_D_crossflow_semiempirical} where the taper ratio $\lambda$ is defined as the ratio between the chords at the tip and the root of the rudder \citep{hughes_tempest_2011}. 
 \begin{equation}
@@ -150,11 +156,6 @@ There is also a small nonlinear part to $C_L$ called $C_{Dcrossflow}$ which is c
 \begin{equation}
     \label{eq:C_L_max_semiempirical}
     \input{equations/mathematical_model_kinetics.C_L_max_semiempirical}
-\end{equation}
-%
-\begin{equation}
-    \label{eq:a_0_semiempirical}
-    \input{equations/mathematical_model_kinetics.a_0_semiempirical}
 \end{equation}
 %
 \begin{equation}
