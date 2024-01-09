@@ -51,13 +51,18 @@ The lift forces are calculated with the lift coefficient $C_L$ as seen in \autor
     \input{equations/mathematical_model_kinetics.L_R_C_semiempirical}
 \end{equation}
 
-The lift coefficient $C_L$ is calculated with \autoref{eq:C_L_semiempirical}, which contains two separate expressions for angle of attack $\alpha$ below or above a critical stalling angle $\alpha_s$.
+The lift coefficient $C_L$ is calculated with \autoref{eq:C_L_semiempirical}, which contains two separate expressions for angle of attack $\alpha$ below or above a critical stalling angle $\alpha_s$ (\autoref{eq:alpha_s_semiempirical}).
 \begin{equation}
     \label{eq:C_L_semiempirical}
     \input{equations/mathematical_model_kinetics.C_L_semiempirical}
 \end{equation}
+%
+\begin{equation}
+    \label{eq:alpha_s_semiempirical}
+    \input{equations/mathematical_model_kinetics.alpha_s_semiempirical}
+\end{equation}
 The lift slope of the rudder $\frac{\partial C_L}{\partial \alpha}$ is calculated with \autoref{eq:dC_L_dalpha_semiempirical} where the effective aspect ratio of the rudder $AR_e$ can be obtained from \autoref{eq:AR_e_semiempirical}. $AR_e$ is the geometrical aspect ratio $AR_g$ (\autoref{eq:AR_g_semiempirical}) with a correction for a potential gap between the upper part of the rudder and the rudder horn for larger rudder angles.
-$a_0$ is the section lift curve slope (\autoref{eq:a_0_semiempirical}) and $\Omega$ is the sweep angle of the quarter chord line.
+$a_0$ is the section lift curve slope (\autoref{eq:a_0_semiempirical}) and $\Omega$ is the sweep angle of the quarter chord line \citep{lewis_principles_1989}.
 \begin{equation}
     \label{eq:dC_L_dalpha_semiempirical}
     \input{equations/mathematical_model_kinetics.dC_L_dalpha_semiempirical}
@@ -87,6 +92,35 @@ There is also a small nonlinear part to $C_L$ called $C_{Dcrossflow}$ which is c
     \label{eq:lambda__semiempirical}
     \input{equations/mathematical_model_kinetics.lambda__semiempirical}
 \end{equation}
+\subsubsection{Propeller induced velocity}
+\label{sec:propeller_induced_velocity}
+According to momentum theory the mean axial flow velocity far downstream of the propeller $V_{\infty}$ is given by \autoref{eq:V_infty_semiempirical} \cite{brix_manoeuvring_1993} where the thrust coefficient $C_{Th}$ is calculated with \autoref{eq:C_Th_semiempirical} where $r_0$ is the propeller radius and the apparent velocity $V_A$ is given by \autoref{eq:V_A_semiempirical}.
+\begin{equation}
+    \label{eq:V_infty_semiempirical}
+    \input{equations/mathematical_model_kinetics.V_infty_semiempirical}
+\end{equation}
+%
+\begin{equation}
+    \label{eq:C_Th_semiempirical}
+    \input{equations/mathematical_model_kinetics.C_Th_semiempirical}
+\end{equation}
+%
+\begin{equation}
+    \label{eq:V_A_semiempirical}
+    \input{equations/mathematical_model_kinetics.V_A_semiempirical}
+\end{equation}
+
+The radius of the propeller slipstream far behind the propeller is given by \autoref{eq:r_infty_semiempirical}.
+\begin{equation}
+    \label{eq:r_infty_semiempirical}
+    \input{equations/mathematical_model_kinetics.r_infty_semiempirical}
+\end{equation}
+
+\begin{equation}
+    \label{eq:r_p_semiempirical}
+    \input{equations/mathematical_model_kinetics.r_p_semiempirical}
+\end{equation}
+
 %
 \begin{equation}
     \label{eq:lambda_R_semiempirical}
@@ -174,11 +208,6 @@ There is also a small nonlinear part to $C_L$ called $C_{Dcrossflow}$ which is c
 \end{equation}
 %
 \begin{equation}
-    \label{eq:alpha_s_semiempirical}
-    \input{equations/mathematical_model_kinetics.alpha_s_semiempirical}
-\end{equation}
-%
-\begin{equation}
     \label{eq:alpha_semiempirical}
     \input{equations/mathematical_model_kinetics.alpha_semiempirical}
 \end{equation}
@@ -238,30 +267,7 @@ There is also a small nonlinear part to $C_L$ called $C_{Dcrossflow}$ which is c
     \input{equations/mathematical_model_kinetics.V_x_C_semiempirical}
 \end{equation}
 %
-\begin{equation}
-    \label{eq:r_p_semiempirical}
-    \input{equations/mathematical_model_kinetics.r_p_semiempirical}
-\end{equation}
-%
-\begin{equation}
-    \label{eq:r_infty_semiempirical}
-    \input{equations/mathematical_model_kinetics.r_infty_semiempirical}
-\end{equation}
-%
-\begin{equation}
-    \label{eq:V_infty_semiempirical}
-    \input{equations/mathematical_model_kinetics.V_infty_semiempirical}
-\end{equation}
-%
-\begin{equation}
-    \label{eq:C_Th_semiempirical}
-    \input{equations/mathematical_model_kinetics.C_Th_semiempirical}
-\end{equation}
-%
-\begin{equation}
-    \label{eq:V_A_semiempirical}
-    \input{equations/mathematical_model_kinetics.V_A_semiempirical}
-\end{equation}
+
 %
 \begin{equation}
     \label{eq:c_semiempirical}
