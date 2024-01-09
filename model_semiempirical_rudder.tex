@@ -1,5 +1,7 @@
-
-The semi-empirical rudder model is a lifting line model. The surge and sway force are expressed as rudder lift $L_R$, and drag $D_R$ projected on the ship through the rudder inflow angle $\alpha_f$ as seen in \autoref{eq:X_R_semiempirical} and \autoref{eq:Y_R_semiempirical}. $\alpha_f$ is an angle influenced by both the rudder angle $\delta$ as well as the angle of the inflow to the rudder from a combination of the propeller induced speed and the velocity in the wake of the ship. The yaw moment is modelled as the sway force times a lever arm $x_R$ as seen in \autoref{eq:N_R_semiempirical}.
+\subsection{Semi-empirical rudder model}
+\label{sec:semiempirical_rudder_model}
+The semi-empirical rudder model is a lifting line model. The surge and sway force are expressed as rudder lift $L_R$, and drag $D_R$ projected on the ship through the rudder inflow angle $\alpha_f$ as seen in \autoref{eq:X_R_semiempirical} and \autoref{eq:Y_R_semiempirical}.
+This angle is a sum of the initial inflow to the rudder at a straight course $\gamma_0$ and the inflow to the rudder $\gamma$ due to propeller induced speed, drift angle, and yaw rate of the ship as seen in \autoref{eq:gamma_semiempirical}.
 \begin{equation}
     \label{eq:X_R_semiempirical}
     \input{equations/mathematical_model_kinetics.X_R_semiempirical}
@@ -11,16 +13,34 @@ The semi-empirical rudder model is a lifting line model. The surge and sway forc
 \end{equation}
 %
 \begin{equation}
+    \label{eq:alpha_f_semiempirical}
+    \input{equations/mathematical_model_kinetics.alpha_f_semiempirical}
+\end{equation}
+%
+\begin{equation}
+    \label{eq:gamma_semiempirical}
+    \input{equations/mathematical_model_kinetics.gamma_semiempirical}
+\end{equation}
+The transverse velocity at the rudder $V_{Ry}$ is calculated with the ship's yaw rate $r$ and the transverse velocity $v$ multiplied by their flow straightening coefficients $\kappa_{rtot}$ and $\kappa_{vtot}$ (\autoref{eq:V_R_y_semiempirical}). The longitudinal velocity at the rudder $V_{RxC}$ is calculated with \autoref{eq:V_R_x_C_semiempirical}.
+\begin{equation}
+    \label{eq:V_R_y_semiempirical}
+    \input{equations/mathematical_model_kinetics.V_R_y_semiempirical}
+\end{equation}
+
+The yaw moment is modelled as the sway force times a lever arm $x_R$ as seen in \autoref{eq:N_R_semiempirical}.
+\begin{equation}
     \label{eq:N_R_semiempirical}
     \input{equations/mathematical_model_kinetics.N_R_semiempirical}
 \end{equation}
 
+\subsubsection{Rudder lift}
+\label{sec:rudder lift}
 The total rudder lift is calculated as the sum of the lift from the part of the rudder that is covered by the propeller race $L_{RC}$ and the uncovered part $L_{RU}$ as seen in \autoref{eq:L_R_semiempirical}.
 \begin{equation}
     \label{eq:L_R_semiempirical}
     \input{equations/mathematical_model_kinetics.L_R_semiempirical}
 \end{equation}
-The lift forces are calculated with the lift coefficient $C_L$ as seen in \autoref{eq:L_R_U_semiempirical} and \autoref{eq:L_R_C_semiempirical}. These equations are essentially the same except that the lift by the covered part $L_{RC}$ is diminished by the factor $\lambda_R$ due to the limited radius of the propeller slipstream in the lateral direction \citep{brix_manoeuvring_1993}. A tuning coefficient $C_{Ltune}$ has also been added to these equations.
+The lift forces are calculated with the lift coefficient $C_L$ as seen in \autoref{eq:L_R_U_semiempirical} and \autoref{eq:L_R_C_semiempirical}. These equations are essentially the same except that the lift by the covered part $L_{RC}$ is diminished by the factor $\lambda_R$ (\autoref{eq:lambda_R_semiempirical}) due to the limited radius of the propeller slipstream in the lateral direction \citep{brix_manoeuvring_1993}. A tuning coefficient $C_{Ltune}$ has also been added to these equations.
 \begin{equation}
     \label{eq:L_R_U_semiempirical}
     \input{equations/mathematical_model_kinetics.L_R_U_semiempirical}
@@ -30,10 +50,36 @@ The lift forces are calculated with the lift coefficient $C_L$ as seen in \autor
     \label{eq:L_R_C_semiempirical}
     \input{equations/mathematical_model_kinetics.L_R_C_semiempirical}
 \end{equation}
-%
+
+The lift coefficient $C_L$ is calculated with \autoref{eq:C_L_semiempirical}, which contains two separate expressions for angle of attack $\alpha$ below or above a critical stalling angle $\alpha_s$.
 \begin{equation}
     \label{eq:C_L_semiempirical}
     \input{equations/mathematical_model_kinetics.C_L_semiempirical}
+\end{equation}
+The lift slope of the rudder $\frac{\partial C_L}{\partial \alpha}$ is calculated with \autoref{eq:dC_L_dalpha_semiempirical} where the effective aspect ratio of the rudder $AR_e$ can be obtained from \autoref{eq:AR_e_semiempirical}. $AR_e$ is the geometrical aspect ratio $AR_g$ (\autoref{eq:AR_g_semiempirical}) with a correction for a potential gap between the upper part of the rudder and the rudder horn for larger rudder angles.
+\begin{equation}
+    \label{eq:dC_L_dalpha_semiempirical}
+    \input{equations/mathematical_model_kinetics.dC_L_dalpha_semiempirical}
+\end{equation}
+%
+\begin{equation}
+    \label{eq:AR_e_semiempirical}
+    \input{equations/mathematical_model_kinetics.AR_e_semiempirical}
+\end{equation}
+%
+\begin{equation}
+    \label{eq:AR_g_semiempirical}
+    \input{equations/mathematical_model_kinetics.AR_g_semiempirical}
+\end{equation}
+There is also a small nonlinear part to $C_L$ called $C_{Dcrossflow}$ which is calculated for a rudder with squared tip using \autoref{eq:C_D_crossflow_semiempirical} where the taper ratio $\lambda$ is defined as the ratio between the chords at the tip and the root of the rudder \citep{hughes_tempest_2011}. 
+\begin{equation}
+    \label{eq:C_D_crossflow_semiempirical}
+    \input{equations/mathematical_model_kinetics.C_D_crossflow_semiempirical}
+\end{equation}
+%
+\begin{equation}
+    \label{eq:lambda__semiempirical}
+    \input{equations/mathematical_model_kinetics.lambda__semiempirical}
 \end{equation}
 %
 \begin{equation}
@@ -59,11 +105,6 @@ The lift forces are calculated with the lift coefficient $C_L$ as seen in \autor
 \begin{equation}
     \label{eq:r_Delta_semiempirical}
     \input{equations/mathematical_model_kinetics.r_Delta_semiempirical}
-\end{equation}
-%
-\begin{equation}
-    \label{eq:alpha_f_semiempirical}
-    \input{equations/mathematical_model_kinetics.alpha_f_semiempirical}
 \end{equation}
 %
 \begin{equation}
@@ -112,23 +153,8 @@ The lift forces are calculated with the lift coefficient $C_L$ as seen in \autor
 \end{equation}
 %
 \begin{equation}
-    \label{eq:dC_L_dalpha_semiempirical}
-    \input{equations/mathematical_model_kinetics.dC_L_dalpha_semiempirical}
-\end{equation}
-%
-\begin{equation}
     \label{eq:a_0_semiempirical}
     \input{equations/mathematical_model_kinetics.a_0_semiempirical}
-\end{equation}
-%
-\begin{equation}
-    \label{eq:C_D_crossflow_semiempirical}
-    \input{equations/mathematical_model_kinetics.C_D_crossflow_semiempirical}
-\end{equation}
-%
-\begin{equation}
-    \label{eq:lambda__semiempirical}
-    \input{equations/mathematical_model_kinetics.lambda__semiempirical}
 \end{equation}
 %
 \begin{equation}
@@ -154,21 +180,6 @@ The lift forces are calculated with the lift coefficient $C_L$ as seen in \autor
 \begin{equation}
     \label{eq:alpha_semiempirical}
     \input{equations/mathematical_model_kinetics.alpha_semiempirical}
-\end{equation}
-%
-\begin{equation}
-    \label{eq:gamma_semiempirical}
-    \input{equations/mathematical_model_kinetics.gamma_semiempirical}
-\end{equation}
-%
-\begin{equation}
-    \label{eq:AR_e_semiempirical}
-    \input{equations/mathematical_model_kinetics.AR_e_semiempirical}
-\end{equation}
-%
-\begin{equation}
-    \label{eq:AR_g_semiempirical}
-    \input{equations/mathematical_model_kinetics.AR_g_semiempirical}
 \end{equation}
 %
 \begin{equation}
@@ -199,11 +210,6 @@ The lift forces are calculated with the lift coefficient $C_L$ as seen in \autor
 \begin{equation}
     \label{eq:V_x_U_semiempirical}
     \input{equations/mathematical_model_kinetics.V_x_U_semiempirical}
-\end{equation}
-%
-\begin{equation}
-    \label{eq:V_R_y_semiempirical}
-    \input{equations/mathematical_model_kinetics.V_R_y_semiempirical}
 \end{equation}
 %
 \begin{equation}
