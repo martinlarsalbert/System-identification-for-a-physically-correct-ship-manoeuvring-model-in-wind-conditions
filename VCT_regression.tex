@@ -1,2 +1,17 @@
 \subsection{Virtual captive tests regression}
 \label{sec:VCT_regression}
+
+\begin{table}[h!]
+    \centering
+    \caption{Scalings with prime system}
+    \label{tab:prime_system}
+    \pgfplotstabletypeset[col sep=comma,
+        columns={Test type,u,v,r,delta,eta0},
+        %columns/SI unit/.style={string type},
+        %columns/Physical quantity/.style={string type},
+        %columns/Denominator/.style={string type},
+        %column type=l,	% specify the align method
+        %every head row/.style={before row=\hline,after row=\hline},	% style the first row
+        %every last row/.style={after row=\hline},	% style the last row
+    ]{tables/virtual_captive_tests.csv"}
+\end{table}
