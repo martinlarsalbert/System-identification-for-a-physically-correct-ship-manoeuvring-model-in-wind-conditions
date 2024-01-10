@@ -1,6 +1,11 @@
 \subsection{Virtual captive tests regression}
 \label{sec:VCT_regression}
-The Abkowitz model and the Semi-empirical model can be identified by regressing their parameters on virtual captive test (VCT) where the state has been varied according to \autoref{tab:vct_variations}. For instance in the VCT Circle yaw rate $r$ is varied while: surge velocity $u$ is constant, no drift angle ($v=0$), no rudder angle, and the propeller is at the self propulsion point ($\eta_0=1$).  
+The Abkowitz model and the Semi-empirical model can be identified by regressing their parameters on virtual captive test (VCT) where the state has been varied according to \autoref{tab:vct_variations}. For instance in the VCT Circle yaw rate $r$ is varied while: surge velocity $u$ is constant, no drift angle ($v=0$), no rudder angle, and the propeller is at the self propulsion point ($\eta_0=1$).
+
+The regression is conducted with ordinary least squares (OLS) multiple linear regression. However, instead of regressing all of the parameters at the same time, the regression is divided into many regressions in order to reduce the multicollinearity between the parameters. The regressions are defined as a step wise process in a regression pipeline. The regression pipeline for the Abkowitz model is shown in \autoref{tab:vct_pipeline_abkowitz}. The first regression of this pipeline is conducted on the equation for ${X_R}'$ (\autoref{eq:X_R_math}) on the VCT Rudder angle variation to identify the the rudder drag ${X_{\delta\delta}}'$ coefficient. This coefficient can now be considered as known when the regression moves on to the next step of the pipeline, in a similar way as solving an equation system.
+
+The regression pipelines of the Abkowitz model (\autoref{tab:vct_pipeline_abkowitz}), and the Semi-empirical model (\autoref{tab:vct_pipeline_semiempirical}) are different. The rudder model of the Semi-empirical model does not need any parameter identification, since it is based on direct calculations. The rudder model is therefore not a part of the regression, which is the main difference with Abkowitz regression pipeline. Another difference is that the Abkowitz regression is mainly on the total forces on the ship ($X_D,Y_D,N_D$) while the Semi-empirical regression is mainly on the hull forces ($X_H,Y_H,N_H$).
+
 \begin{table}[h!]
     \centering
     \caption{Parameter variations in virtual captive tests where fixed value is indicated by -, varying value by $\sim$ and 0 means that the variable is zero.}
@@ -25,7 +30,7 @@ The Abkowitz model and the Semi-empirical model can be identified by regressing 
 \begin{table}[h!]
     \centering
     \caption{Pipeline for the VCT regression of the Abkowitz model}
-    \label{tab:vct_variations}
+    \label{tab:vct_pipeline_abkowitz}
     \pgfplotstabletypeset[col sep=comma, string type, column type=l
     ]{tables/method_VCT_regression.regression_pipeline_abkowitz.csv"}
 \end{table}
@@ -33,7 +38,7 @@ The Abkowitz model and the Semi-empirical model can be identified by regressing 
 \begin{table}[h!]
     \centering
     \caption{Pipeline for the VCT regression of the Semi-empirical model}
-    \label{tab:vct_variations}
+    \label{tab:vct_pipeline_semiempirical}
     \pgfplotstabletypeset[col sep=comma, string type, column type=l
     ]{tables/method_VCT_regression_abkowitz.regression_pipeline_semiempirical.csv"}
 \end{table}
