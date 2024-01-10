@@ -1,4 +1,4 @@
-Test type,$u$,$v$,$r$,$\delta$,$\eta_0$
+Test type,$u$,$v$,$r$,$\\delta$,$\\eta_0$
 Circle,fixed,0,varying,0,1
 Circle + Drift,fixed,varying,varying,0,1
 Circle + rudder angle,fixed,0,varying,varying,1
