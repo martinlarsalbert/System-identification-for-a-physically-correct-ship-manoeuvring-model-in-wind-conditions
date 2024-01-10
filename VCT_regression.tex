@@ -1,10 +1,10 @@
 \subsection{Virtual captive tests regression}
 \label{sec:VCT_regression}
-
+The Abkowitz model and the Semi-empirical model can be identified by regressing their parameters on virtual captive test (VCT) where the state has been varied according to \autoref{tab:vct_variations}. For instance in the VCT Circle yaw rate $r$ is varied while: surge velocity $u$ is constant, no drift angle ($v=0$), no rudder angle, and the propeller is at the self propulsion point ($\eta_0=1$).  
 \begin{table}[h!]
     \centering
-    \caption{Parameter variations where fixed value is indicated by -, varying value by $\sim$, 0 or 1 indicate the actual value.}
-    \label{tab:prime_system}
+    \caption{Parameter variations in virtual captive tests where fixed value is indicated by -, varying value by $\sim$ and 0 means that the variable is zero.}
+    \label{tab:vct_variations}
     \pgfplotstabletypeset[col sep=comma,
         %columns={Test type,$u$,$v$,$r$,$\delta$,$\eta_0$},
         columns/Test type/.style={string type, column type=l},
