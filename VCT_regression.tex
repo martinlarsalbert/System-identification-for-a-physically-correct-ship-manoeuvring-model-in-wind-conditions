@@ -7,6 +7,12 @@
     \label{tab:prime_system}
     \pgfplotstabletypeset[col sep=comma,
         %columns={Test type,$u$,$v$,$r$,$\delta$,$\eta_0$},
+        columns/Test type/.style={string type, column type=l},
+        columns/$u$/.style={string type},
+        columns/$v$/.style={string type},
+        columns/$r$/.style={string type},
+        columns/delta/.style={string type},
+        columns/$eta_0$/.style={string type},
         %columns/SI unit/.style={string type},
         %columns/Physical quantity/.style={string type},
         %columns/Denominator/.style={string type},
