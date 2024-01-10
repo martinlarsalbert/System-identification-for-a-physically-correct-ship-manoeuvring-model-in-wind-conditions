@@ -1,9 +1,9 @@
 Test type,$u$,$v$,$r$,delta,$eta_0$
-Circle,fixed,0,varying,0,1
-Circle + Drift,fixed,varying,varying,0,1
-Circle + rudder angle,fixed,0,varying,varying,1
-Drift angle,fixed,varying,0,0,1
-Rudder and drift angle,fixed,varying,0,varying,1
-Rudder angle,fixed,0,0,varying,1
-Thrust variation,fixed,0,0,fixed,varying
-self propulsion,varying,0,0,0,1
+Circle,-,0,~,0,1
+Circle + Drift,-,~,~,0,1
+Circle + rudder angle,-,0,~,~,1
+Drift angle,-,~,0,0,1
+Rudder and drift angle,-,~,0,~,1
+Rudder angle,-,0,0,~,1
+Thrust variation,-,0,0,-,~
+self propulsion,~,0,0,0,1
