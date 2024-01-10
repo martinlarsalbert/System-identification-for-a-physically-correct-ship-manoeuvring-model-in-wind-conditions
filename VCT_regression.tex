@@ -21,3 +21,19 @@ The Abkowitz model and the Semi-empirical model can be identified by regressing 
         %every last row/.style={after row=\hline},	% style the last row
     ]{tables/virtual_captive_tests.csv"}
 \end{table}
+
+\begin{table}[h!]
+    \centering
+    \caption{Pipeline for the VCT regression of the Abkowitz model}
+    \label{tab:vct_variations}
+    \pgfplotstabletypeset[col sep=comma, string type, column type=l
+    ]{tables/method_VCT_regression.regression_pipeline_abkowitz.csv"}
+\end{table}
+
+\begin{table}[h!]
+    \centering
+    \caption{Pipeline for the VCT regression of the Semi-empirical model}
+    \label{tab:vct_variations}
+    \pgfplotstabletypeset[col sep=comma, string type, column type=l
+    ]{tables/method_VCT_regression_abkowitz.regression_pipeline_semiempirical.csv"}
+\end{table}
