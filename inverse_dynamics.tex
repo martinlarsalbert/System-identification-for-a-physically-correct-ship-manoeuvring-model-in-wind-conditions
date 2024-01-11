@@ -1,0 +1,4 @@
+\subsection{Inverse dynamics}
+\label{sec:inverse_dynamics}
+Inverse dynamics is a technique to estimate the total forces ($X_D,Y_D,N_D$) acting on a ship during a certain motion. Inverse dynamics can for instance be used to estimate the forces from a manoeuvring model test with a free model or motions measured on a real ship. The total forces are calculated from the kinematics of the manoeuvring model (\autoref{eq:X} to \autoref{eq:N}). These equations require the full state of the ship, so that the position and orientation of the ship as well as the higher states: velocity, and accelerations must be known. 
+Only the position and orientation where measured in the model tests used in this paper, so that the higher states must be estimated. A Kalman filter is used to estimate the higher hidden states from the model tests.
