@@ -1,3 +1,19 @@
 \section{Results}
 \label{sec:results}
+The parameters within the Abkowitz model and the Semi-empirical model structures have been identified with: VCT regression, and inverse dynamics regression. The resulting models have been named following a  naming convention based on the model structure and the type of regression applied according to \autoref{tab:model_names}.
+\begin{table}[h!]
+    \caption{Model names are defined by the model structure and regression type.}
+    \label{tab:model_names}
+    \centering
+    \begin{tabular}{l l l}
+        Model name & Structure & Regression \\
+        \hline
+        Semi-empirical VCT & Semi-empirical & VCT \\
+        Semi-empirical ID & Semi-empirical & ID \\
+        Abkowitz VCT & Abkowitz & VCT \\
+        Abkowitz ID & Abkowitz & ID \\
+    \end{tabular}
+\end{table}
+
 \input{result_VCT_regression}
+\input{result_ID_regression}
