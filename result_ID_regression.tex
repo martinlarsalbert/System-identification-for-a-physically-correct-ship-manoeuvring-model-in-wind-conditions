@@ -2,7 +2,7 @@
 \label{sec:result_ID_regression}
 The parameters within the two models have been identified with Inverse dynamics (ID) regression on a set of manoeuvring model tests conducted with a scale model of the WPCC. The model tests (see \autoref{fig:model_tests}) consist of zigzag10/10, and zigzag20/20 tests to port and starboard as well as some yaw rate tests and self propulsion test on a straight course. All of the test are used in the training dataset to identify the parameters within the Abkowitz and Semi-empirical models.
 \begin{figure}[h!]
-    \includegraphics[width=\textwidth]{figures/result_ID_regression.model_tests.pdf}
+    \includegraphics[width=\columnwidth]{figures/result_ID_regression.model_tests.pdf}
     \caption{Model tests trajectories.}
     \label{fig:model_tests}
 \end{figure}
@@ -13,7 +13,7 @@ The parameters within the two models have been identified with Inverse dynamics 
 %    \label{fig:ID_regression_ID_Y}
 %\end{figure}
 \begin{figure}[h!]
-    \includegraphics[width=\textwidth]{figures/result_ID_regression.ID_regression_ID_N.pdf}
+    \includegraphics[width=\columnwidth]{figures/result_ID_regression.ID_regression_ID_N.pdf}
     \caption{Comparison of the total yawing moment acting on the ship: predicted with the Semi-empirical VCT model, predicted with the Semi-empirical ID model, predicted with the Abkowitz ID model, and the corresponding values from a zigzag20/20 test estimated with inverse dynamics.}
     \label{fig:ID_regression_ID_N}
 \end{figure}
@@ -21,7 +21,7 @@ The parameters within the two models have been identified with Inverse dynamics 
 Zooming in further into the models, the hull yawing moment $N_H$ can be decomposed into the individual parameter contributions. \autoref{fig:ID_regression_N_decomposition} show the parameter decomposition for the three models of interest. The graphs show the joined contributions for parameters related to drift $N_v+N_{vvv}$, yaw rate $N_r+N_{rrr}$, and combined drift and yaw rate $N_{vrr}+N_{vvr}$. It seems that the two models for the Semi-empirical model have similar parameter decomposition with the exception that $N_{vrr}+N_{vvr}$ is very small for ID; it seems that $N_r+N_{rrr}$ are a little bit larger for ID compared to VCT as a compensation.
 The parameter decomposition of the Abkowitz model ID show that almost the entire contribution to the hull yawing moment $N_H$ can be denoted to the yaw rate parameters $N_r+N_{rrr}$. 
 \begin{figure}[h!]
-    \includegraphics[width=\textwidth]{figures/result_ID_regression.ID_regression_N_decomposition.pdf}
+    \includegraphics[width=\columnwidth]{figures/result_ID_regression.ID_regression_N_decomposition.pdf}
     \caption{Parameter contributions to the hull forces during a zigzag20/20 test for parameters related to drift, yaw rate and combined drift and yaw rate for the three prediction models.}
     \label{fig:ID_regression_N_decomposition}
 \end{figure}
