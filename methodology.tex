@@ -1,4 +1,19 @@
 \section{Methodology}
 \label{sec:methodology}
+The parameters within the Abkowitz model and the Semi-empirical model structures have been identified with: VCT regression (\autoref{sec:VCT_regression}), and inverse dynamics regression (\autoref{sec:inverse_dynamics}). The resulting models have been named following a  naming convention based on the model structure and the type of regression applied according to \autoref{tab:model_names}.
+\begin{table}[h!]
+    \caption{Model names are defined by the model structure and regression type.}
+    \label{tab:model_names}
+    \centering
+    \begin{tabular}{l l l}
+        Model name & Structure & Regression \\
+        \hline
+        Semi-empirical VCT & Semi-empirical & VCT \\
+        Semi-empirical ID & Semi-empirical & ID \\
+%        Abkowitz VCT & Abkowitz & VCT \\
+        Abkowitz ID & Abkowitz & ID \\
+    \end{tabular}
+\end{table}
+The Semi-empirical VCT is assumed to be the more physically correct model, since it is based on direct measurements of the hydrodynamic forces from a controlled parameter variation. The idea is that this model can serve as a reference to the two other inverse dynamics models.
 \input{VCT_regression}
 \input{inverse_dynamics}
