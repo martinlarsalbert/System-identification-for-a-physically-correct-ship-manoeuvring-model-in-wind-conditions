@@ -7,3 +7,24 @@ Before assessing the physical correctness of the ID regression models, the physi
     \caption{Comparison of the total forces acting on the ship: predicted with the Semi-empirical VCT model, and the corresponding values from a zigzag20/20 test estimated with inverse dynamics.}
     \label{fig:VCT_regression_ID}
 \end{figure}
+
+\begin{table}[h!]
+    \centering
+    \caption{}
+    \label{tab:vct_variations}
+    \pgfplotstabletypeset[col sep=comma,
+    %columns={Test type,$u$,$v$,$r$,$\delta$,$\eta_0$},
+    %columns/Test type/.style={string type, column type=l},
+    %columns/$u$/.style={string type},
+    %columns/$v$/.style={string type},
+    %columns/$r$/.style={string type},
+    %columns/delta/.style={string type},
+    %columns/$eta_0$/.style={string type},
+    %columns/SI unit/.style={string type},
+    %columns/Physical quantity/.style={string type},
+    %columns/Denominator/.style={string type},
+    %column type=l,	% specify the align method
+    %every head row/.style={before row=\hline,after row=\hline},	% style the first row
+    %every last row/.style={after row=\hline},	% style the last row
+    ]{"tables/result_VCT_regression.reference_model_mean_average_error.csv"}
+\end{table}
