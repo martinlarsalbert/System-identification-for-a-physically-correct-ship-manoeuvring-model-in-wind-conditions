@@ -1,6 +1,6 @@
 \section{Methodology}
 \label{sec:methodology}
-The objective of this paper is to investigate the physical correctness of the Abkowitz model and the Semi-empirical model when the parameters are identified by inverse dynamics regression (ID regression, \autoref{sec:inverse_dynamics}) on a set of calm water standard manoeuvres. In order to assess the physical correctness, comparisons are made with a third model -- the Reference model. The Reference model has the Semi-empirical model structure, but with parameters identified with VCT regression (\autoref{sec:VCT_regression}) supported by CFD calculations. The resulting models have been named according to \autoref{tab:model_names}.
+The objective of this paper is to investigate the physical correctness of the Abkowitz model and the Physics informed model when the parameters are identified by inverse dynamics regression (ID regression, \autoref{sec:inverse_dynamics}) on a set of calm water standard manoeuvres. In order to assess the physical correctness, comparisons are made with a third model -- the Reference model. The Reference model has thPhysics informedal model structure, but with parameters identified with VCT regression (\autoref{sec:VCT_regression}) supported by CFD calculations. The resulting models have been named according to \autoref{tab:model_names}.
 The Reference model is assumed to be the more physically correct model, compared to the other two, since it is based on direct CFD calculations of the hydrodynamic forces from a controlled parameter variation. The Reference model is therefore a suitable reference to assess the physical correctness of the two other models.
 % ToDo: Why 3 methods?
 \begin{table}[h]
@@ -8,12 +8,12 @@ The Reference model is assumed to be the more physically correct model, compared
     \label{tab:model_names}
     \centering
     \begin{tabular}{l l l}
-        Model name & Structure & Regression \\
+        Model name                           & Structure      & Regression \\
         \hline
-        Reference model & Semi-empirical & VCT \\
-        Semi-empirical ID & Semi-empirical & ID \\
-%        Abkowitz VCT & Abkowitz & VCT \\
-        Abkowitz ID & Abkowitz & ID \\
+        Reference model   Physics informedal & VCT                         \\
+        Physics informedededPhysics informed   & Physics informed & ID         \\
+        %        Abkowitz VCT & Abkowitz & VCT \\
+        Abkowitz ID                          & Abkowitz       & ID         \\
     \end{tabular}
 \end{table}
 \input{VCT_regression}
