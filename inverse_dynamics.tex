@@ -1,7 +1,7 @@
 \subsection{Inverse dynamics and ID regression}
 \label{sec:inverse_dynamics}
-Inverse dynamics is a technique to estimate the total forces ($X_D,Y_D,N_D$) acting on a ship during a certain motion. Inverse dynamics can for instance be used to estimate the forces from a manoeuvring model test with a free model or motions measured on a real ship. The total forces are calculated from the kinematics of the manoeuvring model (\autoref{eq:X} to \autoref{eq:N}). These equations require the full state of the ship, so that the position and orientation of the ship as well as the higher states: velocity, and accelerations must be known. 
-Only the position and orientation where measured in the model tests used in this paper, so that the higher states must be estimated. This estimation was done with an Extended Kalman filter (EKF) for this paper.
+Inverse dynamics is a technique to estimate the total forces ($X_D,Y_D,N_D$) acting on a ship during a certain motion. Inverse dynamics can for instance be used to estimate the forces from a manoeuvring model test with a free model or motions measured on a real ship. The total forces are calculated from the kinematics of the manoeuvring model (\autoref{eq:X} to \autoref{eq:N}). These equations require the full state of the ship, so that the position and orientation of the ship as well as the higher states: velocity, and accelerations; must be known. 
+These higher states needed to be estimated in this paper, since only the position and orientation of the ship model where measured in the tests. This estimation was done with an Extended Kalman filter (EKF) with the manoeuvring model as the predictor .
 
 The estimated inverse dynamics forces can be regressed with ordinary least squares (OLS) multiple
 linear regression to identify the parameters of a model. This parameter identification technique is referred to as "ID regression" in this paper.
