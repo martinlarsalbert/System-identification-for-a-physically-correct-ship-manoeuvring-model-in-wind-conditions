@@ -12,9 +12,10 @@ Before assessing the physical correctness of the ID regression models, the physi
     \centering
     \caption{}
     \label{tab:vct_variations}
-    \pgfplotstabletypeset[col sep=comma,
+    \pgfplotstabletypeset[col sep=comma,fixed,precision=0,
     %columns={Test type,$u$,$v$,$r$,$\delta$,$\eta_0$},
-    %columns/Test type/.style={string type, column type=l},
+    columns/Description/.style={string type, column type=l},
+    columns/$V$/.style={fixed,precision=2},
     %columns/$u$/.style={string type},
     %columns/$v$/.style={string type},
     %columns/$r$/.style={string type},
