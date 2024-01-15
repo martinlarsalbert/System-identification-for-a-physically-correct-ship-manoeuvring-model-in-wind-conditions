@@ -12,20 +12,10 @@ Before assessing the physical correctness of the ID regression models, the physi
     \centering
     \caption{}
     \label{tab:vct_variations}
-    \pgfplotstabletypeset[col sep=comma,fixed,precision=0,
+    \pgfplotstabletypeset[col sep=comma,fixed,precision=1,
     %columns={Test type,$u$,$v$,$r$,$\delta$,$\eta_0$},
+    
     columns/Description/.style={string type, column type=l},
-    columns/$V$/.style={fixed,precision=2},
-    %columns/$u$/.style={string type},
-    %columns/$v$/.style={string type},
-    %columns/$r$/.style={string type},
-    %columns/delta/.style={string type},
-    %columns/$eta_0$/.style={string type},
-    %columns/SI unit/.style={string type},
-    %columns/Physical quantity/.style={string type},
-    %columns/Denominator/.style={string type},
-    %column type=l,	% specify the align method
-    %every head row/.style={before row=\hline,after row=\hline},	% style the first row
-    %every last row/.style={after row=\hline},	% style the last row
+    
     ]{"tables/result_VCT_regression.reference_model_mean_average_error.csv"}
 \end{table}
