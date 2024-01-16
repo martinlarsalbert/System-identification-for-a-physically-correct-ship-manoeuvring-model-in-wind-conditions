@@ -1,7 +1,7 @@
 \subsection{ID regression}
 \label{sec:result_ID_regression}
 The parameters within the two models have been identified with inverse dynamics regression (ID regression) on a set of manoeuvring model tests conducted with a scale model of the WPCC. The model tests (see \autoref{fig:model_tests}) consist of zigzag10/10, and zigzag20/20 tests to port and starboard as well as some yaw rate tests and self propulsion test on a straight course. All of the test are used in the training dataset to identify the parameters within the Abkowitz and the Semi-empirical model.
-\begin{figure}[h!]
+\begin{figure}[h]
     \includegraphics[width=\columnwidth]{figures/result_ID_regression.model_tests.pdf}
     \caption{Model tests trajectories.}
     \label{fig:model_tests}
@@ -12,26 +12,29 @@ The parameters within the two models have been identified with inverse dynamics 
 %    \caption{}
 %    \label{fig:ID_regression_ID_Y}
 %\end{figure}
-\begin{figure}[ht!]
+\begin{figure}[h]
     \includegraphics[width=\columnwidth]{figures/result_ID_regression.ID_regression_ID_N.pdf}
     \caption{Comparison of the total yawing moment acting on the ship: predicted with the Semi-empirical VCT model, predicted with the Semi-empirical ID model, predicted with the Abkowitz ID model, and the corresponding values from a zigzag20/20 test estimated with inverse dynamics.}
     \label{fig:ID_regression_ID_N}
 \end{figure}
+\autoref{fig:ID_models_mean_average_error} shows mean average error of the models compared to the inverse dynamics
+forces from the rest of the models tests. The Abkowitz ID model has slightly lower error than Physics informed ID model, except for the zigzag tests where the error of the sway force $Y_D$ is much lower for Abkowitz ID.
+\begin{figure}[h]
+    \begin{center}
+        \includegraphics[width=\columnwidth]{figures/result_ID_regression.ID_models_mean_average_error.pdf}
+        \caption{Mean average error of the models compared to the inverse dynamics
+forces from the rest of the models tests.}
+        \label{fig:ID_models_mean_average_error}
+    \end{center}
+\end{figure}
 
 Zooming in further into the models, the hull yawing moment $N_H$ can be decomposed into the individual parameter contributions. \autoref{fig:ID_regression_N_decomposition} shows the parameter decomposition for the two models together with the Reference model. The graphs show the joined contributions for parameters related to drift $N_v+N_{vvv}$, yaw rate $N_r+N_{rrr}$, and combined drift and yaw rate $N_{vrr}+N_{vvr}$. It seems that Semi-empirical ID has similar parameter decomposition to the Reference model with the exception of $N_{vrr}+N_{vvr}$ being very small; it seems that $N_r+N_{rrr}$ are a little bit larger to compensate.
 The parameter decomposition of the Abkowitz ID is completely different, where almost the entire contribution to the hull yawing moment $N_H$ can be denoted to the yaw rate parameters $N_r+N_{rrr}$. 
-\begin{figure}[h!]
+\begin{figure}[h]
     \begin{center}
         \includegraphics[width=\columnwidth]{figures/result_ID_regression.ID_regression_N_decomposition.pdf}
         \caption{Parameter contributions to the hull forces during a zigzag20/20 test for parameters related to drift, yaw rate and combined drift and yaw rate for the three prediction models.}
         \label{fig:ID_regression_N_decomposition}
     \end{center}
 \end{figure}
-%
-\begin{figure}[h!]
-    \begin{center}
-        \includegraphics[width=\columnwidth]{figures/result_ID_regression.ID_models_mean_average_error.pdf}
-        \caption{}
-        \label{fig:ID_models_mean_average_error}
-    \end{center}
-\end{figure}
+
