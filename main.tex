@@ -148,9 +148,78 @@
 %% \linenumbers
 
 %% main text
-%\section{}
-%\label{}
-\input{body}
+\section{Introduction}
+\label{sec:introduction}
+\input{introduction}
+%
+\section{Ship mathematical model}
+\label{sec:theory}
+\FloatBarrier
+\subsection{Models}
+\label{sec:models}
+\input{models.tex}
+%
+\subsection{Mathematical rudder model}
+\label{sec:mathematical_rudder_model}
+\input{model_mathematical_rudder.tex}
+%
+\subsection{semi-empirical rudder model}
+\label{sec:semiempirical_rudder_model}
+\input{model_semiempirical_rudder.tex}
+%
+\subsection{Prime system}
+\label{sec:prime_system}
+\input{prime_system}
+%
+%
+%
+\section{Methodology}
+\label{sec:methodology}
+\input{methodology.tex}
+\subsection{VCT regression}
+\label{sec:VCT_regression}
+\input{VCT_regression}
+\FloatBarrier
+%
+\subsection{Inverse dynamics and ID regression}
+\label{sec:inverse_dynamics}
+\input{inverse_dynamics}
+\FloatBarrier
+%
+%
+%
+\section{Case study}
+\label{sec:case_study}
+\input{case_study}
+\FloatBarrier
+%
+%
+%
+\section{Results}
+\label{sec:results}
+\subsection{Reference model}
+\label{sec:result_VCT_regression}
+\input{result_VCT_regression}
+\FloatBarrier
+%
+\subsection{ID regression}
+\label{sec:result_ID_regression}
+\input{result_ID_regression}
+\FloatBarrier
+%
+\subsection{Idealized wind state}
+\label{sec:idealized_wind_state}
+\input{result_wind_state}
+\FloatBarrier
+%
+\section{Discussion}
+\label{sec:discussion}
+\input{discussion.tex}
+\FloatBarrier
+%
+\section{Conclusions}
+\label{sec:conclusions}
+\input{conclusions}
 
 %% The Appendices part is started with the command \appendix;
 %% appendix sections are then done as normal sections

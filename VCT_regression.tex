@@ -1,5 +1,3 @@
-\subsection{VCT regression}
-\label{sec:VCT_regression}
 The parameters within the Reference model, which has the Physics informed model structure, are identified by regression on a dataset of virtual captive test (VCT) where the state has been varied according to \autoref{tab:vct_variations}. For instance in the VCT Circle yaw rate $r$ is varied while: surge velocity $u$ is constant, no drift angle ($v=0$), no rudder angle, and the propeller is at the self propulsion point ($\eta_0=1$).
 
 The regression is conducted with ordinary least squares (OLS) multiple linear regression. However, instead of regressing all of the parameters at the same time, the regression is divided into many regressions in order to reduce the multicollinearity between the parameters. The regressions are defined as a step wise process in a regression pipeline. 
