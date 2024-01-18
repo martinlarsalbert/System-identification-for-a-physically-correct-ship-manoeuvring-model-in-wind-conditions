@@ -160,7 +160,7 @@
 \label{sec:models}
 \input{models.tex}
 %
-\subsection{semi-empirical rudder model}
+\subsection{Semi-empirical rudder model}
 \label{sec:semiempirical_rudder_model}
 \input{model_semiempirical_rudder.tex}
 %
@@ -221,12 +221,32 @@
 %% The Appendices part is started with the command \appendix;
 %% appendix sections are then done as normal sections
 \appendix
+\section{Hull model}
+\label{sec:hull}
+\input{hull}
 %
 \section{Rudder models}
 \label{sec:rudder_models}
 \subsection{Mathematical rudder model}
 \label{sec:mathematical_rudder_model}
 \input{model_mathematical_rudder.tex}
+\subsection{Semi-empirical rudder model}
+\label{sec:semi-empirical_rudder_model}
+\subsubsection{$C_L$}
+\label{sec:CL}
+\input{CL.tex}
+\subsubsection{$C_D$}
+\label{sec:CD}
+\input{C_D.tex}
+\subsubsection{Velocity in the propeller slip stream}
+\label{sec:velocity_in_the_propeller_slip_stream}
+\input{velocity_in_the_propeller_slip_stream}
+\subsubsection{Velocity outside the propeller slip stream}
+\label{sec:velocity_outside_the_propeller_slip_stream}
+\input{velocity_outside_the_propeller_slip_stream}
+\section{Prime system denominators}
+\label{sec:prime_system_table}
+\input{prime_system_table}
 
 %% If you have bibdatabase file and want bibtex to generate the
 %% bibitems, please use
