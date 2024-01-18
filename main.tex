@@ -152,16 +152,13 @@
 \label{sec:introduction}
 \input{introduction}
 %
-\section{Ship mathematical model}
+\section{Ship models}
 \label{sec:theory}
+\input{ship_mathematical_models}
 \FloatBarrier
 \subsection{Models}
 \label{sec:models}
 \input{models.tex}
-%
-\subsection{Mathematical rudder model}
-\label{sec:mathematical_rudder_model}
-\input{model_mathematical_rudder.tex}
 %
 \subsection{semi-empirical rudder model}
 \label{sec:semiempirical_rudder_model}
@@ -223,10 +220,13 @@
 
 %% The Appendices part is started with the command \appendix;
 %% appendix sections are then done as normal sections
-%% \appendix
-
-%% \section{}
-%% \label{}
+\appendix
+%
+\section{Rudder models}
+\label{sec:rudder_models}
+\subsection{Mathematical rudder model}
+\label{sec:mathematical_rudder_model}
+\input{model_mathematical_rudder.tex}
 
 %% If you have bibdatabase file and want bibtex to generate the
 %% bibitems, please use
