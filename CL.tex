@@ -1,0 +1,72 @@
+The lift coefficient $C_L$ is calculated with \autoref{eq:C_L_semiempirical}, which contains two separate expressions for angle of attack $\alpha$ (\autoref{eq:alpha_semiempirical}) below or above a critical stalling angle $\alpha_s$ (\autoref{eq:alpha_s_semiempirical}).
+\begin{equation}
+    \label{eq:C_L_semiempirical}
+    \input{equations/mathematical_model_kinetics.C_L_semiempirical}
+\end{equation}
+%
+\begin{equation}
+    \label{eq:alpha_s_semiempirical}
+    \input{equations/mathematical_model_kinetics.alpha_s_semiempirical}
+\end{equation}
+%
+\begin{equation}
+    \label{eq:alpha_semiempirical}
+    \input{equations/mathematical_model_kinetics.alpha_semiempirical}
+\end{equation}
+Before stall, the lift slope of the rudder $\frac{\partial C_L}{\partial \alpha}$ is calculated with \autoref{eq:dC_L_dalpha_semiempirical} where the effective aspect ratio of the rudder $AR_e$ can be obtained from \autoref{eq:AR_e_semiempirical}. $AR_e$ is the geometrical aspect ratio $AR_g$ (\autoref{eq:AR_g_semiempirical}) with a correction for a possible gap between the upper part of the rudder and the rudder horn for larger rudder angles.
+$a_0$ is the section lift curve slope (\autoref{eq:a_0_semiempirical}) and $\Omega$ is the sweep angle of the quarter chord line \citep{lewis_principles_1989}.
+\begin{equation}
+    \label{eq:dC_L_dalpha_semiempirical}
+    \input{equations/mathematical_model_kinetics.dC_L_dalpha_semiempirical}
+\end{equation}
+%
+\begin{equation}
+    \label{eq:AR_e_semiempirical}
+    \input{equations/mathematical_model_kinetics.AR_e_semiempirical}
+\end{equation}
+%
+\begin{equation}
+    \label{eq:AR_g_semiempirical}
+    \input{equations/mathematical_model_kinetics.AR_g_semiempirical}
+\end{equation}
+%
+\begin{equation}
+    \label{eq:a_0_semiempirical}
+    \input{equations/mathematical_model_kinetics.a_0_semiempirical}
+\end{equation}
+There is also a small nonlinear part to $C_L$ called $C_{Dcrossflow}$ which is calculated for a rudder with squared tip using \autoref{eq:C_D_crossflow_semiempirical} where the taper ratio $\lambda$ is defined as the ratio between the chords at the tip and the root of the rudder (\autoref{eq:lambda__semiempirical}) \citep{hughes_tempest_2011}. 
+\begin{equation}
+    \label{eq:C_D_crossflow_semiempirical}
+    \input{equations/mathematical_model_kinetics.C_D_crossflow_semiempirical}
+\end{equation}
+%
+\begin{equation}
+    \label{eq:lambda__semiempirical}
+    \input{equations/mathematical_model_kinetics.lambda__semiempirical}
+\end{equation}
+
+Expressions to calculate: $C_{Lmax}$, $B_0$, $B_s$, $u_s$, and $C_N$; to get the lift after stall are shown in \autoref{eq:C_L_max_semiempirical} to \autoref{eq:C_N_semiempirical}.
+\begin{equation}
+    \label{eq:C_L_max_semiempirical}
+    \input{equations/mathematical_model_kinetics.C_L_max_semiempirical}
+\end{equation}
+%
+\begin{equation}
+    \label{eq:B_0_semiempirical}
+    \input{equations/mathematical_model_kinetics.B_0_semiempirical}
+\end{equation}
+%
+\begin{equation}
+    \label{eq:B_s_semiempirical}
+    \input{equations/mathematical_model_kinetics.B_s_semiempirical}
+\end{equation}
+%
+\begin{equation}
+    \label{eq:u_s_semiempirical}
+    \input{equations/mathematical_model_kinetics.u_s_semiempirical}
+\end{equation}
+%
+\begin{equation}
+    \label{eq:C_N_semiempirical}
+    \input{equations/mathematical_model_kinetics.C_N_semiempirical}
+\end{equation}
