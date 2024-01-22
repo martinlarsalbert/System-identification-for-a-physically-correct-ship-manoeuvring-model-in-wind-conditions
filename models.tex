@@ -15,7 +15,7 @@ The ship's kinematics of the manoeuvring models are described by \autoref{eq:X}-
     \input{equations/mathematical_model_kinetics.N}
 \end{equation}
 
-The damping forces and moment are expressed in a modular way as seen in \autoref{eq:X_D} to \autoref{eq:N_D},
+The damping forces and moment are expressed in a modular way as seen in \autoref{eq:X_D} to \autoref{eq:N_D} and \autoref{fig:force_model},
 % Components:
 \begin{equation}
     \label{eq:X_D}
@@ -35,8 +35,8 @@ The damping forces and moment are expressed in a modular way as seen in \autoref
 \begin{figure}[h]
     \centering
     \includesvg[width=4cm]{figures/force_model.svg}
-    \caption{Caption}
-    \label{fig:enter-label}
+    \caption{The modular force components.}
+    \label{fig:force_model}
 \end{figure}
 
 where the subscripts: H, P, R, and RHI represent contributions from: hull, propellers, rudders, and rudder hull interaction. Rudder hull interaction having its own element is a difference to the MMG model, where RHI is included in the hull forces.
