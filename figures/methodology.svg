@@ -24,9 +24,9 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="true"
-     inkscape:zoom="2.1401414"
-     inkscape:cx="124.52448"
-     inkscape:cy="362.1256"
+     inkscape:zoom="1.7573399"
+     inkscape:cx="321.22414"
+     inkscape:cy="518.96619"
      inkscape:window-width="3840"
      inkscape:window-height="2066"
      inkscape:window-x="2293"
@@ -133,6 +133,66 @@
          d="M 5.77,0 -2.88,5 V -5 Z"
          id="path135-6" />
     </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow3-3"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Arrow3"
+       markerWidth="4.2071066"
+       markerHeight="7"
+       viewBox="0 0 4.2071068 7"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:round"
+         d="M 3,-3 0,0 3,3"
+         id="arrow3-9"
+         transform="rotate(180,0.125,0)"
+         sodipodi:nodetypes="ccc" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow3-3-1"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Arrow3"
+       markerWidth="4.2071066"
+       markerHeight="7"
+       viewBox="0 0 4.2071068 7"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:round"
+         d="M 3,-3 0,0 3,3"
+         id="arrow3-9-7"
+         transform="rotate(180,0.125,0)"
+         sodipodi:nodetypes="ccc" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow3-3-1-0"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Arrow3"
+       markerWidth="4.2071066"
+       markerHeight="7"
+       viewBox="0 0 4.2071068 7"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:round"
+         d="M 3,-3 0,0 3,3"
+         id="arrow3-9-7-1"
+         transform="rotate(180,0.125,0)"
+         sodipodi:nodetypes="ccc" />
+    </marker>
   </defs>
   <g
      inkscape:label="Layer 1"
@@ -140,55 +200,55 @@
      id="layer1">
     <text
        xml:space="preserve"
-       style="font-size:7.05556px;line-height:1.5;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1;stroke-linejoin:round;paint-order:markers fill stroke"
+       style="font-size:7.05556px;line-height:1.5;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1;stroke-linejoin:round;paint-order:markers fill stroke"
        x="32.587154"
        y="31.281469"
        id="text295"><tspan
          sodipodi:role="line"
          id="tspan293"
          style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1"
-         x="0"
-         y="0">VCT</tspan></text>
+         x="32.587154"
+         y="31.281469">VCT</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:7.05556px;line-height:1.5;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1;stroke-linejoin:round;paint-order:markers fill stroke"
+       style="font-size:7.05556px;line-height:1.5;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1;stroke-linejoin:round;paint-order:markers fill stroke"
        x="14.605466"
        y="57.677784"
        id="text295-9"><tspan
          sodipodi:role="line"
          id="tspan293-1"
-         style="display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1"
          x="14.605466"
          y="57.677784">$X_D,Y_D,N_D,</tspan><tspan
          sodipodi:role="line"
-         style="display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1"
          x="14.605466"
-         y="57.677784"
+         y="68.261124"
          id="tspan5457">X_H,Y_H,N_H,</tspan><tspan
          sodipodi:role="line"
-         style="display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1"
-         x="0"
-         y="0"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1"
+         x="14.605466"
+         y="78.84446"
          id="tspan5461">X_R,Y_R,N_R$</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:7.05556px;line-height:1.5;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1;stroke-linejoin:round;paint-order:markers fill stroke"
+       style="font-size:7.05556px;line-height:1.5;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1;stroke-linejoin:round;paint-order:markers fill stroke"
        x="16.048962"
        y="45.45459"
        id="text295-6"><tspan
          sodipodi:role="line"
          id="tspan293-14"
          style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1"
-         x="0"
-         y="0">Forces/Moments</tspan></text>
+         x="16.048962"
+         y="45.45459">Forces/Moments</tspan></text>
     <path
-       style="display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1.5;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow3);paint-order:markers fill stroke"
+       style="display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow3);paint-order:markers fill stroke"
        d="M 39.6875,33.072916 V 39.6875"
        id="path6298" />
     <g
        id="figure_1"
        style="display:inline;stroke-linecap:butt;stroke-linejoin:round"
-       transform="matrix(0.07317055,0,0,0.07317055,9.2536235,81.754529)"
+       transform="matrix(0.07317055,0,0,0.07317055,10.913845,93.589666)"
        inkscape:label="plot">
       <path
          style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:4.10756;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleStart);paint-order:markers fill stroke"
@@ -201,15 +261,15 @@
          sodipodi:nodetypes="cc" />
       <text
          xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24.10654136px;line-height:1.5;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.02689;stroke-linejoin:round;paint-order:markers fill stroke"
-         x="244.12515"
-         y="644.06543"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36.2264px;line-height:1.5;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.02689;stroke-linejoin:round;paint-order:markers fill stroke"
+         x="246.89992"
+         y="675.97528"
          id="text295-7"><tspan
            sodipodi:role="line"
            id="tspan293-6"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24.10654136px;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.02689"
-           x="244.12515"
-           y="644.06543">Rudder angle $\delta$</tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36.2264px;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.02689"
+           x="246.89992"
+           y="675.97528">Rudder angle $\delta$</tspan></text>
       <g
          id="axes_1"
          style="display:inline;stroke-linecap:butt;stroke-linejoin:round"
@@ -245,37 +305,82 @@
       </g>
       <text
          xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24.10654136px;line-height:1.5;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.02689;stroke-linecap:butt;stroke-linejoin:round;paint-order:markers fill stroke"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36.2265px;line-height:1.5;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.02689;stroke-linecap:butt;stroke-linejoin:round;paint-order:markers fill stroke"
          x="327.77356"
          y="203.24397"
          id="text295-7-1"><tspan
            sodipodi:role="line"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24.10654136px;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.02689"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36.2265px;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.02689"
            x="327.77356"
            y="203.24397"
            id="tspan10626">$Y_H$</tspan></text>
       <text
          xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24.10654136px;line-height:1.5;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.02689;stroke-linecap:butt;stroke-linejoin:round;paint-order:markers fill stroke"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36.2265px;line-height:1.5;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.02689;stroke-linecap:butt;stroke-linejoin:round;paint-order:markers fill stroke"
          x="243.19438"
          y="323.19476"
          id="text295-7-1-0"><tspan
            sodipodi:role="line"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24.10654136px;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.02689"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36.2265px;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.02689"
            x="243.19438"
            y="323.19476"
            id="tspan10626-9">$Y_R$</tspan></text>
       <text
          xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24.10654136px;line-height:1.5;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.02689;stroke-linecap:butt;stroke-linejoin:round;paint-order:markers fill stroke"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36.2265px;line-height:1.5;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.02689;stroke-linecap:butt;stroke-linejoin:round;paint-order:markers fill stroke"
          x="378.81143"
          y="388.88538"
          id="text295-7-1-9"><tspan
            sodipodi:role="line"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24.10654136px;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.02689"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36.2265px;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.02689"
            x="378.81143"
            y="388.88538"
            id="tspan10626-98">$Y_D$</tspan></text>
     </g>
+    <text
+       xml:space="preserve"
+       style="font-size:7.05556px;line-height:1.5;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1;stroke-linejoin:round;paint-order:markers fill stroke"
+       x="12.354095"
+       y="94.984726"
+       id="text295-0"><tspan
+         sodipodi:role="line"
+         id="tspan293-4"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1"
+         x="12.354095"
+         y="94.984726">Parameter variation</tspan></text>
+    <path
+       style="display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow3-3);paint-order:markers fill stroke"
+       d="m 39.6875,82.443015 v 6.614584"
+       id="path6298-0" />
+    <text
+       xml:space="preserve"
+       style="font-size:7.05556px;line-height:1.5;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1;stroke-linejoin:round;paint-order:markers fill stroke"
+       x="12.808843"
+       y="161.12022"
+       id="text295-0-7"><tspan
+         sodipodi:role="line"
+         id="tspan293-4-1"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1"
+         x="12.808843"
+         y="161.12022">Parameter identification</tspan></text>
+    <path
+       style="display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow3-3-1);paint-order:markers fill stroke"
+       d="m 39.6875,148.82813 v 6.61458"
+       id="path6298-0-8" />
+    <text
+       xml:space="preserve"
+       style="font-size:7.05556px;line-height:1.5;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1;stroke-linejoin:round;paint-order:markers fill stroke"
+       x="15.668279"
+       y="180.96397"
+       id="text295-0-7-5"><tspan
+         sodipodi:role="line"
+         id="tspan293-4-1-1"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1"
+         x="15.668279"
+         y="180.96397">Reference model</tspan></text>
+    <path
+       style="display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow3-3-1-0);paint-order:markers fill stroke"
+       d="m 39.6875,165.36458 v 6.61458"
+       id="path6298-0-8-1" />
   </g>
 </svg>
