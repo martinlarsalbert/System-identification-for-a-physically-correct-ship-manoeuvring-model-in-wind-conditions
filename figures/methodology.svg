@@ -24,15 +24,15 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="true"
-     inkscape:zoom="1.3569064"
-     inkscape:cx="310.63308"
-     inkscape:cy="568.57277"
+     inkscape:zoom="2.1401414"
+     inkscape:cx="124.52448"
+     inkscape:cy="362.1256"
      inkscape:window-width="3840"
      inkscape:window-height="2066"
      inkscape:window-x="2293"
      inkscape:window-y="-11"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1">
+     inkscape:current-layer="figure_1">
     <inkscape:grid
        type="xygrid"
        id="grid132"
@@ -40,6 +40,25 @@
   </sodipodi:namedview>
   <defs
      id="defs2">
+    <marker
+       style="overflow:visible"
+       id="TriangleStart"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="TriangleStart"
+       markerWidth="5.3244081"
+       markerHeight="6.155385"
+       viewBox="0 0 5.3244081 6.1553851"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path135" />
+    </marker>
     <marker
        style="overflow:visible"
        id="Arrow3"
@@ -59,6 +78,60 @@
          id="arrow3"
          transform="rotate(180,0.125,0)"
          sodipodi:nodetypes="ccc" />
+    </marker>
+    <clipPath
+       id="p70bd8f000d">
+      <rect
+         x="135"
+         y="86.400002"
+         width="837"
+         height="554.40002"
+         id="rect9099" />
+    </clipPath>
+    <clipPath
+       id="clipPath9118">
+      <rect
+         x="135"
+         y="86.400002"
+         width="837"
+         height="554.40002"
+         id="rect9116" />
+    </clipPath>
+    <clipPath
+       id="clipPath9122">
+      <rect
+         x="135"
+         y="86.400002"
+         width="837"
+         height="554.40002"
+         id="rect9120" />
+    </clipPath>
+    <path
+       id="m40dba5786b"
+       d="M 0,0 V 3.5"
+       style="stroke:#000000;stroke-width:0.8" />
+    <path
+       id="md3afb6977a"
+       d="M 0,0 H -3.5"
+       style="stroke:#000000;stroke-width:0.8" />
+    <marker
+       style="overflow:visible"
+       id="TriangleStart-5"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="TriangleStart"
+       markerWidth="5.3244081"
+       markerHeight="6.155385"
+       viewBox="0 0 5.3244081 6.1553851"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path135-6" />
     </marker>
   </defs>
   <g
@@ -109,8 +182,100 @@
          x="16.048962"
          y="45.45459">Forces/Moments</tspan></text>
     <path
-       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linejoin:round;paint-order:markers fill stroke;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow3)"
+       style="display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1.5;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow3);paint-order:markers fill stroke"
        d="M 39.6875,33.072916 V 39.6875"
        id="path6298" />
+    <g
+       id="figure_1"
+       style="display:inline;stroke-linecap:butt;stroke-linejoin:round"
+       transform="matrix(0.07317055,0,0,0.07317055,9.2536235,81.754529)"
+       inkscape:label="plot">
+      <path
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:4.10756;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleStart);paint-order:markers fill stroke"
+         d="M 88.981126,604.4307 V 128.959"
+         id="path10010" />
+      <path
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:4.10756;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleStart-5);paint-order:markers fill stroke"
+         d="M 88.981126,604.4307 H 700.30188"
+         id="path10010-5"
+         sodipodi:nodetypes="cc" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36.2264px;line-height:1.5;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.02689;stroke-linejoin:round;paint-order:markers fill stroke"
+         x="244.12515"
+         y="644.06543"
+         id="text295-7"><tspan
+           sodipodi:role="line"
+           id="tspan293-6"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36.2264px;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.02689"
+           x="244.12515"
+           y="644.06543">Rudder angle $\delta$</tspan></text>
+      <g
+         id="axes_1"
+         style="display:inline;stroke-linecap:butt;stroke-linejoin:round"
+         transform="matrix(0.75755672,0,0,0.75755672,-38.73983,55.180587)">
+        <g
+           id="line2d_15"
+           style="stroke-linecap:butt;stroke-linejoin:round">
+          <path
+             d="M 173.04545,615.6 490.09091,426.9991 743.72727,290.36698 933.95455,194.07909"
+             clip-path="url(#p70bd8f000d)"
+             style="display:inline;fill:none;stroke:#000000;stroke-width:4.5;stroke-linecap:square;stroke-linejoin:round;stroke-dasharray:none"
+             id="path9076" />
+        </g>
+        <g
+           id="line2d_16"
+           style="display:inline;stroke-linecap:butt;stroke-linejoin:round">
+          <path
+             d="M 173.04545,558.19651 490.09091,389.04392 743.72727,267.30021 933.95455,182.8414"
+             clip-path="url(#p70bd8f000d)"
+             style="fill:none;stroke:#000000;stroke-width:4.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:16.65, 7.2;stroke-dashoffset:0"
+             id="path9079"
+             inkscape:label="path9079" />
+        </g>
+        <g
+           id="line2d_17"
+           style="display:inline;stroke-linecap:butt;stroke-linejoin:round">
+          <path
+             d="M 173.04545,157.7658 490.09091,138.3175 743.72727,123.42909 933.95455,111.6"
+             clip-path="url(#p70bd8f000d)"
+             style="fill:none;stroke:#000000;stroke-width:4.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:28.8, 7.2, 4.5, 7.2;stroke-dashoffset:0"
+             id="path9082" />
+        </g>
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36.2265px;line-height:1.5;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.02689;stroke-linecap:butt;stroke-linejoin:round;paint-order:markers fill stroke"
+         x="327.77356"
+         y="203.24397"
+         id="text295-7-1"><tspan
+           sodipodi:role="line"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36.2265px;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.02689"
+           x="327.77356"
+           y="203.24397"
+           id="tspan10626">$Y_H$</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36.2265px;line-height:1.5;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.02689;stroke-linecap:butt;stroke-linejoin:round;paint-order:markers fill stroke"
+         x="243.19438"
+         y="323.19476"
+         id="text295-7-1-0"><tspan
+           sodipodi:role="line"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36.2265px;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.02689"
+           x="243.19438"
+           y="323.19476"
+           id="tspan10626-9">$Y_R$</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36.2265px;line-height:1.5;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.02689;stroke-linecap:butt;stroke-linejoin:round;paint-order:markers fill stroke"
+         x="378.81143"
+         y="388.88538"
+         id="text295-7-1-9"><tspan
+           sodipodi:role="line"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36.2265px;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.02689"
+           x="378.81143"
+           y="388.88538"
+           id="tspan10626-98">$Y_D$</tspan></text>
+    </g>
   </g>
 </svg>
