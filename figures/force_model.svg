@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="160mm"
-   height="297mm"
-   viewBox="0 0 160 297"
+   width="146.83946mm"
+   height="276.12701mm"
+   viewBox="0 0 146.83946 276.12702"
    version="1.1"
    id="svg5"
    sodipodi:docname="force_model.svg"
@@ -25,8 +25,8 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="1.3507552"
-     inkscape:cx="161.02103"
-     inkscape:cy="464.18478"
+     inkscape:cx="130.66764"
+     inkscape:cy="384.96983"
      inkscape:window-width="3840"
      inkscape:window-height="2066"
      inkscape:window-x="2293"
@@ -125,7 +125,8 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     style="display:inline"><g
+     style="display:inline"
+     transform="translate(-8.1093005,-20.873337)"><g
        id="g555"
        inkscape:label="Ship"
        inkscape:transform-center-x="-0.16674403"
@@ -209,7 +210,8 @@
            id="tspan6272">$Y_R$</tspan></text></g><g
        id="g6460"
        inkscape:label="vector"
-       transform="matrix(0,1.4504812,-1.4504812,0,363.41847,-111.43889)"><g
+       transform="matrix(0,1.4504812,-1.4504812,0,408.27455,-81.469544)"
+       style="display:none"><g
          id="g6477"
          inkscape:label="Y"><path
            style="display:inline;fill:#94952d;fill-opacity:0.651515;stroke:#f6ce01;stroke-width:0.9;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow1L)"
