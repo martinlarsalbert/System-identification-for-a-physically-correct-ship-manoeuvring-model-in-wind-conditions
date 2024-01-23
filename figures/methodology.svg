@@ -24,9 +24,9 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="true"
-     inkscape:zoom="3.51279"
-     inkscape:cx="266.59721"
-     inkscape:cy="277.27248"
+     inkscape:zoom="7.02558"
+     inkscape:cx="385.51977"
+     inkscape:cy="210.51643"
      inkscape:window-width="3840"
      inkscape:window-height="2066"
      inkscape:window-x="2869"
@@ -926,12 +926,12 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;line-height:1.5;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0751381;stroke-linecap:butt;stroke-linejoin:round;paint-order:markers fill stroke"
-       x="105.84851"
+       x="102.84851"
        y="61.123917"
        id="text295-7-1-3"><tspan
          sodipodi:role="line"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0751381"
-         x="105.84851"
+         x="102.84851"
          y="61.123917"
          id="tspan40820">$\begin{bmatrix} u,v,r,\dot{u},\dot{v},\dot{r}\end{bmatrix}$</tspan></text>
     <text
