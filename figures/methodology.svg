@@ -24,12 +24,12 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="true"
-     inkscape:zoom="3.51279"
-     inkscape:cx="165.25326"
-     inkscape:cy="421.03286"
+     inkscape:zoom="2.4839176"
+     inkscape:cx="224.44384"
+     inkscape:cy="85.349046"
      inkscape:window-width="3840"
      inkscape:window-height="2066"
-     inkscape:window-x="2293"
+     inkscape:window-x="2869"
      inkscape:window-y="-11"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1">
@@ -429,29 +429,29 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;line-height:1.5;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1;stroke-linejoin:round;paint-order:markers fill stroke"
-       x="32.587154"
-       y="28.811335"
+       x="34.968773"
+       y="28.851639"
        id="text295"><tspan
          sodipodi:role="line"
          id="tspan293"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1"
-         x="32.587154"
-         y="28.811335">VCT</tspan></text>
+         x="34.968773"
+         y="28.851639">VCT</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;line-height:1.5;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1;stroke-linejoin:round;paint-order:markers fill stroke"
-       x="22.381601"
-       y="45.640793"
+       x="23.392044"
+       y="61.413303"
        id="text295-9"><tspan
          sodipodi:role="line"
          id="tspan293-1"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1"
-         x="22.381601"
-         y="45.640793">Forces/Moments</tspan><tspan
+         x="23.392044"
+         y="61.413303">Forces/Moments</tspan><tspan
          sodipodi:role="line"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1"
-         x="22.381601"
-         y="53.049129"
+         x="23.392044"
+         y="68.82164"
          id="tspan5461" /></text>
     <text
        xml:space="preserve"
@@ -480,14 +480,14 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;line-height:1.5;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0751381;stroke-linecap:butt;stroke-linejoin:round;paint-order:markers fill stroke"
-       x="17.988293"
-       y="102.18011"
+       x="18.424215"
+       y="98.759521"
        id="text295-7"><tspan
          sodipodi:role="line"
          id="tspan293-6"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0751381"
-         x="17.988293"
-         y="102.18011">Rudder angle $\delta$</tspan></text>
+         x="18.424215"
+         y="98.759521">Rudder angle $\delta$</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;line-height:1.5;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0751381;stroke-linecap:butt;stroke-linejoin:round;paint-order:markers fill stroke"
@@ -541,14 +541,14 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;line-height:1.5;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1;stroke-linejoin:round;paint-order:markers fill stroke"
-       x="20.805639"
-       y="55.348557"
+       x="26.11591"
+       y="48.692978"
        id="text295-0"><tspan
          sodipodi:role="line"
          id="tspan293-4"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1"
-         x="20.805639"
-         y="55.348557">Parameter variation</tspan></text>
+         x="26.11591"
+         y="48.692978">State variation</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;line-height:1.5;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1;stroke-linejoin:round;paint-order:markers fill stroke"
@@ -594,13 +594,13 @@
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;line-height:1.5;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1;stroke-linejoin:round;paint-order:markers fill stroke"
        x="114.61387"
-       y="45.454586"
+       y="43.808693"
        id="text295-8-1"><tspan
          sodipodi:role="line"
          id="tspan293-12-9"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1"
          x="114.61387"
-         y="45.454586">EKF</tspan></text>
+         y="43.808693">EKF</tspan></text>
     <path
        style="display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow3-7);paint-order:markers fill stroke"
        d="m 119.31401,32.240923 v 6.614584"
@@ -608,122 +608,122 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;line-height:1.5;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1;stroke-linejoin:round;paint-order:markers fill stroke"
-       x="116.57449"
-       y="63.652443"
+       x="116.57447"
+       y="76.881607"
        id="text13214"><tspan
          sodipodi:role="line"
          id="tspan13212"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1"
-         x="116.57449"
-         y="63.652443">ID</tspan></text>
+         x="116.57447"
+         y="76.881607">ID</tspan></text>
     <path
        style="display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow3-7-7);paint-order:markers fill stroke"
-       d="m 119.31401,48.777381 v 6.614584"
+       d="m 119.31401,47.131489 v 6.614584"
        id="path6298-9-4" />
     <path
        style="display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow3-7-7-7);paint-order:markers fill stroke"
-       d="m 119.31401,65.313839 v 6.614584"
+       d="m 119.31399,78.543008 v 6.614584"
        id="path6298-9-4-3" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;line-height:1.5;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1;stroke-linejoin:round;paint-order:markers fill stroke"
-       x="95.868759"
-       y="136.42612"
+       x="96.340111"
+       y="159.22208"
        id="text13782"><tspan
          sodipodi:role="line"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1"
-         x="95.868759"
-         y="136.42612"
+         x="96.340111"
+         y="159.22208"
          id="tspan13879">Parameter identification</tspan></text>
     <path
        style="display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow3-7-77);paint-order:markers fill stroke"
-       d="m 119.31401,121.5378 0,6.61458"
+       d="m 119.78536,144.33376 v 6.61458"
        id="path6298-9-9"
        sodipodi:nodetypes="cc" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;line-height:1.5;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1;stroke-linejoin:round;paint-order:markers fill stroke"
-       x="80.348083"
-       y="149.63841"
+       x="80.819435"
+       y="172.43437"
        id="text13782-4"><tspan
          sodipodi:role="line"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1"
-         x="80.348083"
-         y="149.63841"
+         x="80.819435"
+         y="172.43437"
          id="tspan13879-5">Abkowitz ID</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;line-height:1.5;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1;stroke-linejoin:round;paint-order:markers fill stroke"
-       x="112.35113"
-       y="149.25377"
+       x="112.82248"
+       y="172.04973"
        id="text13782-4-9"><tspan
          sodipodi:role="line"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1"
-         x="112.35113"
-         y="149.25377"
+         x="112.82248"
+         y="172.04973"
          id="tspan13879-5-3">Physics informed ID</tspan></text>
     <path
        style="display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow3-7-77-7);paint-order:markers fill stroke"
-       d="M 132.54318,154.61071 92.855681,167.83988"
+       d="M 132.54318,181.06905 99.470263,194.29822"
        id="path6298-9-9-2"
        sodipodi:nodetypes="cc" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;line-height:1.5;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1;stroke-linejoin:round;paint-order:markers fill stroke"
        x="68.819077"
-       y="169.49542"
+       y="195.95377"
        id="text13782-4-9-5"><tspan
          sodipodi:role="line"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1"
          x="68.819077"
-         y="169.49542"
+         y="195.95377"
          id="tspan13879-5-3-8">Validations</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;line-height:1.5;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1;stroke-linejoin:round;paint-order:markers fill stroke"
        x="48.579826"
-       y="187.60646"
+       y="214.0648"
        id="text13782-4-9-5-4"><tspan
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1"
          x="48.579826"
-         y="187.60646"
+         y="214.0648"
          id="tspan13879-5-3-8-7"
          sodipodi:role="line">Model tests</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;line-height:1.5;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1;stroke-linejoin:round;paint-order:markers fill stroke"
        x="90.47718"
-       y="187.60646"
+       y="214.0648"
        id="text13782-4-9-5-1"><tspan
          sodipodi:role="line"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1"
          x="90.47718"
-         y="187.60646"
+         y="214.0648"
          id="tspan13879-5-3-8-3">Wind condition</tspan></text>
     <path
        style="display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow3-7-77-7-2-3);paint-order:markers fill stroke"
-       d="m 92.855681,154.61071 -6.614583,6.61459"
+       d="m 92.855681,181.06905 -6.614583,6.61459"
        id="path6298-9-9-2-9-4"
        sodipodi:nodetypes="cc" />
     <path
        style="display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow3-7-77-7-2-3-5);paint-order:markers fill stroke"
-       d="M 39.939014,141.38155 73.011931,161.2253"
+       d="m 39.939014,167.83989 33.072917,19.84375"
        id="path6298-9-9-2-9-4-5"
        sodipodi:nodetypes="cc" />
     <path
        style="display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow3-7-77-7-2-3-0);paint-order:markers fill stroke"
-       d="m 79.626514,174.45446 -6.614583,6.61459"
+       d="m 79.626514,200.9128 -6.614583,6.61459"
        id="path6298-9-9-2-9-4-58"
        sodipodi:nodetypes="cc" />
     <path
        style="display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow3-7-77-7-2-3-0-1);paint-order:markers fill stroke"
-       d="m 86.241098,174.45446 6.614583,6.61459"
+       d="m 86.241098,200.9128 6.614583,6.61459"
        id="path6298-9-9-2-9-4-58-5"
        sodipodi:nodetypes="cc" />
     <g
        id="figure_1-3"
        style="display:inline;stroke-linecap:butt;stroke-linejoin:round"
-       transform="matrix(0.07317055,0,0,0.07317055,88.801146,65.017143)"
+       transform="matrix(0.07317055,0,0,0.07317055,89.272501,87.813105)"
        inkscape:label="plotID">
       <path
          style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:4.10756;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleStart-57);paint-order:markers fill stroke"
@@ -815,5 +815,26 @@
         </g>
       </g>
     </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;line-height:1.5;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0751381;stroke-linecap:butt;stroke-linejoin:round;paint-order:markers fill stroke"
+       x="80.24662"
+       y="59.072018"
+       id="text295-7-1-3"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0751381"
+         x="80.24662"
+         y="59.072018"
+         id="tspan39768">$\begin{bmatrix}</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0751381"
+         x="80.24662"
+         y="66.480354"
+         id="tspan40818">u &amp; v &amp; r &amp; \dot{u} &amp; \dot{v} &amp; \dot{r} \\</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0751381"
+         x="80.24662"
+         y="73.888687"
+         id="tspan40820">\end{bmatrix}$</tspan></text>
   </g>
 </svg>
