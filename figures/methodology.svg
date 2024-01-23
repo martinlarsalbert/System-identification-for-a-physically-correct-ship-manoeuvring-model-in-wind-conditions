@@ -926,28 +926,28 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;line-height:1.5;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0751381;stroke-linecap:butt;stroke-linejoin:round;paint-order:markers fill stroke"
-       x="105.84851"
+       x="89.036606"
        y="59.072018"
        id="text295-7-1-3"><tspan
          sodipodi:role="line"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0751381"
-         x="105.84851"
+         x="89.036606"
          y="59.072018"
          id="tspan40820">$\begin{bmatrix} u,v,r,\dot{u},\dot{v},\dot{r}\end{bmatrix}$</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;line-height:1.5;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0751381;stroke-linecap:butt;stroke-linejoin:round;paint-order:markers fill stroke"
        x="26.473513"
-       y="63.405258"
+       y="65.6866"
        id="text295-7-1-3-7"><tspan
          sodipodi:role="line"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0751381"
          x="26.473513"
-         y="63.405258"
+         y="65.6866"
          id="tspan40820-2">$\begin{bmatrix} u,v,r,\delta,T\end{bmatrix}$</tspan></text>
     <path
        style="display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow3-7-77-7-8);paint-order:markers fill stroke"
-       d="M 119.31401,167.83988 99.470263,181.06905"
+       d="m 119.31401,167.83988 -13.22916,6.61459"
        id="path6298-9-9-2-4"
        sodipodi:nodetypes="cc" />
   </g>
