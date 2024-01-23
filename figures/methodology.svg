@@ -825,6 +825,6 @@
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0751381"
          x="80.24662"
          y="59.072018"
-         id="tspan40820">$$\begin{bmatrix} u &amp; v &amp; r &amp; \dot{u} &amp; \dot{v} &amp; \dot{r}\end{bmatrix}$$</tspan></text>
+         id="tspan40820">$\begin{bmatrix} u,v,r,\dot{u},\dot{v},\dot{r}\end{bmatrix}$</tspan></text>
   </g>
 </svg>
