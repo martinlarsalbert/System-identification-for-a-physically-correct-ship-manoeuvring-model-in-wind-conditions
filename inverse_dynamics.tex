@@ -1,5 +1,6 @@
-Inverse dynamics is a technique to estimate the total forces ($X_D,Y_D,N_D$) acting on a ship during a certain motion. Inverse dynamics can for instance be used to estimate the forces from a manoeuvring model test with a free model or motions measured on a real ship. The total forces are calculated from the kinematics of the manoeuvring model (\autoref{eq:X} to \autoref{eq:N}). These equations require the full state of the ship, so that the position and orientation of the ship as well as the higher states: velocity, and accelerations; must be known. 
-These higher states needed to be estimated in this paper, since only the position and orientation of the ship model where measured in the tests. This estimation was done with an Extended Kalman filter (EKF) with the manoeuvring model as the predictor \citep{alexandersson_wpcc_2022}.
+Inverse dynamics is a technique to estimate the total forces ($X_D,Y_D,N_D$) acting on a ship during a certain motion. The technique can be applied on data from a free model manoeuvring tests or data obtained from a real ship. The total forces are calculated from the kinematics of the manoeuvring model (\autoref{eq:X} to \autoref{eq:N}). These equations require that the full state of the ship is known -- so that data on the position and orientation of the ship as well as the higher states: velocity, and accelerations, are needed.
+Only the position and orientation of the ship model where however measured during the model tests.
+The higher states therefore needed to be be estimated with an extended Kalman filter (EKF) -- where the manoeuvring model was used as the predictor \citep{alexandersson_wpcc_2022}.
 
-The estimated inverse dynamics forces can be regressed with ordinary least squares (OLS) multiple
-linear regression to identify the parameters of a model. This parameter identification technique is referred to as "ID regression" in this paper.
+The estimated inverse dynamics forces was regressed with ordinary least squares (OLS) multiple
+linear regression to identify the parameters of a model. This parameter identification technique is referred to as inverse dynamics (ID) regression in this paper.
