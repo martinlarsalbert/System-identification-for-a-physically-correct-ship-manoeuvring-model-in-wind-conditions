@@ -24,9 +24,9 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="true"
-     inkscape:zoom="0.81696191"
-     inkscape:cx="85.683309"
-     inkscape:cy="447.38928"
+     inkscape:zoom="2.3107172"
+     inkscape:cx="261.3907"
+     inkscape:cy="577.52631"
      inkscape:window-width="1920"
      inkscape:window-height="1111"
      inkscape:window-x="-9"
@@ -674,12 +674,12 @@
        transform="translate(42.397996,160.07491)"
        inkscape:connector-avoid="true">
       <rect
-         style="fill:none;stroke:#000000;stroke-width:0.291534"
+         style="fill:none;stroke:#000000;stroke-width:0.278845"
          id="rect1-0-4-1"
-         width="64.144226"
-         height="11.320829"
-         x="18.752687"
-         y="40.356552" />
+         width="58.616432"
+         height="11.333518"
+         x="21.947502"
+         y="40.350204" />
       <text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29167px;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264999"
@@ -810,7 +810,7 @@
        inkscape:connection-start="#g3-9-3" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#TriangleStart-5)"
-       d="m 93.222796,211.75229 v 11.80255 H 78.770591"
+       d="m 93.653714,211.75863 v 11.79621 H 78.770591"
        id="path17"
        inkscape:connector-type="orthogonal"
        inkscape:connector-curvature="0"
@@ -826,7 +826,7 @@
        inkscape:connection-start="#g3-7-6" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#TriangleStart)"
-       d="m 93.222796,177.14906 0,23.2824"
+       d="m 93.653714,177.14906 v 23.27605"
        id="path19"
        inkscape:connector-type="orthogonal"
        inkscape:connector-curvature="0"
