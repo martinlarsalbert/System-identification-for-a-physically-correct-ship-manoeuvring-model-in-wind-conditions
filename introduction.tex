@@ -1,3 +1,29 @@
+%________________________________________
+%CaRS Move I "Establish a territory" (Situation):
+% * Important area
+% * Introducing and reviewing items of previous  research <--(ToDO)
+Modern ships gather vast amounts of kinematic data, including high-precision GPS, accelerometers, and inclinometers, offering opportunities to optimize ship operations to reduce fuel consumption, emissions, enhance the ship safety, amongst other things. Predictive modeling using machine learning (ML) techniques is commonly employed for systems with unknown physics, making ML an adaptable choice for forecasting. However, in cases where prior knowledge of a system's physics and structure is available, such as ship manoeuvring, system identification emerges as a valuable alternative. By leveraging established knowledge, system identification models establish causal relationships between variables, which is an important aspect to enable optimization of the ship operation. The fact that correlation does not imply causality is an aspect that is often overlooked when optimization is conducted based on black box ML models.
+
+%
+%________________________________________
+%CaRS Move II "Establish a niche" (Problem):
+% * counter claim?
+% * gap?
+% * question       <------
+% * continuation?
+The correctness of identified models can be mathematical, yielding favorable results on training and test datasets, yet lacking physical accuracy. This discrepancy becomes evident when a model trained in calm water conditions is exposed to wind during maneuvers. This paper explores how models with varying levels of physical correctness respond to such scenarios.
+
+%
+%________________________________________
+%CaRS Move III "Occupy the niche" (Solution/Evaluation):
+% * outline purpose?
+% * list research questions?
+% * announce principal findings?            <--
+% * stating the value of present research?
+% * article structure?                      <--
+To evaluate the physical correctness of identified models, two unique datasets from a wind-powered pure car carrier (WPCC) are employed. Data from virtual captive tests (VCT), calculated via computational fluid dynamics (CFD) at various steady-state drift angles, yaw rates, and rudder angles, establish the physically correct kinetics. System identification is conducted through inverse dynamics regression (IDR) on a second dataset containing a series of manoeuvring model tests with a free model. The generatlization of the models into an idealized wind state is also studied. 
+
+% Old version:
 Prediction of ship maneuverability, which relies on accurate mathematical models to simulate, e.g., Turning Circle Maneuver, Zig-zag Maneuver, etc., is essential for both ship design and intelligent ship navigation. The mathematical ship maneuverability models require inputs of hydrodynamic forces and moments acting on the ship hull, commonly known as “hydrodynamic coefficients”, “maneuvering coefficients” or “maneuvering derivatives” in non-dimensional form. Various approaches have been proposed to derive those non-dimensional hydrodynamic coefficients by different parameter identification methods, such as simple regression, SVM, Kalman filter, and inverse dynamics, such as Tongtong et al. (2020), Zou et al. (2022), Alexandersson et al. (2021, 2022, 2023), ... In Tongtong et al. (2021) and Alexandersson et al. (2022), different mathematical models have been investigated to describe the most accurate and robust ship maneuvering simulations, also referred to the system identification methods.
 
 However, it should be noted that most research activities aimed to identify a ship's maneuverability mathematical models are built on a ship's simulation data, i.e., a type of inverse engineering to find the model used to simulate the ship maneuvering data. While for practical application, the only reliable source of hydrodynamic coefficients is a model test (ABS 2006), which should also be validated later by full scale test /sea trial). Therefore, several knowledge gaps should be investigated to researched to close the gap between purely simulation-based PIM and generic application of the identified MM model from model to actual usage:
