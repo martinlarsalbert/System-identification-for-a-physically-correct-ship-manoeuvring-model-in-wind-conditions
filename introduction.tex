@@ -3,6 +3,10 @@
 % * Important area
 % * Introducing and reviewing items of previous  research <--(ToDO)
 Modern ships gather vast amounts of kinematic data, including high-precision GPS, accelerometers, and inclinometers, offering opportunities to optimize ship operations to reduce fuel consumption, emissions, enhance the ship safety, amongst other things. Predictive modeling using machine learning (ML) techniques is commonly employed for systems with unknown physics, making ML an adaptable choice for forecasting. However, in cases where prior knowledge of a system's physics and structure is available, such as ship manoeuvring, system identification emerges as a valuable alternative. By leveraging established knowledge, system identification models establish causal relationships between variables, which is an important aspect to enable optimization of the ship operation. The fact that correlation does not imply causality is an aspect that is often overlooked when optimization is conducted based on black box ML models.
+% * Introducing and reviewing items of previous  research <--(ToDO)
+\begin{itemize}
+    \item Identification on zigzag manoeuvres
+\end{itemize}
 
 %
 %________________________________________
@@ -11,6 +15,10 @@ Modern ships gather vast amounts of kinematic data, including high-precision GPS
 % * gap?
 % * question       <------
 % * continuation?
+\begin{itemize}
+    \item Multicollinearity
+    \item Generalization
+\end{itemize}
 The correctness of identified models can be mathematical, yielding favorable results on training and test datasets, yet lacking physical accuracy. This discrepancy becomes evident when a model trained in calm water conditions is exposed to wind during maneuvers. This paper explores how models with varying levels of physical correctness respond to such scenarios.
 
 %
