@@ -1,6 +1,13 @@
 \begin{itemize}
-    \item It was not possible to identify an Abkowitz model that makes sense from a physical point of view based on inverse dynamics forces from the standard manoeuvres used in this paper. This was revealed when the regressed model was compared with the CFD based VCT regression model.
-    \item The yawing moment $N_D$ from the Abkowitz model was completely wrong in an idealized wind state.
-    \item A pure mathematical model which has been identified on calm water standard manoeuvres can therefore be expected to have a poor generalization into a wind condition.   
-    \item The introduction of a semi-empirical rudder model guided the identification toward a more physically correct model, which produced forces that were closer to the VCT reference model. The Physics informed model should therefore have a better generalization into a wind condition.
+    \item All of the identified models can be considered as mathematically correct, since they all predicted the model tests with satisfactory agreement.
+    
+    \item The Reference model predicted the VCT with good accuracy and can therefore be considered as the most physically correct model.   
+    %
+    \item As a logical consequence of this, the mathematical Abkowitz model is considered as physically incorrect, since it predicted very different forces and moments; The regression seems to have made an incorrect decomposition between hull-, and rudder forces, as well as drift angle-, and yaw rate dependent coefficients.  
+    %
+    \item The physics informed model on the other hand, predicted very similar forces and moments for the model tests and therefore seems to have a more physically correct representation.
+    %
+    \item Potential problems with the incorrect force decomposition of the Abkowitz model was shown in an artificial wind state, where the forces and moments had very large errors. 
+    %
+    \item The introduction of a semi-empirical rudder model seems to have guided the identification towards a more physically correct model, which generalizes better from calm water zigzag tests to wind conditions. The procedure presented in this paper is one good way to mitigate the well known issues with high multicollinearity within the ship manoeuvring models.
 \end{itemize}
