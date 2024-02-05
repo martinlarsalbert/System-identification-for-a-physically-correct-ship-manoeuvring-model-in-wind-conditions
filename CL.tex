@@ -10,7 +10,12 @@ For a none stalling rudder, the lift coefficient $C_L$ is calculated with \autor
 \end{equation}
 The lift slope of the rudder $\frac{\partial C_L}{\partial \alpha}$ is calculated with \autoref{eq:dC_L_dalpha_semiempirical}; 
 The effective aspect ratio $AR_e$ accounts for the mirror image effect when the rudder is flush with the hull, where the effective aspect ratio is typically assumed to be twice the geometric aspect ratio $AR_g$ (\autoref{eq:AR_e_semiempirical}) \citep{hughes_tempest_2011}.
-The WPCC rudder is however not flush to the hull, so that a gap is created between the rudder and rudder horn for larger rudder angles. This gap reduces the pressure difference between the high and low pressure sides of the rudder in the upper part of the rudder. \citet{dy}
+The WPCC rudder is however not flush to the hull, so that a gap is created between the rudder and rudder horn for larger rudder angles. This gap reduces the pressure difference between the high and low pressure sides of the rudder in the upper part of the rudder. \citet{matusiak_dynamics_2021} proposes that the gap effect can be modelled as a reduced aspect ratio.
+\begin{equation}
+    \label{eq:lambda_gap_semiempirical}
+    \input{equations/mathematical_model_kinetics.lambda_gap_semiempirical}
+\end{equation}
+%
 
 $a_0$ is the section lift curve slope (\autoref{eq:a_0_semiempirical}) and $\Omega$ is the sweep angle of the quarter chord line \citep{lewis_principles_1989}.
 \begin{equation}
