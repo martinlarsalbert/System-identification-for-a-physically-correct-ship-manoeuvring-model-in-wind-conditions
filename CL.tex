@@ -1,19 +1,14 @@
-The lift coefficient $C_L$ is calculated with \autoref{eq:C_L_semiempirical}, which contains two separate expressions for angle of attack $\alpha$ (\autoref{eq:alpha_semiempirical}) below or above a critical stalling angle $\alpha_s$ (\autoref{eq:alpha_s_semiempirical}).
+For a none stalling rudder, the lift coefficient $C_L$ is calculated with \autoref{eq:C_L_semiempirical},
 \begin{equation}
     \label{eq:C_L_semiempirical}
     \input{equations/mathematical_model_kinetics.C_L_semiempirical}
 \end{equation}
 %
 \begin{equation}
-    \label{eq:alpha_s_semiempirical}
-    \input{equations/mathematical_model_kinetics.alpha_s_semiempirical}
-\end{equation}
-%
-\begin{equation}
     \label{eq:alpha_semiempirical}
     \input{equations/mathematical_model_kinetics.alpha_semiempirical}
 \end{equation}
-Before stall, the lift slope of the rudder $\frac{\partial C_L}{\partial \alpha}$ is calculated with \autoref{eq:dC_L_dalpha_semiempirical} where the effective aspect ratio of the rudder $AR_e$ can be obtained from \autoref{eq:AR_e_semiempirical}. $AR_e$ is the geometrical aspect ratio $AR_g$ (\autoref{eq:AR_g_semiempirical}) with a correction for a possible gap between the upper part of the rudder and the rudder horn for larger rudder angles.
+The lift slope of the rudder $\frac{\partial C_L}{\partial \alpha}$ is calculated with \autoref{eq:dC_L_dalpha_semiempirical} where the effective aspect ratio of the rudder $AR_e$ can be obtained from \autoref{eq:AR_e_semiempirical}. $AR_e$ is the geometrical aspect ratio $AR_g$ (\autoref{eq:AR_g_semiempirical}) with a correction for a possible gap between the upper part of the rudder and the rudder horn for larger rudder angles.
 $a_0$ is the section lift curve slope (\autoref{eq:a_0_semiempirical}) and $\Omega$ is the sweep angle of the quarter chord line \citep{lewis_principles_1989}.
 \begin{equation}
     \label{eq:dC_L_dalpha_semiempirical}
