@@ -1,16 +1,32 @@
 \begin{figure}
      \centering
-     \begin{subfigure}[b]{0.5\columnwidth}
+     \begin{subfigure}[b]{0.49\textwidth}
          \centering
-         \includesvg[width=\columnwidth]{figures/vct.VCT Drift angle.svg}
-         \caption{$y=x$}
-         \label{fig:y equals x}
+         \includesvg[width=\textwidth]{figures/vct.VCT Drift angle.svg}
+         \caption{Drift angles.}
+         \label{fig:vct_drift_angle}
      \end{subfigure}
      \hfill
-     \begin{subfigure}[b]{0.5\columnwidth}
+     \begin{subfigure}[b]{0.49\textwidth}
          \centering
-         \includesvg[width=\columnwidth]{figures/vct.VCT Circle.svg}
-         \caption{$y=3\sin x$}
-         \label{fig:three sin x}
+         \includesvg[width=\textwidth]{figures/vct.VCT Circle.svg}
+         \caption{Yaw rates.}
+         \label{fig:vct_circle}
      \end{subfigure}
+     %
+     \begin{subfigure}[b]{0.49\textwidth}
+         \centering
+         \includesvg[width=\textwidth]{figures/vct.VCT Rudder angle.svg}
+         \caption{Rudder angles.}
+         \label{fig:vct_rudder_angle}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}[b]{0.49\textwidth}
+         \centering
+         \includesvg[width=\textwidth]{figures/vct.VCT Thrust variation.svg}
+         \caption{Thrust variations.}
+         \label{fig:vct_thrust_variation}
+     \end{subfigure}
+     \label{fig:vct}
+     \caption{Forces and moments: total ($D$), hull ($H$), and rudders ($R$), from VCT (lines) and predictions with Reference model (x marks).}
 \end{figure}
