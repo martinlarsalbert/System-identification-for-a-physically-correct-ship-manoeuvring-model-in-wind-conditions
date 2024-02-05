@@ -4,6 +4,11 @@
 % * Introducing and reviewing items of previous  research <--(ToDO)
 Modern ships gather vast amounts of kinematic data, including high-precision GPS, accelerometers, and inclinometers, offering opportunities to optimize ship operations to reduce fuel consumption, emissions, enhance ship safety, amongst other things. Predictive modeling using machine learning (ML) techniques is commonly employed for systems with unknown physics, making ML an adaptable choice for forecasting. However, in cases where prior knowledge of a system's physics and structure is available, such as ship manoeuvring, system identification emerges as a valuable alternative. By leveraging established knowledge, system identification models establish causal relationships between variables, which is an important aspect to enable optimization of the ship operation. The fact that correlation does not imply causality is an aspect that is often overlooked when optimization is conducted based on black box ML models.
 % * Introducing and reviewing items of previous  research <--(ToDO)
+
+The input variables of the manoeuvring model are often strongly linearly dependent; This multicollinearity is a well known issue in parameter identification that may lead to parameter drift and poor generalization; The parameters are thus mathematically correct but physically incorrect \citep{luo_parameter_2016}. 
+Simplifying the model -- when possible -- and thereby reducing the number of parameters, is perhaps the most effective way to mitigate the multicollinearity.
+Some other possible remedies are: the difference method \citep{luo_parameter_2016}, principal component analysis (PCA), and partial least squares regression \citep{jian-chuan_parametric_2015}. 
+
 \begin{itemize}
     \item Identification on zigzag manoeuvres
 \end{itemize}
