@@ -5,4 +5,6 @@ Some points to consider:
     \item For instance Pseudo-Random Binary Sequences (PRBS) \citep{landau_digital_2006} is more informative.
     \item It has been shown in this paper that the Physics informed model seems to have a better generalization than the pure mathematical Abkowitz model. A pure mathematical model still has the benefit of being very easy to regress, compared to
           identifying the parameters within the semi-empirical rudder model. The semi-empirical rudder model was however treated as a deterministic model in this paper, so that parameter identification on the rudder model itself was not needed. The flow straightening coefficients $\kappa_v$, and $\kappa_r$ where however determined from the VCT data.
+
+    \item The fact that correlation does not imply causality is an aspect that is often overlooked when optimization is conducted based on black box ML models.
 \end{itemize}
