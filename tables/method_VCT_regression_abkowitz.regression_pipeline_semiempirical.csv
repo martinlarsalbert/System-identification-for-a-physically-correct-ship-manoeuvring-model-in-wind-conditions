@@ -1,4 +1,6 @@
 Test type,Label,Features
+Rudder angle,${Y_{D}}'$,${a_{H}}'$
+Rudder angle,${N_{D}}'$,${x_{H}}'$
 Self propulsion,${X_{H}}'$,${X_{u}}'$ ${X_{0}}'$
 Drift angle,${X_{H}}'$,${X_{vv}}'$
 Drift angle,${Y_{H}}'$,${Y_{v}}'$
