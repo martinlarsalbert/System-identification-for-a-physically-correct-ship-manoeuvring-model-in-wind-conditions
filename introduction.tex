@@ -7,15 +7,16 @@ Predictive modeling can be used for IoS to make predictions about future events 
 Predictive modeling using machine learning (ML) techniques is commonly employed for systems with unknown physics, making ML an adaptable choice for forecasting. However, in cases where prior knowledge of a system's physics and structure is available, such as ship manoeuvring, system identification emerges as a valuable alternative. By leveraging established knowledge, system identification models establish causal relationships between variables, which is an important aspect to enable optimization of the ship operation.
 A lot of research has been devoted to describe the ship manoeuvring dynamics with system based manoeuvring simulation models such as: \citet{abkowitz_ship_1964,nomoto_steering_1957,norrbin_theory_1971,yasukawa_introduction_2015}, and others.
 
-Captive model tests is the classical approach to identify the parameters within these models. However, this approach is not practically possible for the full scale ships; Instead, virtual captive tests (VCT) -- which are essentially simulated captive tests with computational fluid dynamics (CFD) -- has emerged as an interesting option for the full scale ship predictions. 
+Captive model tests is the classical approach to identify the parameters within these models. However, this approach is not practically applicable for the full scale ships; Instead, computational fluid dynamics (CFD) with either direct simulations or virtual captive tests (VCT) has emerged as an interesting option for the full scale ship predictions \citep{liu_predictions_2018,li_ship_2022}.
 The CFD requires a complete understanding of the system; Acquiring such knowledge may be possible for some cases, but it is not practical for the complex environment and nonlinearities of a ship operating at sea \citep{miller_ship_2021}.
-Wind, waves, and currents add uncertainty to the modelling in the deep sea. Water depth and the bank effect add uncertainty in coastal areas \citep{nielsen_machine_2022}.
+Wind, waves, and currents, add uncertainty to the modelling in the deep sea. Water depth and the bank effect add uncertainty in coastal areas \citep{nielsen_machine_2022}.
 Even if the sea is flawlessly modelled, long-term predictions with high accuracy will be exposed to deterministic chaos \citep{lorenz_deterministic_1963}.
-Together with the other drawback of high computational costs of CFD, data driven models emerges as a valuable alternative or complement to the other methods. 
+Together with the other drawbacks of CFD -- such as high computational costs -- data driven models, that identifies models directly from ship operational data or model tests, have become an attractive alternative or complement to the other methods and there has been an increased research within the are in the past 10-15 years.
+Many papers are based on the simulation data can effectively estimate the hydrodynamic coefficients since the exact ''psychical'' model is assumed known
 
-, where system identification based on the measured trajectory of the ship is instead    
 
-% * Introducing and reviewing items of previous  research <--(ToDO)
+The Kalman filter (KF) combined with maximum likelihood estimation was proposed in 1976 by \citet{} to develop a linear manoeuvring model that utilized manually recorded data in 1969 aboard the Atlantic Song freighter.
+
 The input variables of the manoeuvring model are often strongly linearly dependent; This multicollinearity is a well known issue in parameter identification that may lead to parameter drift and poor generalization; The parameters are thus mathematically correct but physically incorrect \citep{luo_parameter_2016}. 
 Simplifying the model -- when possible -- and thereby reducing the number of parameters, is perhaps the most effective way to mitigate the multicollinearity.
 Some other possible remedies are: the difference method \citep{luo_parameter_2016}, principal component analysis (PCA), and partial least squares regression \citep{jian-chuan_parametric_2015}. 
