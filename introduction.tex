@@ -2,8 +2,24 @@
 %CaRS Move I "Establish a territory" (Situation):
 % * Important area
 % * Introducing and reviewing items of previous  research <--(ToDO)
-Modern ships gather vast amounts of kinematic data, including high-precision GPS, accelerometers, and inclinometers, offering opportunities to optimize ship operations to reduce fuel consumption, emissions, enhance ship safety, amongst other things. Predictive modeling using machine learning (ML) techniques is commonly employed for systems with unknown physics, making ML an adaptable choice for forecasting. However, in cases where prior knowledge of a system's physics and structure is available, such as ship manoeuvring, system identification emerges as a valuable alternative. By leveraging established knowledge, system identification models establish causal relationships between variables, which is an important aspect to enable optimization of the ship operation. The fact that correlation does not imply causality is an aspect that is often overlooked when optimization is conducted based on black box ML models.
+Modern ships gather vast amounts of kinematic data, including high-precision GPS, accelerometers, and inclinometers, etc. Similarly to the emergence of the Internet-of-Things (IoT) we can now talk about Internet of Ships (IoS) \citep{liu_internet_2016}, where safety enhancements, route planning and optimization, energy efficiency, automatic berthing and autonomous shipping are some of the emerging applications \citep{aslam_internet_2020}.
+Predictive modeling can be used for IoS to make predictions about future events or outcomes based on the gathered historical data.
+Predictive modeling using machine learning (ML) techniques is commonly employed for systems with unknown physics, making ML an adaptable choice for forecasting. However, in cases where prior knowledge of a system's physics and structure is available, such as ship manoeuvring, system identification emerges as a valuable alternative. By leveraging established knowledge, system identification models establish causal relationships between variables, which is an important aspect to enable optimization of the ship operation.
+A lot of research has been devoted to describe the ship manoeuvring dynamics with system based manoeuvring simulation models such as: \citet{abkowitz_ship_1964,nomoto_steering_1957,norrbin_theory_1971,yasukawa_introduction_2015}, and others.
+
+Captive model tests is the classical approach to identify the parameters within these models. This approach is not practically possible for the full scale ships however; Instead, virtual captive tests (VCT) -- which are essentially simulated captive tests with computational fluid dynamics (CFD) -- has emerged as an interesting option for the full scale ship predictions. 
+The CFD requires a complete understanding of the system; Acquiring such knowledge may be possible for some cases, but it is not practical for the complex environment and nonlinearities of a ship operating at sea \citep{miller_ship_2021}.
+Wind, waves, and currents add uncertainty to the modelling in the deep sea. Water depth and the bank effect add uncertainty in coastal areas \citep{nielsen_machine_2022}.
+Even if the sea is flawlessly modelled, long-term predictions with high accuracy will be exposed to deterministic chaos \citep{lorenz_deterministic_1963}.
+Together with the other drawback of high computational costs of CFD, data driven models emerges as a valuable alternative or complement to the other methods. 
+
+, where system identification based on the measured trajectory of the ship is instead    
+
 % * Introducing and reviewing items of previous  research <--(ToDO)
+The input variables of the manoeuvring model are often strongly linearly dependent; This multicollinearity is a well known issue in parameter identification that may lead to parameter drift and poor generalization; The parameters are thus mathematically correct but physically incorrect \citep{luo_parameter_2016}. 
+Simplifying the model -- when possible -- and thereby reducing the number of parameters, is perhaps the most effective way to mitigate the multicollinearity.
+Some other possible remedies are: the difference method \citep{luo_parameter_2016}, principal component analysis (PCA), and partial least squares regression \citep{jian-chuan_parametric_2015}. 
+
 \begin{itemize}
     \item Identification on zigzag manoeuvres
 \end{itemize}
