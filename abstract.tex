@@ -1,20 +1,17 @@
 % Move 1 - Background/introduction/situation
-Ship dynamics prediction models have a wide range of applications within: safety enhancements, route planning and optimization, energy efficiency, automatic berthing and autonomous shipping.
-Ship manoeuvring is a sub field of ship dynamics with well established system based models.
-System identification offers ways to identify the real dynamics with these models on real ships in operation, but also poses some major challenges;
-Multicollinearity is a well known issue that may lead to parameter drift and poor generalization for models that turns out to be  mathematically correct yet physically incorrect.
+
+System identification offers ways to identify the real dynamics with these models on real ships in operation, but also poses some major challenges, such as Multicollinearity and generability. 
 
 % Move 2 - Present research/purpose
-This paper presents a new physics informed manoeuvring model, where a deterministic semi-empirical rudder model has been added, to guide the identification towards a physically correct model. 
+This paper proposes a new physics informed manoeuvring model, where a deterministic semi-empirical rudder model has been added, to guide the identification towards a physically correct model. 
 
 % Move 3 - Methods/materials/subjects/procedures
-The models are evaluated for the novel test case wind powered pure car carrier (WPCC).
 To assess the physical correctness, a reference model, is first established via parameter identification on virtual captive tests. The reference model is assumed to resemble the physically correct kinetics.  
 The inverse dynamics regression is then conducted on zigzag model tests for: the physics informed model, as well as an uninformed mathematical Abkowitz model -- for comparison. 
 
 % Move 4 - Results/findings
-All of the models predicted the zigzag tests with satisfactory agreement and can thus indeed be considered as being mathematically correct; However, the physics informed model predicted forces and moments that were much more in agreement to the reference model than the Abkowitz model did, and can thus be considered as the more physically correct model. 
+The models are evaluated for the novel test case wind powered pure car carrier (WPCC).
+All of the models predicted the zigzag tests with satisfactory agreement and can thus indeed be considered as being mathematically correct; However, the introduction of a semi-empirical rudder model seems to have guided the identification towards a more physically correct calm water hydrodynamic model, with lower multicollinearity and better generalization. The physics informed model predicted forces and moments that were much more in agreement to the reference model than the Abkowitz model did, and can thus be considered as the more physically correct model. 
 
 % Move 5 - Discussion/conclusion/significance
-A drift angle is needed when the ship is traveling on a straight course in wind -- to counteract the wind forces. This wind state is very rare in calm water manoeuvring tests, where the drift angle is almost exclusively accompanied by yaw rate. It has been shown in this paper that it is very hard to identify a physically correct mathematical model, under those conditions.
-However, the introduction of a semi-empirical rudder model seems to have guided the identification towards a more physically correct calm water hydrodynamic model, with lower multicollinearity and better generalization. This is an essential building block when more uncertainties from wind, waves, and currents, are added for a real sea conditions.
+ This is an essential building block when more uncertainties from wind, waves, and currents, are added for a real sea conditions.

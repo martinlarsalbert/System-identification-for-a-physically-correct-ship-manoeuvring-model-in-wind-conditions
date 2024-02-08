@@ -2,10 +2,30 @@
 %CaRS Move I "Establish a territory" (Situation):
 % * Important area
 % * Introducing and reviewing items of previous  research <--(ToDO)
+Ship dynamics prediction models have a wide range of applications within: safety enhancements, route planning and optimization, energy efficiency, automatic berthing and autonomous shipping.
+Ship manoeuvring is a sub field of ship dynamics with well established system based models.
+Multicollinearity is a well known issue that may lead to parameter drift and poor generalization for models that turns out to be  mathematically correct yet physically incorrect.
+
+A drift angle is needed when the ship is traveling on a straight course in wind -- to counteract the wind forces. This wind state is very rare in calm water manoeuvring tests, where the drift angle is almost exclusively accompanied by yaw rate. It has been shown in this paper that it is very hard to identify a physically correct mathematical model, under those conditions.
+
+
+\begin{figure}[h!]
+  \includegraphics[width=.45\textwidth]{figures/trendinyear.jpg}
+  \includegraphics[width=.45\textwidth]{figures/kewords23.png}
+  \caption{Publication overview within the field of ship maneuverability system identification}
+  \label{fig:pub_overview}
+\end{figure}
+
 Modern ships gather vast amounts of kinematic data, including high-precision GPS, accelerometers, and inclinometers, etc. This can be referred to as Internet of Ships (IoS) \citep{liu_internet_2016} as sub group to the internet of things (IoT); Safety enhancements, route planning and optimization, energy efficiency, automatic berthing and autonomous shipping are some of the emerging applications \citep{aslam_internet_2020}.
 Predictive modeling can be used for IoS to make predictions about future events or outcomes based on gathered historical data.
 Predictive modeling using machine learning (ML) techniques is commonly employed for systems with unknown physics, making ML an adaptable choice for forecasting. However, in cases where prior knowledge of a system's physics and structure is available, such as ship manoeuvring, system identification emerges as a valuable alternative. By leveraging established knowledge, system identification models establish causal relationships between variables, which is an important aspect to enable optimization of the ship operation.
 A lot of research has been devoted to describe the ship manoeuvring dynamics with system based manoeuvring simulation models such as: \citet{abkowitz_ship_1964,nomoto_steering_1957,norrbin_theory_1971}, MMG model \citep{yasukawa_introduction_2015}, and others.
+
+\begin{figure}[h!]
+  \includegraphics[width=.8\textwidth]{figures/wind_drift_research.png}
+  \caption{Recent Publications keyword in 2022 and 2023 on ship maneuverability system identification}
+  \label{fig:pub_overview}
+\end{figure}
 
 Captive model tests is the classical approach to identify the parameters within these models. However, this approach is not practically applicable for the full scale ships; Instead, computational fluid dynamics (CFD) with either direct simulations or virtual captive tests (VCT) has emerged as an interesting option for the full scale ship predictions \citep{liu_predictions_2018,li_ship_2022}.
 The CFD requires a complete understanding of the system; Acquiring such knowledge may be possible for some cases, but it is not practical for the complex environment and nonlinearities of a ship operating at sea \citep{miller_ship_2021};
