@@ -155,10 +155,35 @@
 %
 %
 %
+\section{Ship models}
+\label{sec:ship_models}
+\input{ship_mathematical_models}
+\FloatBarrier
+\subsection{Models}
+\label{sec:models}
+\input{models.tex}
+%
+\subsection{Semi-empirical rudder model}
+\label{sec:semiempirical_rudder_model}
+\input{model_semiempirical_rudder.tex}
+
+%
+%
+%
 \section{Methodology}
 \label{sec:methodology}
 \input{methodology.tex}
 \FloatBarrier
+%
+\subsection{Prime system}
+\label{sec:prime_system}
+\input{prime_system}
+
+%\subsection{Prime system denominators}
+%\label{sec:prime_system_table}
+\input{prime_system_table}
+\FloatBarrier
+
 \subsection{VCT regression}
 \label{sec:VCT_regression}
 \input{VCT_regression}
@@ -171,28 +196,14 @@
 %
 %
 %
-\section{Ship models}
-\label{sec:ship_models}
-\input{ship_mathematical_models}
-\FloatBarrier
-\subsection{Models}
-\label{sec:models}
-\input{models.tex}
-%
-\subsection{Semi-empirical rudder model}
-\label{sec:semiempirical_rudder_model}
-\input{model_semiempirical_rudder.tex}
-%
-\subsection{Prime system}
-\label{sec:prime_system}
-\input{prime_system}
-%
-%
-%
 \section{Case study}
 \label{sec:case_study}
 \input{case_study}
 \FloatBarrier
+\subsection{Parameters}
+\label{sec:parameters}
+\input{parameters}
+
 %
 %
 %
@@ -215,14 +226,16 @@
 \input{result_wind_state}
 \FloatBarrier
 %
-\section{Discussion}
-\label{sec:discussion}
-\input{discussion.tex}
-\FloatBarrier
+%\section{Discussion}
+%\label{sec:discussion}
+
+
 %
 \section{Conclusions}
 \label{sec:conclusions}
 \input{conclusions}
+\FloatBarrier
+\input{discussion.tex}
 
 %% The Appendices part is started with the command \appendix;
 %% appendix sections are then done as normal sections
@@ -250,13 +263,7 @@
 \subsubsection{Velocity outside the propeller slip stream}
 \label{sec:velocity_outside_the_propeller_slip_stream}
 \input{velocity_outside_the_propeller_slip_stream}
-\section{Prime system denominators}
-\label{sec:prime_system_table}
-\input{prime_system_table}
-\FloatBarrier
-\section{Parameters}
-\label{sec:parameters}
-\input{parameters}
+
 \FloatBarrier
 %% If you have bibdatabase file and want bibtex to generate the
 %% bibitems, please use
