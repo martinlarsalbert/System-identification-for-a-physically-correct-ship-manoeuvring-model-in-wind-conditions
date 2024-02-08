@@ -20,7 +20,7 @@ This angle is a sum of the initial inflow to the rudder at a straight course $\g
     \input{equations/mathematical_model_kinetics.gamma_semiempirical}
 \end{equation}
 The transverse velocity at the rudder $V_{Ry}$ is calculated with the ship's yaw rate $r$ and the transverse velocity $v$ multiplied by their flow straightening $\kappa_{rtot}$ and $\kappa_{vtot}$ (\autoref{eq:V_R_y_semiempirical}). The flow straightening has a nonlinear dependency of the geometric inflow angle $\gamma_g$ (\autoref{eq:gamma_g_semiempirical}) as seen in \autoref{eq:kappa_r_tot_semiempirical} and \autoref{eq:kappa_v_tot_semiempirical}, so that the flow straightening may vary for different inflow angles, which is an enhancement compared to the MMG model.
-The axial velocity at the rudder $V_{RxC}$, including the velocity of the propeller race is presented in \autoref{sec:velocity_in_the_propeller_slip_stream}.
+The axial velocity at the rudder $V_{RxC}$, including the velocity of the propeller race, is presented in \autoref{sec:velocity_in_the_propeller_slip_stream}.
 \begin{equation}
     \label{eq:V_R_y_semiempirical}
     \input{equations/mathematical_model_kinetics.V_R_y_semiempirical}
@@ -40,8 +40,7 @@ The axial velocity at the rudder $V_{RxC}$, including the velocity of the propel
     \label{eq:gamma_g_semiempirical}
     \input{equations/mathematical_model_kinetics.gamma_g_semiempirical}
 \end{equation}
-
-The yaw moment is modelled as the sway force times a lever arm $x_R$ as seen in \autoref{eq:N_R_semiempirical}.
+The yawing moment is modelled as the sway force times a lever arm $x_R$ as seen in \autoref{eq:N_R_semiempirical}.
 \begin{equation}
     \label{eq:N_R_semiempirical}
     \input{equations/mathematical_model_kinetics.N_R_semiempirical}
@@ -50,7 +49,7 @@ The yaw moment is modelled as the sway force times a lever arm $x_R$ as seen in 
 %
 \subsubsection{Rudder lift}
 \label{sec:rudder lift}
-With the inspiration from the work of \citet{villa_numerical_2020}, the total rudder lift is calculated as the sum of the lift from the part of the rudder that is covered by the propeller race $L_{RC}$ and the uncovered part $L_{RU}$ as seen in \autoref{eq:L_R_semiempirical}.
+With inspiration from the work of \citet{villa_numerical_2020}, the total rudder lift is calculated as the sum of the lift from the part of the rudder that is covered by the propeller race $L_{RC}$ and the uncovered part $L_{RU}$ as seen in \autoref{eq:L_R_semiempirical}.
 \begin{equation}
     \label{eq:L_R_semiempirical}
     \input{equations/mathematical_model_kinetics.L_R_semiempirical}
