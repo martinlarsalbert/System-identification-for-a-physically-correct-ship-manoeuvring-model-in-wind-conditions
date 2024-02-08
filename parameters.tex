@@ -10,5 +10,11 @@
     \centering
     \caption{Added masses.}
     \label{tab:added_masses}
-    \pgfplotstabletypeset[col sep=comma, column type=r]{tables/result_models.added_masses.csv}
+    \pgfplotstabletypeset[col sep=comma, column type=r,
+    columns/Xudot/.style={column name=$X_{\dot{u}}$},
+    columns/Yvdot/.style={column name=$Y_{\dot{v}}$},
+    columns/Yrdot/.style={column name=$Y_{\dot{r}}$},
+    columns/Nvdot/.style={column name=$N_{\dot{v}}$},
+    columns/Nrdot/.style={column name=$N_{\dot{r}}$},
+    ]{tables/result_models.added_masses.csv}
 \end{table}
