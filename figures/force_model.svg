@@ -8,7 +8,7 @@
    version="1.1"
    id="svg5"
    sodipodi:docname="force_model.svg"
-   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
    xml:space="preserve"
    inkscape:export-filename="force_model2.svg"
    inkscape:export-xdpi="96"
@@ -27,11 +27,11 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="1.4938664"
-     inkscape:cx="-170.698"
-     inkscape:cy="549.58062"
+     inkscape:zoom="1.3536875"
+     inkscape:cx="458.37759"
+     inkscape:cy="505.65586"
      inkscape:window-width="3840"
-     inkscape:window-height="2066"
+     inkscape:window-height="2054"
      inkscape:window-x="2293"
      inkscape:window-y="-11"
      inkscape:window-maximized="1"
@@ -173,7 +173,7 @@
          id="a4772"
          style="fill:#7781d7;fill-opacity:0.651515;stroke:#adadad;stroke-opacity:1"><path
            id="path1055"
-           style="display:inline;fill:#7781d7;fill-opacity:0.651515;stroke:#adadad;stroke-width:0.1;stroke-linejoin:round;stroke-opacity:1;paint-order:markers fill stroke"
+           style="display:inline;fill:#bbc3d7;fill-opacity:0.65098041;stroke:#adadad;stroke-width:0.1;stroke-linejoin:round;stroke-opacity:1;paint-order:markers fill stroke"
            d="m 84.908844,208.33619 c -0.01405,7.59908 1.001138,23.55292 1.750282,30.24932 h 15.746844 15.74684 c 0.74914,-6.6964 1.76428,-22.65024 1.75028,-30.24932 0,0 -0.32185,-95.21403 -0.19998,-108.29106 0.12187,-13.077032 -4.37335,-46.129312 -17.29714,-51.728622 -12.923794,5.59931 -17.41901,38.65159 -17.297139,51.728622 0.121871,13.07703 -0.199987,108.29106 -0.199987,108.29106 z" /></a><g
          id="g2726"
          inkscape:label="rudder_stbd"
@@ -181,7 +181,7 @@
          inkscape:transform-center-x="0.89140398"
          inkscape:transform-center-y="3.1648025"><path
            id="path7777-0"
-           style="display:inline;fill:#404ec7;fill-opacity:0.651515;stroke:#000000;stroke-width:0.3;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           style="display:inline;fill:#7881cc;fill-opacity:0.87843138;stroke:none;stroke-width:0.30021477;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
            d="m 97.39785,221.77287 c 1.60658,1.87599 1.65983,6.0205 0.26066,12.28624 m -0.26066,-12.28624 c -1.52556,1.94243 -1.40299,6.08548 0.26066,12.28624" /></g><g
          id="g2726-3"
          inkscape:label="rudder_stbd"
@@ -190,7 +190,7 @@
          inkscape:transform-center-y="3.1648024"
          style="display:inline"><path
            id="path7777-0-5"
-           style="display:inline;fill:#404ec7;fill-opacity:0.651515;stroke:#000000;stroke-width:0.3;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           style="display:inline;fill:#7881cc;fill-opacity:0.87843138;stroke:none;stroke-width:0.30021477;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
            d="m 97.39785,221.77287 c 1.60658,1.87599 1.65983,6.0205 0.26066,12.28624 m -0.26066,-12.28624 c -1.52556,1.94243 -1.40299,6.08548 0.26066,12.28624" /></g><path
          style="display:none;fill:#5a63fe;fill-opacity:1;stroke:#b90303;stroke-width:0.3;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
          d="M 102.40597,48.316506 V 243.9396"
@@ -464,4 +464,8 @@
              style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.86429px;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.3"
              x="-220.87881"
              y="103.92158"
-             id="tspan28383">$Y_{RHI}$</tspan></text></g></g></g></svg>
+             id="tspan28383">$Y_{RHI}$</tspan></text></g></g><g
+       id="g18"
+       inkscape:label="psi"
+       transform="matrix(0.30000001,0,0,0.30000001,265.93231,136.3133)"
+       style="display:inline" /></g></svg>
