@@ -1,10 +1,11 @@
-The ship's kinematics of the manoeuvring models are described by \autoref{eq:X}-\autoref{eq:N}, where $X_D$, $Y_D$, and $N_D$ describe the damping forces and moments acting on the ship in the surge, sway, and yaw degrees of freedoms. These equations have the additional added mass terms: $Y_{\dot{r}}$, and $N_{\dot{v}}$, compared to the MMG model.
+The ship's kinematics are expressed at midship 
+in the surge $X$, sway $Y$, and yaw $N$ degrees of freedoms (see \autoref{fig:reference_frames}) described by \autoref{eq:X}-\autoref{eq:N}, where $X_D$, $Y_D$, and $N_D$ describe the damping forces and moments. Note that these equations have the added mass coupling terms: $Y_{\dot{r}}$, and $N_{\dot{v}}$ -- which are neglected in the MMG model.
 %
 \begin{figure}[h]
     \centering
     \includesvg{figures/reference_frames.svg}
     \caption{Reference frames.}
-    \label{fig:force_model}
+    \label{fig:reference_frames}
 \end{figure}
 %
 \begin{equation}
