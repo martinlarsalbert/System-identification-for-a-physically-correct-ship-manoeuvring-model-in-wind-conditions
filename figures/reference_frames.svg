@@ -27,9 +27,9 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="2.6613646"
-     inkscape:cx="-43.023042"
-     inkscape:cy="40.768559"
+     inkscape:zoom="4.0175361"
+     inkscape:cx="-70.06782"
+     inkscape:cy="142.00246"
      inkscape:window-width="3840"
      inkscape:window-height="2054"
      inkscape:window-x="2293"
@@ -125,12 +125,11 @@
        inkscape:transform-center-x="8.7520097"
        inkscape:transform-center-y="8.5261563"
        transform="matrix(1.0904114,0.6295493,-0.6295493,1.0904114,36.344418,-67.956298)"
-       style="stroke:none;stroke-width:0.443968;stroke-dasharray:none;stroke-opacity:1"
-       sodipodi:insensitive="true"><a
+       style="stroke:none;stroke-width:0.443968;stroke-dasharray:none;stroke-opacity:1"><a
          id="a4772"
          style="fill:#7781d7;fill-opacity:0.651515;stroke:none;stroke-width:0.444763;stroke-dasharray:none;stroke-opacity:1"><path
            id="path1055"
-           style="display:inline;fill:#7781d7;fill-opacity:0.651515;stroke:none;stroke-width:0.444763;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+           style="display:inline;fill:#bbc3d7;fill-opacity:0.65151501;stroke:none;stroke-width:0.444763;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
            d="m 84.908844,208.33619 c -0.01405,7.59908 1.001138,23.55292 1.750282,30.24932 h 15.746844 15.74684 c 0.74914,-6.6964 1.76428,-22.65024 1.75028,-30.24932 0,0 -0.32185,-95.21403 -0.19998,-108.29106 0.12187,-13.077032 -4.37335,-46.129312 -17.29714,-51.728622 -12.923794,5.59931 -17.41901,38.65159 -17.297139,51.728622 0.121871,13.07703 -0.199987,108.29106 -0.199987,108.29106 z" /></a><g
          id="g2726"
          inkscape:label="rudder_stbd"
@@ -139,7 +138,7 @@
          inkscape:transform-center-y="3.1648025"
          style="stroke:none;stroke-width:0.444763;stroke-dasharray:none;stroke-opacity:1"><path
            id="path7777-0"
-           style="display:inline;fill:#404ec7;fill-opacity:0.651515;stroke:none;stroke-width:0.444763;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           style="display:inline;fill:#606ac7;fill-opacity:0.65151501;stroke:none;stroke-width:0.444763;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
            d="m 101.97691,217.0293 c 2.40987,2.81399 2.48975,9.03075 0.39099,18.42936 m -0.39099,-18.42936 c -2.288337,2.91365 -2.104482,9.12822 0.39099,18.42936"
            sodipodi:nodetypes="cccc" /></g><path
          style="display:none;fill:#5a63fe;fill-opacity:1;stroke:none;stroke-width:0.443968;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
@@ -154,7 +153,7 @@
          inkscape:transform-center-y="3.1648025"
          style="stroke:none;stroke-width:0.444763;stroke-dasharray:none;stroke-opacity:1"><path
            id="path1"
-           style="display:inline;fill:#404ec7;fill-opacity:0.651515;stroke:none;stroke-width:0.444763;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           style="display:inline;fill:#606ac7;fill-opacity:0.65151501;stroke:none;stroke-width:0.444763;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
            d="m 101.97691,217.0293 c 2.40987,2.81399 2.48975,9.03075 0.39099,18.42936 m -0.39099,-18.42936 c -2.288337,2.91365 -2.104482,9.12822 0.39099,18.42936"
            sodipodi:nodetypes="cccc" /></g></g><g
        id="g6460"
@@ -284,7 +283,7 @@
            inkscape:label="Vector"
            sodipodi:nodetypes="cc" /><text
            xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.60366px;line-height:1.5;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;display:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.471237;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.60366px;line-height:1.5;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.471237;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
            x="97.265518"
            y="153.82559"
            id="text9"><tspan
