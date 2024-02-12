@@ -4,8 +4,11 @@
     \label{tab:other_parameters}
     \pgfplotstabletypeset[col sep=comma, column type=r,
     columns/Parameter/.style={column type=c,string type},
-    columns/Parameter1/.style={column type=c,string type},
-    columns/Parameter2/.style={column type=c,string type},
+    columns/Parameter1/.style={column type=c,string type, column name=Parameter},
+    columns/Parameter2/.style={column type=c,string type, column name=Parameter},
+    columns/Value/.style={column type=r, column name=~},
+    columns/Value1/.style={column type=r, column name=~},
+    columns/Value2/.style={column type=r, column name=~},
     ]{tables/result_models.other_parameters.csv}
 \end{table}
 \begin{table}[h]
