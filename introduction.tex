@@ -34,6 +34,14 @@ Support vector regression (SVR) has been investigated by \citet{luo_parameter_20
 The input variables of the data-driven ship manoeuvring models are often strongly linearly dependent. This multicollinearity is a well known issue in parameter identification, that may lead to parameter drift and poor generalization; The parameters are thus mathematically correct but physically incorrect \citep{luo_parameter_2016}. 
 An example of generalization is when a model identified on calm water data is exposed to wind; A drift angle is now needed to maintain a straight course. This wind state is rare in calm water manoeuvring tests, where the drift angle is almost exclusively accompanied by yaw rate; 
 The regression will thus have problems to distinguish between these states.
+%
+\begin{figure}[h]
+    \centering
+    \includesvg{figures/multicollineraity.multicollinearity.svg}
+    \caption{Phase portrait where the combination of drift angle and yaw rate is shown for some zigzag tests.}
+    \label{fig:multicollinearity}
+\end{figure}
+%
 
 % Wengang fixes a better figure here...
 This drifting (side forces) is rarely investigated as shown in Fig.\ref{fig:pub_overview}.
