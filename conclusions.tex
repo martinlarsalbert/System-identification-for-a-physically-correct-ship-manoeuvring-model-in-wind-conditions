@@ -1,15 +1,43 @@
-\begin{itemize}
-    \item A new semi-empirical rudder model has been proposed, combining existing semi-empirical formulas together with some new enhancements: the rudder area covered or uncovered by the propeller slip stream are modelled separately, a new way to model the effect of reduced lift due to gap between rudder and rudder horn has also been proposed.     
+%_________________________________________________________
+%Move 1: Background information (research purposes, theory,
+%methodology)
+The objective of this paper was to identify a ship manoeuvring model from zigzag model tests trajectories, so that that the model is not just mathematical correct -- but also as physically correct as possible, to maximize the generalization. Multicollinearity of the model regressors was found to be a major issue; The physics informed ship manoeuvring model (PISM), which features a deterministic semi-empirical rudder model, was introduced to mitigate this issue. 
 
-    \item All of the identified models in this paper can be considered as mathematically correct, since they all predicted the model tests with satisfactory agreement.
-    
-    \item The Reference model predicted the VCT with good accuracy and can therefore be considered as the most physically correct model.   
-    %
-    \item As a logical consequence of this, the mathematical model is considered as physically incorrect, since it predicted very different forces and moments; The regression seems to have made an incorrect decomposition between hull-, and rudder forces, as well as drift angle-, and yaw rate dependent coefficients.  
-    %
-    \item The PISM on the other hand, predicted very similar forces and moments for the model tests and can therefore considered as more physically correct.
-    %
-    \item Potential problems with the incorrect force decomposition of the mathematical model was shown in the lack of generalization of an artificial wind state, where the forces and moments had very large errors. 
-    %
-    \item The introduction of a semi-empirical rudder model seems to have guided the identification towards a more physically correct model, with lower multicollinearity and better generalization from calm water zigzag tests to wind conditions. 
-\end{itemize}
+%_________________________________________________________
+%Move 2: Summarizing and reporting key results. (oblig.)
+The PISM was identified with inverse dynamics (ID) regression. Two other models where also identified for comparisons;
+The Reference model has the same model structure as PISM, but with parameters identified with VCT regression instead; The so called mathematical model served as a reference of an uninformed model identified in the same way as PISM.
+
+All of the identified models predicted the model tests with satisfactory agreement and can thus be considered as mathematically correct.
+The Reference model was however the only model capable of predicted the VCT with good accuracy and can therefore be considered as the most physically correct model.
+As a logical consequence of this, the mathematical model is considered as physically incorrect, since it predicted very different forces and moments; The regression seems to have made an incorrect decomposition between hull-, and rudder forces, as well as drift angle-, and yaw rate dependent coefficients.
+The PISM on the other hand, predicted very similar forces compared to the Reference model for the model tests and can therefore considered as more physically correct.
+Potential problems with the incorrect force decomposition of the mathematical model was shown in the lack of generalization of an artificial wind state, where the forces and moments had very large errors.
+
+%_________________________________________________________
+%Move 3: Commenting on key results (making claims, explaining the results,
+%comparing the new work with previous studies, offering
+%alternative explanations) (oblig.)
+The introduction of a semi-empirical rudder model seems to have guided the identification towards a more physically correct model, with lower multicollinearity and better generalization from calm water zigzag tests to wind conditions.
+
+%_________________________________________________________
+%Move 4: Stating the limitations of the study
+A completely data driven model, identified with ID regression, can give good simulations result, even if the mass and added masses are wrong, since the erroneous mass will cancel in Newtons second law of motion as seen in \autoref{eq:Fma} and \autoref{eq:cancel} where $\epsilon$ is the mass error.
+\begin{equation}
+    \label{eq:Fma}
+    F = (m+\epsilon) \cdot a
+\end{equation}
+\begin{equation}
+    \label{eq:cancel}
+    a = \frac{F}{m+\epsilon} = \frac{(m+\epsilon) \cdot a}{m+\epsilon}
+\end{equation}
+When the deterministic forces are introduced in the PISM however, the acceleration contribution $a_R$ of an this force $F_R$ will be wrong when the mass is wrong (\autoref{eq:mass_scaling}). Having correct mass values therefore becomes all the more important.
+\begin{equation}
+    \label{eq:mass_scaling}
+    a_R = \frac{F_R}{m+\epsilon}
+\end{equation}
+
+%_________________________________________________________
+%Move 5: Making recommendations for future implementation and/or for
+%future research
+The semi-empirical rudder was actually not treated as an entirely deterministic model in this paper; The flow straightening coefficients $\kappa_v$ and $\kappa_r$ where determined from the VCT as well as the rudder hull interaction coefficients $a_H$ and $x_H$. For the time being, a few VCT calculations are thus needed. In the future, when more experience is gained about these coefficients, semi-empirical expressions or rules of thumb can hopefully be developed to make the model fully deterministic. 
