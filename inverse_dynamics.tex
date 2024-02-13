@@ -1,6 +1,31 @@
-Inverse dynamics is a widely used technique within robotics \citep{faber_inverse_2018}; It can be used to estimate the total forces ($X_D,Y_D,N_D$) acting on a ship during motions. The technique can be applied on data from a free model manoeuvring tests or real ship data. The total forces are calculated from the kinematics of the manoeuvring model (\autoref{eq:X} to \autoref{eq:N}). These equations require that the mass, added mass , and the full state of the ship is known -- so that data on the position and orientation of the ship as well as the higher states: velocities, and accelerations, are needed.
+Inverse dynamics is a widely used technique within robotics \citep{faber_inverse_2018}; It can be used to estimate the total forces acting on a ship during motions. The technique can be applied on data from a free model manoeuvring tests or real ship data. 
+Estimations of the total damping forces can be solved from the manoeuvring model kinematic equations  (\autoref{eq:X} to \autoref{eq:N}). These equations require that the mass, added mass, and the full state of the ship is known -- so that data on the position and orientation of the ship as well as the higher states: velocities, and accelerations, are known.
 However, in the model tests used in this paper, only the position and orientation of the ship model where measured;
-The higher states where therefore estimated with an extended Kalman filter (EKF) -- where the manoeuvring model was used as the predictor \citep{alexandersson_wpcc_2022}.
+The higher states where thus estimated with an extended Kalman filter (EKF) -- where the manoeuvring model was used as the predictor \citep{alexandersson_wpcc_2022}.
 
-The estimated inverse dynamics forces were regressed with ordinary least squares (OLS) multiple
-linear regression to identify the model parameters. The inverse dynamics regression was conducted on zigzag10/10, and zigzag20/20 model test data to port and starboard.  
+The parameter estimations are defined as a linear regression problem (\autoref{eq:regression}) -- one for each degree of freedom. 
+\begin{equation}\label{eq:regression}
+\begin{split}y = X\gamma + \epsilon\end{split}
+\end{equation}
+How the label vector \(y\) and the feature matrix \(X\) are calculated differs for the Abkowitz model and PISM; For the Abkowitz model the rudder model is data driven and is thus included in the regression; But for the PSIM, the semi-empirical rudder model is deterministic and is thus not included in the regression, as seen in \autoref{eq:X_H_estimation_abkowitz} for the Abkowitz and in \autoref{eq:X_H_estimation_PISM} for PISM, where \textbullet\ represents the degree of freedoms ($X,Y,N$).
+\begin{equation}
+    \label{eq:X_H_estimation_abkowitz}
+    y = (\bullet)_D
+\end{equation}
+\begin{equation}
+    \label{eq:X_H_estimation_PISM}
+    y = (\bullet)_H = (\bullet)_D - (\bullet)_R
+\end{equation}
+For example, the regression of the surge degree of freedom label \(y\) can be calculated using the inverse dynamics force (\autoref{eq:label}). 
+The feature matrix \(X\) and coefficient vector $\gamma$ are expressed from the model damping force polynomials as seen in \autoref{eq:features} and \autoref{eq:gamma}, where $\delta^2$, and $X_{\delta\delta}$ are removed for the PISM.
+\begin{equation}\label{eq:label}
+\begin{split}\displaystyle X_D = - X_{\dot{u}} \dot{u}' + \dot{u}' m' - m' r'^{2} x_{G'} - m' r' v'\end{split}
+\end{equation}
+\begin{equation}\label{eq:features}
+\begin{split}\displaystyle X = \left[\begin{matrix}1 & u' & (\delta^{2}) & r'^{2} & v'^{2} & r' v'\end{matrix}\right]\end{split}
+\end{equation}
+\begin{equation}\label{eq:gamma}
+\begin{split}\displaystyle \gamma = \left[\begin{matrix}X_{0}\\X_{u}\\(X_{\delta\delta})\\X_{rr}\\X_{vv}\\X_{vr}\end{matrix}\right]\end{split}
+\end{equation}
+The hydrodynamic derivatives in the \(\gamma\) vector are estimated with ordinary least squares (OLS) multiple linear regression.
+In this regression, the hydrodynamic derivatives are treated as Gaussian random variables. The hydrodynamic derivatives in the manoeuvring model are usually estimated as the mean value of each regressed random variable, which is the most likely estimate.
