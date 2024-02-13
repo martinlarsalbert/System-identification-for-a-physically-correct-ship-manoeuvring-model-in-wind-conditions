@@ -1,5 +1,5 @@
 The ship's kinematics are expressed at midship 
-in the surge $X$, sway $Y$, and yaw $N$ degrees of freedoms (see \autoref{fig:reference_frames}) described by \autoref{eq:X}-\autoref{eq:N}, where $X_D$, $Y_D$, and $N_D$ describe the damping forces and moments. Note that these equations have the added mass coupling terms: $Y_{\dot{r}}$, and $N_{\dot{v}}$ -- which are neglected in the MMG model.
+in the surge $X$, sway $Y$, and yaw $N$, degrees of freedoms (see \autoref{fig:reference_frames}) described by \autoref{eq:X}-\autoref{eq:N}, where $X_D$, $Y_D$, and $N_D$ describe the damping forces and moments. Note that these equations have the added mass coupling terms: $Y_{\dot{r}}$, and $N_{\dot{v}}$ -- which are neglected in the MMG model.
 %
 \begin{figure}[h]
     \centering
@@ -22,7 +22,6 @@ in the surge $X$, sway $Y$, and yaw $N$ degrees of freedoms (see \autoref{fig:re
     \label{eq:N}
     \input{equations/mathematical_model_kinetics.N}
 \end{equation}
-
 The damping forces and moments are expressed in a modular way as seen in \autoref{eq:X_D} to \autoref{eq:N_D} and \autoref{fig:force_model},
 % Components:
 \begin{equation}
@@ -46,12 +45,10 @@ The damping forces and moments are expressed in a modular way as seen in \autore
     \caption{The modular force components.}
     \label{fig:force_model}
 \end{figure}
-%
-where the subscripts: H, P, R, and RHI represent contributions from: hull, propellers, rudders, and rudder hull interaction. Rudder hull interaction having its own element is a difference to the MMG model, where RHI is included in the hull forces.
+where the subscripts: H, P, R, and RHI represent contributions from: hull, propellers, rudders, and rudder hull interaction. Rudder hull interaction having its own element, is a difference to the MMG model.
 % Hull:
 
 The hull forces are expressed with the same polynomials as the MMG model, except that the ${X_{vvvv}}'$ coefficient has been omitted and an additional resistance term ${X_u}'$ has been added -- to allow for a more nonlinear resistance (see \autoref{sec:hull}). The nonlinear resistance is possible due to the use of perturbed velocity (see \autoref{sec:prime_system}).
-
 %Propellers:
 The total twin screw propeller forces are expressed as,
 \begin{equation}
@@ -68,7 +65,7 @@ The total twin screw propeller forces are expressed as,
     \label{eq:N_P}
     \input{equations/mathematical_model_kinetics.N_P}
 \end{equation}
-The surge forces from the propellers are calculated as the propeller thrust times a thrust deduction coefficient $X_{Tport}=X_{Tstbd}=(1-t_{df})$ as shown in \autoref{eq:X_P_port} and a small yawing moment contribution as seen in \autoref{eq:N_P_port}, where $y_{pport}$ is the propellers transverse coordinate. The thrusts from the propellers $T_{port},T_{stbd}$ are taken from the the model tests measurements, and VCT calculations, since modelling of propeller forces is not of primary focus in this paper.
+The surge forces from the propellers are calculated as the propeller thrust times a thrust deduction coefficient $X_{Tport}=X_{Tstbd}=(1-t_{df})$ as shown in \autoref{eq:X_P_port} and a small yawing moment contribution as seen in \autoref{eq:N_P_port}, where $y_{pport}$ is the propellers transverse coordinate. The thrusts from the propellers $T_{port},T_{stbd}$ are taken from the the model tests measurements, or VCT calculations, since modelling of propeller forces is not of primary focus in this paper.
 \begin{equation}
     \label{eq:X_P_port}
     \input{equations/mathematical_model_kinetics.X_P_port}

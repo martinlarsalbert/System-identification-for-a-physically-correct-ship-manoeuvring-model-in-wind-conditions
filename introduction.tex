@@ -5,8 +5,8 @@
 Ship dynamics predictive models have a wide range of applications, e.g., safety enhancements, route planning and optimization, autonomous shipping, etc., \citep{aslam_internet_2020}.
 Ship manoeuvring is a sub field of ship dynamics with well established system based models such as: \citet{abkowitz_ship_1964,nomoto_steering_1957,norrbin_theory_1971}, and the MMG model \citep{yasukawa_introduction_2015}.
 
-Captive model tests is the classical approach to identify the parameters within these models. However, this approach is not practically applicable for the full scale ships; Instead, computational fluid dynamics (CFD) with either direct simulations or virtual captive tests (VCT) has emerged as an interesting option for the full scale ship predictions \citep{liu_predictions_2018,li_ship_2022}.
-The CFD requires a complete understanding of the system. Acquiring such knowledge may be possible for some cases, but it is not practical in a complex sea environment including: wind, wave and current, with increased modelling uncertainties \citep{miller_ship_2021}; In coastal areas, water depth and the bank effect also add uncertainty  \citep{nielsen_machine_2022};
+Captive model tests is the classical approach to identify the parameters within these models. However, it is not practically applicable for the full scale ships; Instead, computational fluid dynamics (CFD) with either direct simulations or virtual captive tests (VCT) has emerged as an interesting option for the full scale ship predictions \citep{liu_predictions_2018,li_ship_2022}.
+The CFD requires a complete understanding of the system. Acquiring such knowledge may be possible for some cases, but it is not practical in a complex sea environment including: wind, wave and current -- with increased modelling uncertainties \citep{miller_ship_2021}; In coastal areas, water depth and the bank effect also add uncertainty  \citep{nielsen_machine_2022};
 And even if the sea is flawlessly modelled, long-term predictions with high accuracy will be exposed to deterministic chaos \citep{lorenz_deterministic_1963}.
 Together with the other drawbacks of CFD -- such as high computational costs -- data driven models have become an attractive alternative or complement, with an increased number of publications in the past 10-15 years (shown in Fig.\ref{fig:pub_overview}) -- especially within autonomous ships \citep{ahmed_survey_2023}.
 %
@@ -31,9 +31,11 @@ Support vector regression (SVR) has been investigated by \citet{luo_parameter_20
 % * gap?
 % * question       <------
 % * continuation?
-The input variables of the data-driven ship manoeuvring models are often strongly linearly dependent. This multicollinearity is a well known issue in parameter identification, that may lead to parameter drift and poor generalization; The parameters are thus mathematically correct but physically incorrect \citep{luo_parameter_2016}. 
+The regressors of the data-driven ship manoeuvring models are often strongly linearly dependent. This multicollinearity is a well known issue in parameter identification, that may lead to parameter drift and poor generalization; The parameters are thus mathematically correct but physically incorrect \citep{luo_parameter_2016}. 
 An example of generalization is when a model identified on calm water data is exposed to wind; A drift angle is now needed to maintain a straight course. This wind state is rare in calm water manoeuvring tests, where the drift angle is almost exclusively accompanied by yaw rate (see \autoref{fig:phase_portrait}); 
-The regression will thus have problems to distinguish between these states.
+The regression will thus have problems to distinguish between these quantities.
+% Wengang fixes a better figure here...
+%This drifting (side forces) is rarely investigated as shown in %\autoref{fig:pub_overview}.
 %
 \begin{figure}[h]
     \centering
@@ -41,13 +43,7 @@ The regression will thus have problems to distinguish between these states.
     \caption{Phase portrait where the combination of drift angle and yaw rate is shown for zigzag10/10, and zigzag20/20 tests.}
     \label{fig:phase_portrait}
 \end{figure}
-%
-
-% Wengang fixes a better figure here...
-This drifting (side forces) is rarely investigated as shown in \autoref{fig:pub_overview}.
-
 Using more informative data or simplifying the model -- when possible -- and thereby reducing the number of parameters, is one of the most researched ways to mitigate the multicollinearity through some possible remedies such as the difference method \citep{luo_parameter_2016}, principal component analysis (PCA), and partial least squares regression \citep{jian-chuan_parametric_2015}. 
-
 %________________________________________
 %CaRS Move III "Occupy the niche" (Solution/Evaluation):
 % * outline purpose?                        <--
@@ -72,4 +68,4 @@ System identification is conducted via inverse dynamics \citep{faber_inverse_201
 \end{figure}
 
 The left of the paper is organized as follows. The proposed physics informed manoeuvring model is first presented in \autoref{sec:ship_models}, while some mathematical details of the model are given in the appendix. 
-The developed methodology framework to identify parameters within the proposed physics-informed model is described in \autoref{sec:methodology} -- including the VCT regression, and the inverse dynamics. The case study ship with wind propulsions is briefly described in \autoref{sec:case_study}, as well as some known parameters of the ship's manoeuvring model. Results are presented in \autoref{sec:results}, followed by some key conclusions of this research in \autoref{sec:conclusions}.
+The developed methodology framework to identify parameters within the PISM is described in \autoref{sec:methodology} -- including the VCT regression, and the inverse dynamics. The case study ship with wind propulsions is briefly described in \autoref{sec:case_study}, as well as some known parameters of the ship's manoeuvring model. Results are presented in \autoref{sec:results}, followed by some key conclusions of this research in \autoref{sec:conclusions}.
