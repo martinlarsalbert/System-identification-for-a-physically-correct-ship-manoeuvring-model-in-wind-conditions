@@ -1,11 +1,11 @@
 \begin{table}[h]
     \centering
-    \caption{Semi-empirical rudder parameters in model scale.}
+    \caption{Semi-empirical rudder parameters (SI units) in model scale.}
     \label{tab:other_parameters}
     \pgfplotstabletypeset[col sep=comma, column type=r,
-    columns/Parameter/.style={column type=c,string type},
-    columns/Parameter1/.style={column type=c,string type, column name=Parameter},
-    columns/Parameter2/.style={column type=c,string type, column name=Parameter},
+    columns/Parameter/.style={column type=l,string type},
+    columns/Parameter1/.style={column type=l,string type, column name=Parameter},
+    columns/Parameter2/.style={column type=l,string type, column name=Parameter},
     columns/Value/.style={column type=r, column name=~},
     columns/Value1/.style={column type=r, column name=~},
     columns/Value2/.style={column type=r, column name=~},
@@ -15,7 +15,7 @@
     \centering
     \caption{Added masses.}
     \label{tab:added_masses}
-    \pgfplotstabletypeset[col sep=comma, column type=r,
+    \pgfplotstabletypeset[col sep=comma, column type=c,
     columns/Xudot/.style={column name=$X_{\dot{u}}$},
     columns/Yvdot/.style={column name=$Y_{\dot{v}}$},
     columns/Yrdot/.style={column name=$Y_{\dot{r}}$},
