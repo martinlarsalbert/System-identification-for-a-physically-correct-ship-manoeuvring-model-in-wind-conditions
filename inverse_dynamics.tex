@@ -7,7 +7,7 @@ The parameter estimations are defined as a linear regression problem (\autoref{e
 \begin{equation}\label{eq:regression}
 \begin{split}y = X\gamma + \epsilon\end{split}
 \end{equation}
-How the label vector \(y\) and the feature matrix \(X\) are calculated differs for the mathematical model and PISM; For the mathematical model the rudder model is data driven and is thus included in the regression; But for the PSIM, the semi-empirical rudder model is deterministic and is thus not included in the regression, as seen in \autoref{eq:X_H_estimation_abkowitz} for the Abkowitz and in \autoref{eq:X_H_estimation_PISM} for PISM, where \textbullet\ represents the degree of freedoms ($X,Y,N$).
+How the label vector \(y\) and the feature matrix \(X\) are calculated differs for the mathematical model and PISM; For the mathematical model the rudder model is data driven and is thus included in the regression; But for the PSIM, the semi-empirical rudder model is deterministic and is thus not included in the regression, as seen in \autoref{eq:X_H_estimation_abkowitz} for the mathematical model and in \autoref{eq:X_H_estimation_PISM} for PISM, where \textbullet\ represents the degree of freedoms ($X,Y,N$).
 \begin{equation}
     \label{eq:X_H_estimation_abkowitz}
     y = (\bullet)_D
