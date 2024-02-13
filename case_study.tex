@@ -6,3 +6,13 @@ In this paper however, only the motoring mode is considered. Due to the WASP, th
     \caption{The scale model of the WPCC used in the model tests. Copyright RISE.}
     \label{fig:WPCC}
 \end{figure}
+\begin{table}[h]
+    \centering
+    \caption{Main particulars (SI units) of WPCC scale model.}
+    \label{tab:other_parameters}
+    \pgfplotstabletypeset[col sep=comma, column type=r,
+    columns/Parameter/.style={column type=c,string type},
+    columns/Description/.style={column type=c,string type},
+    columns/Value/.style={column type=r, column name=~},
+    ]{tables/result_models.main_particulars.csv}
+\end{table}
