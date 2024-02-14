@@ -5,7 +5,7 @@
 Ship dynamics predictive models have a wide range of applications, e.g., safety enhancements, route planning and optimization, autonomous shipping, etc., \citep{aslam_internet_2020}.
 Ship manoeuvring is a sub field of ship dynamics with well established system based models such as: \citet{abkowitz_ship_1964,nomoto_steering_1957,norrbin_theory_1971}, and the MMG model \citep{yasukawa_introduction_2015}.
 
-Captive model tests is the classical approach to identify the parameters within these models. However, it is not practically applicable for the full scale ships; Instead, computational fluid dynamics (CFD) with either direct simulations or virtual captive tests (VCT) has emerged as an interesting option for the full scale ship predictions \citep{liu_predictions_2018,li_ship_2022}.
+Captive model tests is the classical method to identify the parameters within these models. However, it is not practically applicable for the full scale ships; Instead, computational fluid dynamics (CFD) with either direct simulations or virtual captive tests (VCT) has emerged as an interesting option for the full scale ship predictions \citep{liu_predictions_2018,li_ship_2022}.
 The CFD requires a complete understanding of the system. Acquiring such knowledge may be possible for some cases, but it is not practical in a complex sea environment including: wind, wave and current -- with increased modelling uncertainties \citep{miller_ship_2021}; In coastal areas, water depth and the bank effect also add uncertainty  \citep{nielsen_machine_2022};
 And even if the sea is flawlessly modelled, long-term predictions with high accuracy will be exposed to deterministic chaos \citep{lorenz_deterministic_1963}.
 Together with the other drawbacks of CFD -- such as high computational costs -- data driven models have become an attractive alternative or complement, with an increased number of publications in the past 10-15 years (shown in Fig.\ref{fig:pub_overview}) -- especially within autonomous ships \citep{ahmed_survey_2023}.
@@ -43,7 +43,7 @@ The regression will thus have problems to distinguish between these quantities.
     \caption{Phase portrait where the combination of drift angle and yaw rate is shown for zigzag10/10, and zigzag20/20 tests.}
     \label{fig:phase_portrait}
 \end{figure}
-Using more informative data or simplifying the model -- when possible -- and thereby reducing the number of parameters, is one of the most researched ways to mitigate the multicollinearity through some possible remedies such as the difference method \citep{luo_parameter_2016}, principal component analysis (PCA), and partial least squares regression \citep{jian-chuan_parametric_2015}. 
+Using more informative data or simplifying the model -- when possible -- and thereby reducing the number of parameters, is one of the most researched ways to mitigate the multicollinearity. Other possible remedies are the difference method \citep{luo_parameter_2016}, principal component analysis (PCA), and partial least squares regression \citep{jian-chuan_parametric_2015}. 
 %________________________________________
 %CaRS Move III "Occupy the niche" (Solution/Evaluation):
 % * outline purpose?                        <--
