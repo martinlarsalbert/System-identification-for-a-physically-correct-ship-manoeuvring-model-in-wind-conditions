@@ -12,8 +12,8 @@ In this paper however, only the motoring mode is considered. Due to the WASP, th
 Required input parameters for the semi-empirical rudder model are summarized in \autoref{tab:other_parameters}.
 The rudder areas where obtained according to \autoref{fig:rudder_coverage}.   
 Some manual tuning of the rudder drag was necessary, especially in the neutral rudder case, where the drag was increased almost 8 times as seen for $C_{D0tune}$. The rudder hull interaction coefficient $a_H$ was set to 0.12, reflecting that 12\% of the rudder force is generated on the ship hull.
-Rudder angles above 15 degrees ($\delta_{lim}$) are assumed to be affected by the gap between rudder and rudder horn with an estimated strength $s$, which is based on experience from similar rudder arrangements.
-
+Rudder angles above 15 degrees ($\delta_{lim}$) are assumed to be affected by the gap between rudder and rudder horn with an estimated strength $s$ -- based on experience from similar rudder arrangements.
+The local inflow to the rudders $\gamma_{0port},\gamma_{0stbd}$ was set to $\pm 2.5$ degrees to produce zero lift in straight ahead condition.
 The added mass coefficients are shown in \autoref{tab:added_masses}.
 \begin{table}[h]
     \centering
