@@ -38,10 +38,10 @@ The regression will thus have problems to distinguish between these quantities.
 %This drifting (side forces) is rarely investigated as shown in %\autoref{fig:pub_overview}.
 %
 \begin{figure}[h]
-    \centering
-    \includesvg{figures/multicollineraity.multicollinearity.svg}
-    \caption{Phase portrait where the combination of drift angle and yaw rate is shown for zigzag10/10, and zigzag20/20 tests.}
-    \label{fig:phase_portrait}
+  \centering
+  \includesvg{figures/multicollineraity.multicollinearity.svg}
+  \caption{Phase portrait where the combination of drift angle and yaw rate is shown for zigzag10/10, and zigzag20/20 tests.}
+  \label{fig:phase_portrait}
 \end{figure}
 Using more informative data or simplifying the model -- when possible -- and thereby reducing the number of parameters, is one of the most researched ways to mitigate the multicollinearity through some possible remedies such as the difference method \citep{luo_parameter_2016}, principal component analysis (PCA), and partial least squares regression \citep{jian-chuan_parametric_2015}. 
 %________________________________________
@@ -56,15 +56,15 @@ More remedies are however needed; Therefore, in this paper, a physics informed m
 
 The objective is to identify a model that is not just mathematical correct: but also as physically correct as possible.
 To evaluate the physical correctness, two unique datasets from a wind-powered pure car carrier (WPCC) are employed following a research workflow as summarized in \autoref{fig:methodology}.
-Data from VCT at various steady-state drift angles, yaw rates, and rudder angles, establish the physically correct kinetics in an identified Reference model. 
-System identification is conducted via inverse dynamics \citep{faber_inverse_2018} on a second dataset containing a series of manoeuvring model tests with a free model of the WPCC. The identification is conducted for the PISM as well as an mathematical manoeuvring model. The identifications are compared to the Reference model and the generalization of the models is also studied in an idealized wind state.
+Data from VCT at various steady-state drift angles, yaw rates, and rudder angles, establish the physically correct kinetics in an identified reference model. 
+System identification is conducted via inverse dynamics \citep{faber_inverse_2018} on a second dataset containing a series of manoeuvring model tests with a free model of the WPCC. The identification is conducted for the PISM as well as an mathematical manoeuvring model. The identifications are compared to the reference model and the generalization of the models is also studied in an idealized wind state.
 %
 \begin{figure}[h]
-    \centering
-    %\includesvg[width=\columnwidth, pretex=\scriptsize, height=12cm]{figures/methodology2.svg}
-    \includesvg[pretex=\centering\fontsize{6}{7}]{figures/methodology2.svg}
-    \caption{Research workflow.}
-    \label{fig:methodology}
+  \centering
+  %\includesvg[width=\columnwidth, pretex=\scriptsize, height=12cm]{figures/methodology2.svg}
+  \includesvg[pretex=\centering\fontsize{6}{7}]{figures/methodology2.svg}
+  \caption{Research workflow.}
+  \label{fig:methodology}
 \end{figure}
 
 The left of the paper is organized as follows. The proposed physics informed manoeuvring model is first presented in \autoref{sec:ship_models}, while some mathematical details of the model are given in the appendix. 
