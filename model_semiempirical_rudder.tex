@@ -1,9 +1,9 @@
-The semi-empirical rudder model is a lifting line model. The surge and sway force are expressed as: rudder lift $L_R$, and rudder drag $D_R$, which are projected on the ship through the rudder inflow angle $\alpha_f$ (see \autoref{eq:X_R_semiempirical} and \autoref{eq:Y_R_semiempirical}).
+The semi-empirical rudder model is a lifting line model. The surge and sway force are expressed as: rudder lift $L_R$, and rudder drag $D_R$, which are projected on the ship through the rudder inflow angle $\alpha_f$ (see \autoref{eq:X_R_semiempirical}, \autoref{eq:Y_R_semiempirical}, and \autoref{fig:inflow}).
 This angle is a sum of the initial inflow to the rudder at a straight course $\gamma_0$ and the inflow to the rudder $\gamma$ due to: propeller induced speed, drift angle, and yaw rate of the ship; as seen in \autoref{eq:gamma_semiempirical}.
 %
 \begin{figure}[h]
     \centering
-    \includesvg{figures/rudder_flow.svg}
+    \includesvg[pretex=\centering\fontsize{10}{11}]{figures/rudder_flow.svg}
     \caption{Inflow to rudder.}
     \label{fig:inflow}
 \end{figure}
