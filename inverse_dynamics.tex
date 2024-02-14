@@ -1,4 +1,4 @@
-Inverse dynamics (ID) is a widely used technique within robotics \citep{faber_inverse_2018}; It can be used to estimate the total forces acting on a ship during motions. The technique can be applied on data from a free model manoeuvring tests or real ship data. 
+Inverse dynamics (ID) is a widely used technique within robotics \citep{faber_inverse_2018}; It can be used to estimate the total forces acting on a ship during motions. The technique can be applied on data from a free model manoeuvring tests or real ship manoeuvres. 
 Estimations of the total damping forces can be solved from the manoeuvring model kinematic equations  (\autoref{eq:X} to \autoref{eq:N}). These equations require that the mass, added mass, and the full state of the ship is known -- so that data on the position and orientation of the ship as well as the higher states: velocities, and accelerations, are known.
 However, in the model tests used in this paper, only the position and orientation of the ship model where measured;
 The higher states where thus estimated with an extended Kalman filter (EKF) -- where the manoeuvring model was used as the predictor \citep{alexandersson_wpcc_2022}.

@@ -6,12 +6,12 @@ The objective of this paper was to identify a ship manoeuvring model from zigzag
 %_________________________________________________________
 %Move 2: Summarizing and reporting key results. (oblig.)
 The PISM was identified with inverse dynamics (ID) regression. Two other models where also identified for comparisons;
-The reference model has the same model structure as PISM, but with parameters identified with VCT regression instead; The so called mathematical model served as a reference of an uninformed model identified in the same way as PISM.
+The reference model has the same model structure as PISM, but with parameters identified with VCT regression; The so called mathematical model served as a reference for an uninformed model identified in the same way as PISM.
 
 All of the identified models predicted the model tests with satisfactory agreement and can thus be considered as mathematically correct.
 The reference model was however the only model capable of predicted the VCT with good accuracy and can therefore be considered as the most physically correct model.
 As a logical consequence of this, the mathematical model is considered as physically incorrect, since it predicted very different forces and moments; The regression seems to have made an incorrect decomposition between hull-, and rudder forces, as well as drift angle-, and yaw rate dependent coefficients.
-The PISM on the other hand, predicted very similar forces compared to the reference model for the model tests and can therefore considered as more physically correct.
+The PISM on the other hand, predicted very similar forces compared to the reference model for the model tests and can therefore considered as a more physically correct model.
 Potential problems with the incorrect force decomposition of the mathematical model was shown in the lack of generalization of an artificial wind state, where the forces and moments had very large errors.
 
 %_________________________________________________________
@@ -22,7 +22,8 @@ The introduction of a semi-empirical rudder model seems to have guided the ident
 
 %_________________________________________________________
 %Move 4: Stating the limitations of the study
-A completely data driven model, identified with ID regression, can give good simulations result, even if the mass and added masses are wrong, since the erroneous mass will cancel in Newtons second law of motion as seen in \autoref{eq:Fma} and \autoref{eq:cancel} where $\epsilon$ is the mass error.
+It is more important to have very accurate values of mass and added masses when inverse dynamics is employed to a physics informed model, compared to a completely data driven model.
+The data driven model can give good simulations result even if the mass and added masses are wrong -- if the forces are equally wrong -- since the erroneous mass will cancel in Newtons second law of motion as seen in \autoref{eq:Fma} and \autoref{eq:cancel}, where $\epsilon$ is the mass error.
 \begin{equation}
     \label{eq:Fma}
     F = (m+\epsilon) \cdot a
@@ -31,7 +32,7 @@ A completely data driven model, identified with ID regression, can give good sim
     \label{eq:cancel}
     a = \frac{F}{m+\epsilon} = \frac{(m+\epsilon) \cdot a}{m+\epsilon}
 \end{equation}
-When the deterministic forces are introduced in the PISM however, the acceleration contribution $a_R$ of an this force $F_R$ will be wrong when the mass is wrong (\autoref{eq:mass_scaling}). Having correct mass values therefore becomes all the more important.
+When a deterministic force $F_R$ is introduced in the PISM however, the acceleration contribution $a_R$ of this force will be wrong -- if the mass is wrong (\autoref{eq:mass_scaling}). Having correct mass values therefore becomes all the more important.
 \begin{equation}
     \label{eq:mass_scaling}
     a_R = \frac{F_R}{m+\epsilon}
@@ -40,6 +41,7 @@ When the deterministic forces are introduced in the PISM however, the accelerati
 %_________________________________________________________
 %Move 5: Making recommendations for future implementation and/or for
 %future research
-The semi-empirical rudder was actually not treated as an entirely deterministic model in this paper; The flow straightening coefficients $\kappa_v$ and $\kappa_r$ where determined from the VCT as well as the rudder hull interaction coefficients $a_H$ and $x_H$. For the time being, a few VCT calculations are thus needed. In the future, when more experience is gained about these coefficients, semi-empirical expressions or rules of thumb can hopefully be developed to make the model fully deterministic.
-The calculated rudder drag from the semi-empirical formulas where also not in good agreement with the VCT calculations.
-This would not have a very large influence on the overall results, but manual tuning was applied anyway; So there is room for further improvement on the semi-empirical formulations. 
+The semi-empirical rudder was actually not treated as an entirely deterministic model in this paper; The flow straightening coefficients $\kappa_v$ and $\kappa_r$ where determined from the VCT as well as the rudder hull interaction coefficients $a_H$ and $x_H$. For the time being, a few VCT calculations are thus needed. In the future, when more experience is gained about these coefficients, semi-empirical expressions or rules of thumb can hopefully be developed.
+The calculated rudder drag from the semi-empirical formulas and VCT where also not in good agreement.
+This would not have a very large influence on the overall results, but manual tuning was applied anyway;
+Further improvements on the semi-empirical formulations is thus needed to make the model fully deterministic.
