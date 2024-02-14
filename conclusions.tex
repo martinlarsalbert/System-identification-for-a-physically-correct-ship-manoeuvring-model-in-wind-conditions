@@ -40,4 +40,6 @@ When the deterministic forces are introduced in the PISM however, the accelerati
 %_________________________________________________________
 %Move 5: Making recommendations for future implementation and/or for
 %future research
-The semi-empirical rudder was actually not treated as an entirely deterministic model in this paper; The flow straightening coefficients $\kappa_v$ and $\kappa_r$ where determined from the VCT as well as the rudder hull interaction coefficients $a_H$ and $x_H$. For the time being, a few VCT calculations are thus needed. In the future, when more experience is gained about these coefficients, semi-empirical expressions or rules of thumb can hopefully be developed to make the model fully deterministic. 
+The semi-empirical rudder was actually not treated as an entirely deterministic model in this paper; The flow straightening coefficients $\kappa_v$ and $\kappa_r$ where determined from the VCT as well as the rudder hull interaction coefficients $a_H$ and $x_H$. For the time being, a few VCT calculations are thus needed. In the future, when more experience is gained about these coefficients, semi-empirical expressions or rules of thumb can hopefully be developed to make the model fully deterministic.
+The calculated rudder drag from the semi-empirical formulas where also not in good agreement with the VCT calculations.
+This would not have a very large influence on the overall results, but manual tuning was applied anyway; So there is room for further improvement on the semi-empirical formulations. 
