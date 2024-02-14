@@ -5,10 +5,10 @@
 Ship dynamics predictive models have a wide range of applications, e.g., safety enhancements, route planning and optimization, autonomous shipping, etc., \citep{aslam_internet_2020}.
 Ship manoeuvring is a sub field of ship dynamics with well established system based models such as: \citet{abkowitz_ship_1964,nomoto_steering_1957,norrbin_theory_1971}, and the MMG model \citep{yasukawa_introduction_2015}.
 
-Captive model tests is the classical method to identify the parameters within these models. However, it is not practically applicable for the full scale ships; Instead, computational fluid dynamics (CFD) with either direct simulations or virtual captive tests (VCT) has emerged as an interesting option for the full scale ship predictions \citep{liu_predictions_2018,li_ship_2022}.
-The CFD requires a complete understanding of the system. Acquiring such knowledge may be possible for some cases, but it is not practical in a complex sea environment including: wind, wave and current -- with increased modelling uncertainties \citep{miller_ship_2021}; In coastal areas, water depth and the bank effect also add uncertainty  \citep{nielsen_machine_2022};
-And even if the sea is flawlessly modelled, long-term predictions with high accuracy will be exposed to deterministic chaos \citep{lorenz_deterministic_1963}.
-Together with the other drawbacks of CFD -- such as high computational costs -- data driven models have become an attractive alternative or complement, with an increased number of publications in the past 10-15 years (shown in Fig.\ref{fig:pub_overview}) -- especially within autonomous ships \citep{ahmed_survey_2023}.
+Captive model test is the classical method to identify the parameters within these models. However, for the full scale ships, this method is not practically applicable, while computational fluid dynamics (CFD) with either direct simulations or virtual captive tests (VCT) has emerged as an interesting option \citep{liu_predictions_2018,li_ship_2022}.
+The CFD requires a complete understanding of the system. Acquiring such knowledge may be possible for some simplified scenarios, but huge modelling uncertainties are expected when applied in a complex sea environment including wind, wave and current \citep{miller_ship_2021}. 
+Even if the sea is flawlessly modelled, long-term predictions with high accuracy will be exposed to deterministic chaos \citep{lorenz_deterministic_1963}.
+Together with the other drawbacks of CFD -- such as high computational costs -- data driven models have become an attractive alternative or complement, with an increased number of publications in the past 10-15 years (shown in Fig.\ref{fig:pub_overview}) -- especially within the field of autonomous ships \citep{ahmed_survey_2023}.
 %
 \begin{figure}[h]
   \includegraphics[width=.5\textwidth]{figures/trendinyear.jpg}
@@ -18,7 +18,7 @@ Together with the other drawbacks of CFD -- such as high computational costs -- 
 \end{figure}
 %
 
-Many of these papers have shown that hydrodynamic coefficients can effectively be estimated on simulated data where the exact ''physical'' model is assumed known; However in real cases/applications, the mathematical model is just the simplification of real physics (from VCT, model test, sea trials, or full-scale tests), while the complexity of hydrodynamics involved in vessel maneuvering will greatly challenge the simplified empirical mathematical methods without carefully considering the actual physics inside hydrodynamic coefficients and their interactions. 
+Many of these papers have shown that hydrodynamic coefficients can effectively be estimated on simulated data where the exact ''physical'' model is assumed known. However, in real cases/applications, the mathematical model is just the simplification of real physics (from VCT, model test, sea trials, or full-scale tests), while the complexity of hydrodynamics involved in vessel maneuvering will greatly challenge the simplified empirical mathematical methods without carefully considering the actual physics inside hydrodynamic coefficients and their interactions. 
 
 One of the earlier papers with real data was proposed in 1976 by \citet{astrom_identification_1976} to develop a linear manoeuvring model that utilized manually recorded data in 1969 aboard the Atlantic Song freighter with Kalman filter (KF) and maximum likelihood estimation. 
 The extended Kalman filter (EKF) was used on a nonlinear Nomoto model by \citet{perera_system_2015} and a 3 degree of freedom model by \citet{shi_identification_2009}. The unscented Kalman filter (UKF), which has been proposed as an improvement to the EKF for handling nonlinear systems, was used in \citet{revestido_herrero_two-step_2012}.
@@ -31,8 +31,8 @@ Support vector regression (SVR) has been investigated by \citet{luo_parameter_20
 % * gap?
 % * question       <------
 % * continuation?
-The regressors of the data-driven ship manoeuvring models are often strongly linearly dependent. This multicollinearity is a well known issue in parameter identification, that may lead to parameter drift and poor generalization; The parameters are thus mathematically correct but physically incorrect \citep{luo_parameter_2016}. 
-An example of generalization is when a model identified on calm water data is exposed to wind; A drift angle is now needed to maintain a straight course. This wind state is rare in calm water manoeuvring tests, where the drift angle is almost exclusively accompanied by yaw rate (see \autoref{fig:phase_portrait}); 
+The regressors of the data-driven ship manoeuvring models are often strongly linearly dependent. This multicollinearity is a well known issue in parameter identification, that may lead to parameter drift and poor generalization. The parameters are thus mathematically correct but physically incorrect \citep{luo_parameter_2016}. 
+An example of generalization is when a model identified on calm water data is exposed to wind, where a drift angle is now needed to maintain a straight course. This wind state is rare in calm water manoeuvring tests, where the drift angle is almost exclusively accompanied by yaw rate (see \autoref{fig:phase_portrait}); 
 The regression will thus have problems to distinguish between these quantities.
 % Wengang fixes a better figure here...
 %This drifting (side forces) is rarely investigated as shown in %\autoref{fig:pub_overview}.
@@ -54,7 +54,7 @@ Using more informative data or simplifying the model -- when possible -- and the
 
 More remedies are however needed; Therefore, in this paper, a physics informed manoeuvring model (PISM), which features a new semi-empirical rudder model based on semi-empirical formulas from the literature, is proposed.
 
-The objective is to identify a model that is not just mathematical correct: but also as physically correct as possible.
+The objective is to identify a model that is not just mathematical correct, but also as physically correct as possible.
 To evaluate the physical correctness, two unique datasets from a wind-powered pure car carrier (WPCC) are employed following a research workflow as summarized in \autoref{fig:methodology}.
 Data from VCT at various steady-state drift angles, yaw rates, and rudder angles, establish the physically correct kinetics in an identified reference model. 
 System identification is conducted via inverse dynamics \citep{faber_inverse_2018} on a second dataset containing a series of manoeuvring model tests with a free model of the WPCC. The identification is conducted for the PISM as well as an mathematical manoeuvring model. The identifications are compared to the reference model and the generalization of the models is also studied in an idealized wind state.
