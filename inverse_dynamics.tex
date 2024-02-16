@@ -7,7 +7,7 @@ The parameter estimations are defined as a linear regression problem (\autoref{e
 \begin{equation}\label{eq:regression}
 \begin{split}y = X\gamma + \epsilon\end{split}
 \end{equation}
-How the label vector \(y\) and the feature matrix \(X\) are calculated differs for the mathematical model and the PISM; For the mathematical model the rudder model is data driven and is thus included in the regression; But for the PSIM, the semi-empirical rudder model is deterministic and is thus not included in the regression, as seen in \autoref{eq:X_H_estimation_abkowitz} for the mathematical model and in \autoref{eq:X_H_estimation_PISM} for the PISM, where \textbullet\ represents the degree of freedoms ($X,Y,N$).
+How the label vector \(y\) and the feature matrix \(X\) are calculated differs for the mathematical model and the PI model; For the mathematical model the rudder model is data driven and is thus included in the regression; But for the PSIM, the semi-empirical rudder model is deterministic and is thus not included in the regression, as seen in \autoref{eq:X_H_estimation_abkowitz} for the mathematical model and in \autoref{eq:X_H_estimation_PISM} for the PISM, where \textbullet\ represents the degree of freedoms ($X,Y,N$).
 \begin{equation}
     \label{eq:X_H_estimation_abkowitz}
     y = (\bullet)_D
@@ -17,7 +17,7 @@ How the label vector \(y\) and the feature matrix \(X\) are calculated differs f
     y = (\bullet)_H = (\bullet)_D - (\bullet)_R
 \end{equation}
 For example, the regression of the surge degree of freedom label \(y\) can be calculated using the inverse dynamics force (\autoref{eq:label}). 
-The feature matrix \(X\) and coefficient vector $\gamma$ are expressed from the model damping force polynomials as seen in \autoref{eq:features} and \autoref{eq:gamma}, where $\delta^2$, and $X_{\delta\delta}$ are removed for the PISM.
+The feature matrix \(X\) and coefficient vector $\gamma$ are expressed from the model damping force polynomials as seen in \autoref{eq:features} and \autoref{eq:gamma}, where $\delta^2$, and $X_{\delta\delta}$ are removed for the PI model.
 \begin{equation}\label{eq:label}
 \begin{split}\displaystyle X_D = - X_{\dot{u}} \dot{u}' + \dot{u}' m' - m' r'^{2} x_{G'} - m' r' v'\end{split}
 \end{equation}
