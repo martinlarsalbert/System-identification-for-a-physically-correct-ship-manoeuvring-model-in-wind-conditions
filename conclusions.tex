@@ -1,19 +1,19 @@
 %_________________________________________________________
 %Move 1: Background information (research purposes, theory,
 %methodology)
-The objective of this paper was to identify a ship manoeuvring model from zigzag model tests trajectories, so that that the model is not just mathematical correct -- but also as physically correct as possible, to maximize the generalization. Multicollinearity of the model regressors was found to be a major issue; The physics informed ship manoeuvring model (PI model), which features a deterministic semi-empirical rudder model, was introduced to mitigate this issue. 
+%
+%The objective of this paper was to investigate if the PI model is physically more correct than a physics uninformed model (PU model), when they are both identified from zigzag model tests, and also to investigate how this affects the generalization.
+The objective of this paper was to investigate if the introduction of a semi-empirical rudder model to form a physics informed manoeuvring model (PI model) would be more physically correct -- with better generalization.
+Three fitted models where investigated: the PI and PU models identified on two zigzag tests, and the reference model which was identified on VCT data.
 
 %_________________________________________________________
 %Move 2: Summarizing and reporting key results. (oblig.)
-The PI model was identified with inverse dynamics (ID) regression. Two other models where also identified for comparisons;
-The reference model has the same model structure as PI model, but with parameters identified with VCT regression; The PU model served as a reference for an uninformed model identified in the same way as PISM.
-
-All of the identified models predicted the model tests with satisfactory agreement and can thus be considered as mathematically correct.
-The reference model was however the only model capable of predicted the VCT with good accuracy and can therefore be considered as the most physically correct model.
-As a logical consequence of this, the PU model is considered as physically incorrect, since it predicted very different forces and moments; The regression seems to have made an incorrect decomposition between hull-, and rudder forces, as well as drift angle-, and yaw rate dependent coefficients.
-The PI model on the other hand, predicted very similar forces compared to the reference model for the model tests and can therefore considered as a more physically correct model.
+All of the identified models can be considered as mathematically correct, since they all predicted the model tests with satisfactory agreement.
+The reference model can indeed be considered as the most physically correct model since it predicted both the model tests and VCT with good accuracy;
+The PU model predicted very different forces and moments and is thus considered as physically incorrect; 
+The regression seems to have made an incorrect decomposition between hull-, and rudder forces, as well as drift angle-, and yaw rate dependent coefficients.
 Potential problems with the incorrect force decomposition of the PU model was shown in the lack of generalization of an artificial wind state, where the forces and moments had very large errors.
-
+The PI model on the other hand, predicted very similar forces compared to the reference model for the model tests and can therefore be considered as a more physically correct model.
 %_________________________________________________________
 %Move 3: Commenting on key results (making claims, explaining the results,
 %comparing the new work with previous studies, offering
@@ -22,26 +22,11 @@ The introduction of a semi-empirical rudder model seems to have guided the ident
 
 %_________________________________________________________
 %Move 4: Stating the limitations of the study
-It is more important to have very accurate values of mass and added masses when inverse dynamics is employed to a physics informed model, compared to a completely data driven model.
-The data driven model can give good simulations result even if the mass and added masses are wrong -- if the forces are equally wrong -- since the erroneous mass will cancel in Newtons second law of motion as seen in \autoref{eq:Fma} and \autoref{eq:cancel}, where $\epsilon$ is the mass error.
-\begin{equation}
-    \label{eq:Fma}
-    F = (m+\epsilon) \cdot a
-\end{equation}
-\begin{equation}
-    \label{eq:cancel}
-    a = \frac{F}{m+\epsilon} = \frac{(m+\epsilon) \cdot a}{m+\epsilon}
-\end{equation}
-When a deterministic force $F_R$ is introduced in the PI model however, the acceleration contribution $a_R$ of this force will be wrong -- if the mass is wrong (\autoref{eq:mass_scaling}). Having correct mass values therefore becomes all the more important.
-\begin{equation}
-    \label{eq:mass_scaling}
-    a_R = \frac{F_R}{m+\epsilon}
-\end{equation}
-
+The semi-empirical rudder was actually not treated as an entirely deterministic model in this paper; The flow straightening coefficients $\kappa_v$ and $\kappa_r$ where determined from the VCT as well as the rudder hull interaction coefficients $a_H$ and $x_H$. For the time being, a few VCT calculations are thus needed.
 %_________________________________________________________
 %Move 5: Making recommendations for future implementation and/or for
 %future research
-The semi-empirical rudder was actually not treated as an entirely deterministic model in this paper; The flow straightening coefficients $\kappa_v$ and $\kappa_r$ where determined from the VCT as well as the rudder hull interaction coefficients $a_H$ and $x_H$. For the time being, a few VCT calculations are thus needed. In the future, when more experience is gained about these coefficients, semi-empirical expressions or rules of thumb can hopefully be developed.
+In the future, when more experience is gained about these coefficients, semi-empirical expressions or rules of thumb can hopefully be developed.
 The calculated rudder drag from the semi-empirical formulas and VCT where also not in good agreement.
 This would not have a very large influence on the overall results, but manual tuning was applied anyway;
 Further improvements on the semi-empirical formulations is thus needed to make the model fully deterministic.

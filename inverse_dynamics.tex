@@ -29,3 +29,19 @@ The feature matrix \(X\) and coefficient vector $\gamma$ are expressed from the 
 \end{equation}
 The hydrodynamic derivatives in the \(\gamma\) vector are estimated with ordinary least squares (OLS) multiple linear regression.
 In this regression, the hydrodynamic derivatives are treated as Gaussian random variables. The hydrodynamic derivatives in the manoeuvring model are usually estimated as the mean value of each regressed random variable, which is the most likely estimate.
+
+It is more important to have very accurate values of mass and added masses when inverse dynamics is employed to a physics informed model, compared to a completely data driven model.
+The data driven model can give good simulations result even if the mass and added masses are wrong -- if the forces are equally wrong -- since the erroneous mass will cancel in Newtons second law of motion as seen in \autoref{eq:Fma} and \autoref{eq:cancel}, where $\epsilon$ is the mass error.
+\begin{equation}
+    \label{eq:Fma}
+    F = (m+\epsilon) \cdot a
+\end{equation}
+\begin{equation}
+    \label{eq:cancel}
+    a = \frac{F}{m+\epsilon} = \frac{(m+\epsilon) \cdot a}{m+\epsilon}
+\end{equation}
+When a deterministic force $F_R$ is introduced in the PI model however, the acceleration contribution $a_R$ of this force will be wrong -- if the mass is wrong (\autoref{eq:mass_scaling}). Having correct mass values therefore becomes all the more important.
+\begin{equation}
+    \label{eq:mass_scaling}
+    a_R = \frac{F_R}{m+\epsilon}
+\end{equation}
