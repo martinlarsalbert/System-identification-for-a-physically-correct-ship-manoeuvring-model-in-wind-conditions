@@ -18,7 +18,7 @@ Together with the other drawbacks of CFD -- such as high computational costs -- 
 \end{figure}
 %
 
-Many of these papers have shown that hydrodynamic coefficients can effectively be estimated on simulated data where the exact ''physical'' model is assumed known. However, in real cases/applications, the PU model is just the simplification of real physics (from VCT, model test, sea trials, or full-scale tests), while the complexity of hydrodynamics involved in vessel maneuvering will greatly challenge the simplified empirical mathematical methods without carefully considering the actual physics inside hydrodynamic coefficients and their interactions. 
+Many of these papers have shown that hydrodynamic coefficients can effectively be estimated on simulated data where the exact ''physical'' model is assumed known. However, in real cases/applications, the mathematical model is just the simplification of real physics (from VCT, model test, sea trials, or full-scale tests), while the complexity of hydrodynamics involved in vessel maneuvering will greatly challenge the simplified empirical mathematical methods without carefully considering the actual physics inside hydrodynamic coefficients and their interactions. 
 
 One of the earlier papers with real data was proposed in 1976 by \citet{astrom_identification_1976} to develop a linear manoeuvring model that utilized manually recorded data in 1969 aboard the Atlantic Song freighter with Kalman filter (KF) and maximum likelihood estimation. 
 The extended Kalman filter (EKF) was used on a nonlinear Nomoto model by \citet{perera_system_2015}, a 3 degree of freedom model by \citet{shi_identification_2009}, and a recursive EKF by \citet{alexandersson_system_2022}.
@@ -55,10 +55,14 @@ Using more informative data or simplifying the model -- when possible -- and the
 
 More remedies are however needed; Therefore, in this paper, a physics informed manoeuvring model (PI model), which features a new semi-empirical rudder model based on semi-empirical formulas from the literature, is proposed.
 
-The objective is to identify a model that is not just mathematical correct, but also as physically correct as possible.
-To evaluate the physical correctness, two unique datasets from a wind-powered pure car carrier (wPCC) are employed following a research workflow as summarized in \autoref{fig:methodology}.
-Data from VCT at various steady-state drift angles, yaw rates, and rudder angles, establish the physically correct kinetics in an identified reference model. 
-System identification is conducted via inverse dynamics \citep{faber_inverse_2018} on a second dataset containing a series of manoeuvring model tests with a free model of the WPCC. The identification is conducted for the PI model as well as an mathematical manoeuvring model. The identifications are compared to the reference model and the generalization of the models is also studied in an idealized wind state.
+The objective of this paper is to investigate if the PI model is physically more correct than a physics uninformed model (PU model), when they are both identified from zigzag model tests, and also to investigate how this affects the generalization.
+To evaluate the physical correctness, a wind-powered pure car carrier (wPCC) test case is studied. 
+This ship has much larger rudders than conventional ships -- to improve the sailing performance -- 
+which increases the demand for a physically correct rudder modelling.
+
+A brief description of the workflow of this research is shown in \autoref{fig:methodology}.
+The PI and PU models are identified on free sailing model tests via inverse dynamics \citep{faber_inverse_2018} and regression (ID regression). To assess the physical correctness, a reference model is established, where the PI model is instead identified on a VCT dataset. This reference model -- which is based on CFD -- is assumed to be a sufficiently correct representation of the real ship model physics.
+Validations and comparisons between the models are carried out on the free sailing model tests. The generalization of the models are then studied on an idealized wind condition.
 %
 \begin{figure}[h]
   \centering
@@ -68,5 +72,6 @@ System identification is conducted via inverse dynamics \citep{faber_inverse_201
   \label{fig:methodology}
 \end{figure}
 
-The left of the paper is organized as follows. The proposed physics informed manoeuvring model is first presented in \autoref{sec:ship_models}, while some mathematical details of the model are given in the appendix. 
-The developed methodology framework to identify parameters within the PI model is described in \autoref{sec:methodology} -- including the VCT regression, and the inverse dynamics. The case study ship with wind propulsions is briefly described in \autoref{sec:case_study}, as well as some known parameters of the ship's manoeuvring model. Results are presented in \autoref{sec:results}, followed by some key conclusions of this research in \autoref{sec:conclusions}.
+The left of the paper is organized as follows; The proposed PI model is first presented together with the PU 
+ model in \autoref{sec:ship_models}, while some mathematical details of the models are given in the appendix. 
+The developed methodology framework to identify parameters within the PI model is described in \autoref{sec:methodology} -- including the VCT regression, and the inverse dynamics. The case study ship is briefly described in \autoref{sec:case_study}, as well as some known parameters of the ship's manoeuvring model. Results are presented in \autoref{sec:results}, followed by some key conclusions of this research in \autoref{sec:conclusions}.
