@@ -8,22 +8,25 @@ Ship manoeuvring is a sub field of ship dynamics with well established system ba
 Captive model test is the classical method to identify the parameters within these models. However, for the full scale ships, this method is not practically applicable, while computational fluid dynamics (CFD) with either direct simulations or virtual captive tests (VCT) has emerged as an interesting option \citep{liu_predictions_2018,li_ship_2022}.
 The CFD requires a complete understanding of the system. Acquiring such knowledge may be possible for some simplified scenarios, but huge modelling uncertainties are expected when applied in a complex sea environment including wind, wave and current \citep{miller_ship_2021}. 
 Even if the sea is flawlessly modelled, long-term predictions with high accuracy will be exposed to deterministic chaos \citep{lorenz_deterministic_1963}.
-Together with the other drawbacks of CFD -- such as high computational costs -- data driven models have become an attractive alternative or complement, with an increased number of publications in the past 10-15 years (shown in Fig.\ref{fig:pub_overview}) -- especially within the field of autonomous ships \citep{ahmed_survey_2023}.
-%
-\begin{figure}[h]
-  \includegraphics[width=.5\textwidth]{figures/trendinyear.jpg}
-  \includegraphics[width=.5\textwidth]{figures/wind_drift_research.png}
-  \caption{Research topics within the field of ship maneuverability system identification}
-  \label{fig:pub_overview}
-\end{figure}
-%
+Together with the other drawbacks of CFD -- such as high computational costs -- data driven models have become an attractive alternative or complement, with an increased number of publications in the past 10-15 years %(shown in Fig.\ref{fig:pub_overview})
+-- especially within the field of autonomous ships \citep{ahmed_survey_2023} where it is important to predict the ships’ trajectories to avoid collision. 
+%%
+%\begin{figure}[h]
+%  \includegraphics[width=.5\textwidth]{figures/trendinyear.jpg}
+%  \includegraphics[width=.5\textwidth]{figures/wind_drift_research.png}
+%  \caption{Research topics within the field of ship maneuverability system identification}
+%  \label{fig:pub_overview}
+%\end{figure}
+%%
 
-Many of these papers have shown that hydrodynamic coefficients can effectively be estimated on simulated data where the exact ''physical'' model is assumed known. However, in real cases/applications, the mathematical model is just the simplification of real physics (from VCT, model test, sea trials, or full-scale tests), while the complexity of hydrodynamics involved in vessel maneuvering will greatly challenge the simplified empirical mathematical methods without carefully considering the actual physics inside hydrodynamic coefficients and their interactions. 
+
 
 One of the earlier papers with real data was proposed in 1976 by \citet{astrom_identification_1976} to develop a linear manoeuvring model that utilized manually recorded data in 1969 aboard the Atlantic Song freighter with Kalman filter (KF) and maximum likelihood estimation. 
 The extended Kalman filter (EKF) was used on a nonlinear Nomoto model by \citet{perera_system_2015}, a 3 degree of freedom model by \citet{shi_identification_2009}, and a recursive EKF by \citet{alexandersson_system_2022}.
 The unscented Kalman filter (UKF), which has been proposed as an improvement to the EKF for handling nonlinear systems, was used in \citet{revestido_herrero_two-step_2012}.
 Support vector regression (SVR) has been investigated by \citet{luo_parameter_2016}, \citet{zhu_parameter_2017}, and \citet{wang_parameter_2021}. 
+
+Many of these papers have shown that hydrodynamic coefficients can effectively be estimated on simulated data where the exact ''physical'' model is assumed known. However, in real cases/applications, the mathematical model is just the simplification of real physics (from VCT, model test, sea trials, or full-scale tests), while the complexity of hydrodynamics involved in vessel maneuvering will greatly challenge the simplified empirical mathematical methods without carefully considering the actual physics inside hydrodynamic coefficients and their interactions. 
 
 %
 %________________________________________
