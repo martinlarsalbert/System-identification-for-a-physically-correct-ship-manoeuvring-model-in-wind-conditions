@@ -6,9 +6,9 @@ Ship dynamics predictive models have a wide range of applications, e.g., safety 
 Ship manoeuvring is a sub field of ship dynamics with well established system based models such as: \citet{abkowitz_ship_1964,nomoto_steering_1957,norrbin_theory_1971}, and the MMG model \citep{yasukawa_introduction_2015}.
 
 Captive model test is the classical method to identify the parameters within these models. However, for the full scale ships, this method is not practically applicable, while computational fluid dynamics (CFD) with either direct simulations or virtual captive tests (VCT) has emerged as an interesting option \citep{liu_predictions_2018,li_ship_2022}.
-The CFD requires a complete understanding of the system. Acquiring such knowledge may be possible for some simplified scenarios, but huge modelling uncertainties are expected when applied in a complex sea environment including wind, wave and current \citep{miller_ship_2021}. 
+The CFD requires a complete understanding of the system. Acquiring such knowledge may be possible for some simplified scenarios, but large modelling uncertainties from wind, wave and current are expected when applied in a complex sea environment \citep{miller_ship_2021}. 
 Even if the sea is flawlessly modelled, long-term predictions with high accuracy will be exposed to deterministic chaos \citep{lorenz_deterministic_1963}.
-Together with the other drawbacks of CFD -- such as high computational costs -- data driven models have become an attractive alternative or complement, with an increased number of publications in the past 10-15 years %(shown in Fig.\ref{fig:pub_overview})
+Together with the other drawbacks of CFD in manoeuvring -- such as high computational costs -- data driven models have become an attractive alternative or complement, with an increased number of publications in the past 10-15 years %(shown in Fig.\ref{fig:pub_overview})
 -- especially within the field of autonomous ships \citep{ahmed_survey_2023} where it is important to predict the ships’ trajectories to avoid collision. 
 
 The keywords of most recent research activities related to ship maneuvering modelling in \autoref{fig:pub_overview} indicate that various proposed regression-based methods can effectively estimate the hydrodynamic coefficients of a ship’s maneuvering system where the exact “physical” model is assumed known, i.e., the regression is based on “simulation” data. 
@@ -41,7 +41,7 @@ The regression will thus have problems to distinguish between these quantities.
 \begin{figure}[h]
   \centering
   \includesvg{figures/multicollineraity.multicollinearity.svg}
-  \caption{Phase portrait where the combination of drift angle and yaw rate is shown for zigzag10/10, and zigzag20/20 tests.}
+  \caption{Phase portrait where the combination of drift angle and yaw rate is shown for zigzag10/10, and zigzag20/20 wPCC model tests.}
   \label{fig:phase_portrait}
 \end{figure}
 Using more informative data or simplifying the model -- when possible -- and thereby reducing the number of parameters, is one of the most researched ways to mitigate the multicollinearity. Other possible remedies are the difference method \citep{luo_parameter_2016}, principal component analysis (PCA), and partial least squares regression \citep{jian-chuan_parametric_2015}. 
@@ -62,7 +62,7 @@ which increases the demand for a physically correct rudder modelling.
 
 A brief description of the workflow of this research is shown in \autoref{fig:methodology}.
 The PI and PU models are identified on free sailing model tests via inverse dynamics \citep{faber_inverse_2018} and regression (ID regression). To assess the physical correctness, a reference model is established, where the PI model is instead identified on a VCT dataset. This reference model -- which is based on CFD -- is assumed to be a sufficiently correct representation of the real ship model physics.
-Validations and comparisons between the models are carried out on the free sailing model tests. The generalization of the models are then studied on an idealized wind condition.
+Verification and comparisons between the models are carried out on the free sailing model tests. The generalization of the models are then studied on an idealized wind condition.
 %
 \begin{figure}[h]
   \centering
