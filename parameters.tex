@@ -9,6 +9,8 @@
     columns/Value/.style={column type=r, column name=~},
     columns/Value1/.style={column type=r, column name=~},
     columns/Value2/.style={column type=r, column name=~},
+    every head row/.style={before row=\hline,after row=\hline},
+    every last row/.style={after row=\hline}
     ]{tables/result_models.other_parameters.csv}
 \end{table}
 \begin{table}[h]
@@ -21,5 +23,7 @@
     columns/Yrdot/.style={column name=$Y_{\dot{r}}$},
     columns/Nvdot/.style={column name=$N_{\dot{v}}$},
     columns/Nrdot/.style={column name=$N_{\dot{r}}$},
+    every head row/.style={before row=\hline,after row=\hline},
+    every last row/.style={after row=\hline}
     ]{tables/result_models.added_masses.csv}
 \end{table}

@@ -22,6 +22,8 @@ The regression pipeline of the PI model is shown in \autoref{tab:vct_pipeline_se
     %column type=l,	% specify the align method
     %every head row/.style={before row=\hline,after row=\hline},	% style the first row
     %every last row/.style={after row=\hline},	% style the last row
+    every head row/.style={before row=\hline,after row=\hline},
+    every last row/.style={after row=\hline}
     ]{tables/virtual_captive_tests.csv"}
 \end{table}
 %\begin{table}[h!]
@@ -35,6 +37,8 @@ The regression pipeline of the PI model is shown in \autoref{tab:vct_pipeline_se
     \centering
     \caption{Pipeline for the VCT regression of the PI model}
     \label{tab:vct_pipeline_semiempirical}
-    \pgfplotstabletypeset[col sep=comma, string type, column type=l
+    \pgfplotstabletypeset[col sep=comma, string type, column type=l,
+    every head row/.style={before row=\hline,after row=\hline},
+    every last row/.style={after row=\hline}
     ]{tables/method_VCT_regression_abkowitz.regression_pipeline_semiempirical.csv"}
 \end{table}

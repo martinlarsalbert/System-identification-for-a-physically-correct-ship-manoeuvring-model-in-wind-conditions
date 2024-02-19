@@ -5,6 +5,8 @@ The parameters within the models (see \autoref{tab:parameters}) were identified 
     \label{tab:parameters}
     \pgfplotstabletypeset[col sep=comma, column type=r,
         columns/Coefficient/.style={column type=c,string type},
+    every head row/.style={before row=\hline,after row=\hline},
+    every last row/.style={after row=\hline}
     ]{tables/result_models.parameters.csv}
 \end{table}
 
