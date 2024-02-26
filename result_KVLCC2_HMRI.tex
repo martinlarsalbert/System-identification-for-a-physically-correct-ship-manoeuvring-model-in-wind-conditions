@@ -1,7 +1,26 @@
 \begin{figure}[h]
     \begin{center}
         \includesvg{figures/results_kvlcc2.KVLCC2_HMRI}
-        \caption{Decomposition of hull forces and moments during a zigzag20/20 test for parameters related to drift, yaw rate the prediction models.}
+        \caption{}
         \label{fig:KVLCC2_HMRI}
     \end{center}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \begin{subfigure}[b]{0.49\textwidth}
+        \centering
+        \includesvg[width=\textwidth]{figures/results_kvlcc2.KVLCC2_HMRI_D}
+        \caption{Yaw rates.}
+        \label{fig:vct_circle}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.49\textwidth}
+        \centering
+        \includesvg[width=\textwidth]{figures/results_kvlcc2.KVLCC2_HMRI_R}
+        \caption{Drift angles.}
+        \label{fig:vct_drift_angle}
+    \end{subfigure}
+    \caption{Forces and moments (expressed in prime system times 1000): total ($D$ -- in red), hull ($H$ -- in green), and rudders ($R$ -- in blue), from VCT (lines) and predictions with reference model (x marks).}
+    \label{fig:vct}
 \end{figure}
