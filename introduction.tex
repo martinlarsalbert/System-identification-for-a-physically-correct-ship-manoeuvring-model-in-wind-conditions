@@ -32,7 +32,7 @@ Most of the simulations (as in the keywords) were based on the model in \citet{f
 % * gap?
 % * question       <------
 % * continuation?
-The regressors of the data-driven ship manoeuvring models are often strongly linearly dependent. This multicollinearity is a well known issue in parameter identification, that may lead to parameter drift and poor generalization. The parameters are thus mathematically correct but physically incorrect \citep{luo_parameter_2016}. 
+The regressors of the data-driven ship manoeuvring models are often strongly linearly dependent. This multicollinearity is a well known issue in parameter identification, that may lead to parameter drift and poor generalization. The parameters are thus mathematically correct but physically incorrect \citep{luo_parameter_2016-1}. 
 An example of generalization is when a model identified on calm water data is exposed to wind, where a drift angle is now needed to maintain a straight course. This wind state is rare in calm water manoeuvring tests, where the drift angle is almost exclusively accompanied by yaw rate (see \autoref{fig:phase_portrait}); 
 The regression will thus have problems to distinguish between these quantities.
 % Wengang fixes a better figure here...
@@ -44,7 +44,7 @@ The regression will thus have problems to distinguish between these quantities.
   \caption{Phase portrait where the combination of drift angle and yaw rate is shown for zigzag10/10, and zigzag20/20 wPCC model tests.}
   \label{fig:phase_portrait}
 \end{figure}
-Using more informative data or simplifying the model -- when possible -- and thereby reducing the number of parameters, is one of the most researched ways to mitigate the multicollinearity. Other possible remedies are the difference method \citep{luo_parameter_2016}, principal component analysis (PCA), and partial least squares regression \citep{jian-chuan_parametric_2015}. 
+Using more informative data or simplifying the model -- when possible -- and thereby reducing the number of parameters, is one of the most researched ways to mitigate the multicollinearity. Other possible remedies are the difference method \citep{luo_parameter_2016-1}, principal component analysis (PCA), and partial least squares regression \citep{jian-chuan_parametric_2015}. 
 %________________________________________
 %CaRS Move III "Occupy the niche" (Solution/Evaluation):
 % * outline purpose?                        <--
