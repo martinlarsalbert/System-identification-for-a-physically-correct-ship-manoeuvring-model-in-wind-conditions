@@ -2,8 +2,8 @@ Parameter,Value,Unit,Parameter1,Value1,Unit1,Parameter2,Value2,Unit2
 $A_{R C}$,0.013622720096144783,m\textsuperscript{2},$\kappa_{r}$,1.1692699494533285,,$r_{0}$,0.06067961165048543,m
 $A_{R U}$,0.01647301230087661,m\textsuperscript{2},$\kappa_{v \gamma g}$,0.033913057303963226,,$s$,-10.0,
 $A_{R}$,0.030095732397021395,m\textsuperscript{2},$\kappa_{v}$,0.8893921387071696,,$w_{f}$,0.297,
-$C_{D tune}$,1.0807788910260494,,$\nu$,1.18849e-06,m \textsuperscript{2}/s,$x$,0.027800910486710073,m
-$C_{D0 tune}$,7.820651568531009,,$\rho$,1000.0,kg/m \textsuperscript{3},$x_{H}$,0.12495489987343933,
+$C_{D tune}$,1.0807788910260494,,$\nu$,1.18849e-06,m\textsuperscript{2}/s,$x$,0.027800910486710073,m
+$C_{D0 tune}$,7.820651568531009,,$\rho$,1000.0,kg\m\textsuperscript{3},$x_{H}$,0.12495489987343933,
 $\Omega$,0.0,rad,$a_{H}$,0.12824552804749745,,$x_{R}$,-2.45,m
 $\delta_{lim}$,0.2617993877991494,rad,$b_{R}$,0.17427184466019416,m,$y_{p port}$,-0.2176,m
 $\gamma_{0 port}$,0.044,rad,$c_{r}$,0.14660194174757282,m,$y_{p stbd}$,0.2176,m
