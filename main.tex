@@ -44,6 +44,9 @@
 %% \begin{linenumbers}, end it with \end{linenumbers}. Or switch it on
 %% for the whole article with \linenumbers.
 %% \usepackage{lineno}
+\def\sectionautorefname{Section}
+\def\subsectionautorefname{Subsection}
+\def\subsubsectionautorefname{Subsubsection}
 \input{extra_packages.tex}
 \journal{Ocean Engineering}
 
@@ -76,7 +79,7 @@
     %%            country={}}
     %% \fntext[label3]{}
 
-    \title{System identification of a physics informed ship model for better predictions in wind conditions}
+    \title{System identification of a physics-informed ship model for better predictions in wind conditions}
 
     %% use optional labels to link authors explicitly to addresses:
     %% \author[label1,label2]{}
@@ -135,7 +138,7 @@
     %\end{highlights}
 
     \begin{keyword}
-    Inverse dynamics; KVLCC2; Multicollinearity; Physics-informed manoeuvring model; System identification; Wind-assisted propulsion; 
+    Inverse dynamics \sep KVLCC2 \sep Multicollinearity \sep Physics-informed maneuvering model \sep System identification \sep Wind-assisted propulsion 
         %% keywords here, in the form: keyword \sep keyword
 
         %% PACS codes here, in the form: \PACS code \sep code
@@ -160,7 +163,7 @@
 \label{sec:ship_models}
 \input{ship_mathematical_models}
 \FloatBarrier
-\subsection{Basic Manoeuvring Model}
+\subsection{Basic manoeuvring model}
 \label{sec:models}
 \input{models.tex}
 %

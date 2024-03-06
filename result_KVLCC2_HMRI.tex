@@ -1,8 +1,8 @@
-A similar investigation was also conducted for the KVLCC2 test case. The PI, and PU models where identified with ID regression on zigzag10/10, and zigzag20/10 model tests -- to port and starboard. The model test data was measured from the Hamburg ship model basin (HSVA) for the SIMMAN2008 workshop \citep{stern_experience_2011}.
-The MMG wake model was added with coefficient values according to \citet{yasukawa_introduction_2015}.
-The identified prediction models were compared with captive model tests (CMT) measured at the Hyundai Maritime Research Institute (HMRI) for the SIMMAN2014 workshop \citep{ittc_final_2017}. A comparison for the drift angle variation is shown in \autoref{fig:KVLCC2_HMRI}. 
-Similar trends to the wPCC in the idealized wind state can be observed; The PI model predicts total sway force, and yawing moment that are closer to the CMT than the PU model, as seen in \autoref{fig:KVLCC2_HMRI_D}.
-This can be explained by the PU models inability to identify the correct rudder forces, as seen in \autoref{fig:KVLCC2_HMRI_R}.
+A similar investigation was also conducted for the KVLCC2 test case. The PI and PU models were identified with ID regression on the zigzag10/10 and zigzag20/10 model tests to port and starboard. The model test data were measured from the Hamburg ship model basin (HSVA) for the SIMMAN2008 workshop \citep{stern_experience_2011}.
+The MMG wake model was added with coefficient values per \citet{yasukawa_introduction_2015}.
+The identified prediction models were compared with captive model tests (CMTs) measured at the Hyundai Maritime Research Institute (HMRI) for the SIMMAN2014 workshop \citep{ittc_final_2017}. A comparison for the drift angle variation is shown in \autoref{fig:KVLCC2_HMRI}. 
+Similar trends to the wPCC in the idealized wind state are evident. The PI model predicts total sway force and yawing moment values that are closer to those of the CMT than those of the PU model, as shown in \autoref{fig:KVLCC2_HMRI_D}.
+This can be explained by the PU model's inability to identify the correct rudder forces, as shown in \autoref{fig:KVLCC2_HMRI_R}.
 %
 \begin{figure}
     \centering
@@ -19,6 +19,6 @@ This can be explained by the PU models inability to identify the correct rudder 
         \caption{Rudder forces.}
         \label{fig:KVLCC2_HMRI_R}
     \end{subfigure}
-    \caption{KVLCC2 forces and moments (expressed in prime system times 1000): HMRI captive model tests (CMT -- black), PI (green), and PU (red).}
+    \caption{KVLCC2 forces and moments (expressed in the prime system $\times 1000$): HMRI CMTs (black), PI (green), and PU (red).}
     \label{fig:KVLCC2_HMRI}
 \end{figure}

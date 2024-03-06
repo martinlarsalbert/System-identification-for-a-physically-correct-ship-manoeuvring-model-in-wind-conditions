@@ -1,18 +1,18 @@
 %________________________________________
-%CaRS Move I "Establish a territory" (Situation):
+%CaRS Move I “Establish a territory” (Situation):
 % * Important area
 % * Introducing and reviewing items of previous  research <--(ToDO)
-Ship dynamics predictive models have a wide range of applications, e.g., safety enhancements, route planning and optimization, autonomous shipping, etc., \citep{aslam_internet_2020}.
-Ship manoeuvring is a sub field of ship dynamics with well established system based models such as: \citet{abkowitz_ship_1964,nomoto_steering_1957,norrbin_theory_1971}, and the MMG model \citep{yasukawa_introduction_2015}.
+Ship dynamics predictive models have a wide range of applications, e.g., safety enhancements, and route planning and optimization, autonomous shipping \citep{aslam_internet_2020}.
+Ship manoeuvring is a sub-field of ship dynamics with well-established system-based models such as \citet{abkowitz_ship_1964,nomoto_steering_1957,norrbin_theory_1971}, and the MMG (manoeuvring modeling group) model \citep{yasukawa_introduction_2015}.
 
-Captive model test is the classical method to identify the parameters within these models. However, for the full scale ships, this method is not practically applicable. Computational fluid dynamics (CFD) with either unsteady Reynolds averaged Navier-Stokes (URANS) or steady RANS computations in virtual captive tests (VCT) has emerged as an interesting option \citep{liu_predictions_2018,li_ship_2022}.
-The CFD requires a complete understanding of the system. Acquiring such knowledge may be possible for some simplified scenarios, but large modelling uncertainties from wind, wave and current are expected when applied in a complex sea environment \citep{miller_ship_2021}. 
-Even if the sea is flawlessly modelled, long-term predictions with high accuracy will be exposed to deterministic chaos \citep{lorenz_deterministic_1963}.
-Together with the other drawbacks of CFD in manoeuvring -- such as high computational costs -- data driven models have become an attractive alternative or complement, with an increased number of publications in the past 10-15 years %(shown in Fig.\ref{fig:pub_overview})
--- especially within the field of autonomous ships \citep{ahmed_survey_2023} where it is important to predict the ships’ trajectories to avoid collision. 
+The captive model test is the classical method to identify the parameters within these models. However, for full-scale ships, this method is not practical. Computational fluid dynamics (CFD) with either unsteady Reynolds averaged Navier--Stokes (URANS) or steady Reynolds averaged Navier--Stokes (RANS) computations in virtual captive tests (VCTs) has emerged as an interesting option \citep{liu_predictions_2018,li_ship_2022}.
+CFD requires a complete understanding of the system, which is straightforward for some simplified scenarios, but large modeling uncertainties from wind, wave, and current are expected when applied in a complex sea environment \citep{miller_ship_2021}. 
+Even if the sea is flawlessly modeled, long-term predictions with high accuracy are exposed to deterministic chaos \citep{lorenz_deterministic_1963}.
+With the other drawbacks of CFD in manoeuvring---such as high computational costs---data-driven models have become an attractive alternative or complement, with an increased number of publications in the past 10--15 years, %(shown in Fig.\ref{fig:pub_overview})
+especially within the field of autonomous ships \citep{ahmed_survey_2023}, where predicting  ship trajectories is critical to avoid collisions. 
 
-The keywords and their connections of most recent research activities related to ship maneuvering modelling are presented in \autoref{fig:pub_overview}, where the size of the circles indicates how often those keywords occurred in those research articles. All the papers state that their proposed regression-based methods can effectively estimate the hydrodynamic coefficients of a ship’s maneuvering system. However, most of those regression methods are based on that the exact “physical” model is assumed known, i.e., the regression is based on “simulation” data. This is clearly indicated in \autoref{fig:pub_overview} that both keywords of “simulation” and “maneuvering simulation” are directly connected with others, while their sizes are also large.
-Most of the simulations (as in the keywords) were based on the model in \citet{fossen_handbook_2021}, such as the Gaussian process regression method in \citet{xue_system_2020}, and support vector machine method in \citet{wang_identification_2019}, \citet{wang_parameter_2021}, etc. Recently, the support vector machine and neural network methods were also used to identify the parameters of ship dynamic models using data from some benchmark model tests with well-known ship maneuverability (SIMMAN, SHOPERA, etc.), as in e.g., \citet{wang_kernel-based_2020}, \citet{wakita_neural_2021}. The identified maneuvering models were validated by comparing their capabilities for trajectory prediction with either simulated or well-controlled model test results. However, the accuracy of those identified models to describe the ship’s physical dynamic performance, e.g., various forces acting on ships, is rarely mentioned. But such dynamic performance is essential to determine the feasibility of the identified model for the application of a ship’s operation in real sea environments, i.e., with drifting caused by wind and current.
+Relevant paper keywords and their connections to the most recent research activities related to ship maneuvering modeling are presented in \autoref{fig:pub_overview}, where the circle size indicates how often the keywords occurred in the research articles. These papers claim their proposed regression-based methods can estimate the hydrodynamic coefficients of a ship’s maneuvering system accurately. However, most of the regression methods assume the exact “physical” model is known, i.e., the regression is based on “simulation” data, as indicated in \autoref{fig:pub_overview}, where the large circles of “simulation” and “maneuvering simulation” are directly connected with others.
+Most of the simulations (as shown in the keywords) were based on the model in \citet{fossen_handbook_2021}, such as the Gaussian process regression method in \citet{xue_system_2020} and the support vector machine method in \citet{wang_identification_2019} and \citet{wang_parameter_2021}. Recently, the support vector machine and neural network methods have also been used to identify the parameters of ship dynamic models using data from benchmark model tests with well-known ship maneuverability (e.g., SIMMAN, SHOPERA), as in \citet{wang_kernel-based_2020} and \citet{wakita_neural_2021}. The identified maneuvering models were validated by comparing their capabilities for trajectory prediction with either simulated or well-controlled model test results. However, the model accuracies in describing the ship’s kinetics, e.g., various forces acting on ships, was rarely mentioned. Nevertheless, such dynamic performance is essential to determine model feasibility for the application of a ship’s operation in real sea environments, i.e., with drifting caused by wind and current.
 %%
 \begin{figure}[h]
   \includegraphics[width=\textwidth]{figures/keywords.png}
@@ -27,42 +27,42 @@ Most of the simulations (as in the keywords) were based on the model in \citet{f
 
 %
 %________________________________________
-%CaRS Move II "Establish a niche" (Problem):
+%CaRS Move II “Establish a niche” (Problem):
 % * counter claim?
 % * gap?
 % * question       <------
 % * continuation?
-The regressors of the data-driven ship manoeuvring models are often strongly linearly dependent. This multicollinearity is a well known issue in parameter identification, that may lead to parameter drift and poor generalization. The parameters are thus mathematically correct but physically incorrect \citep{luo_parameter_2016-1}. 
-An example of generalization is when a model identified on calm water data is exposed to wind, where a drift angle is now needed to maintain a straight course. This wind state is rare in calm water manoeuvring tests, where the drift angle is almost exclusively accompanied by yaw rate (see \autoref{fig:phase_portrait}); 
-The regression will thus have problems to distinguish between these quantities.
+The regressors of the data-driven ship manoeuvring models are often strongly linearly dependent. This multicollinearity is a well-known issue in parameter identification that may lead to parameter drift and poor generalization. The parameters are thus mathematically correct but physically incorrect \citep{luo_parameter_2016-1}. 
+An example of generalization is when a model identified on calm water data is exposed to wind, where a drift angle is needed to maintain a straight course. This wind state is rare in calm water manoeuvring tests, where the drift angle is almost exclusively accompanied by yaw rate (see \autoref{fig:phase_portrait}); 
+Thus, the regression has problems when distinguishing between these quantities.
 % Wengang fixes a better figure here...
 %This drifting (side forces) is rarely investigated as shown in %\autoref{fig:pub_overview}.
 %
 \begin{figure}[h]
   \centering
   \includesvg{figures/multicollineraity.multicollinearity.svg}
-  \caption{Phase portrait where the combination of drift angle and yaw rate is shown for zigzag10/10, and zigzag20/20 wPCC model tests.}
+  \caption{Phase portrait where the combination of drift angle and yaw rate is shown for zigzag10/10 and zigzag20/20 wPCC model tests.}
   \label{fig:phase_portrait}
 \end{figure}
-Using more informative data or simplifying the model -- when possible -- and thereby reducing the number of parameters, is one of the most researched ways to mitigate the multicollinearity. Other possible remedies are the difference method \citep{luo_parameter_2016-1}, principal component analysis (PCA), and partial least squares regression \citep{jian-chuan_parametric_2015}. 
+Using more informative data or simplifying the model when possible, thereby reducing the number of parameters, is a commonly researched approach to mitigating multicollinearity. Other possible remedies are the difference method \citep{luo_parameter_2016-1}, principal component analysis (PCA), and partial least-squares regression \citep{jian-chuan_parametric_2015}. 
 %________________________________________
-%CaRS Move III "Occupy the niche" (Solution/Evaluation):
+%CaRS Move III “Occupy the niche” (Solution/Evaluation):
 % * outline purpose?                        <--
 % * list research questions?                <--
 % * announce principal findings?            
 % * stating the value of present research?
 % * article structure?                      <--
 
-More remedies are however needed; Therefore, in this paper, a physics informed manoeuvring model (PI model), which features a new semi-empirical rudder model based on semi-empirical formulas from the literature, is proposed.
+However, more remedies are needed. Therefore, this paper proposes a physics-informed manoeuvring model (PI model), which features a new semi-empirical rudder model based on semi-empirical formulas from the literature.
 
-The objective of this paper is to investigate if the PI model is physically more correct than a physics uninformed model (PU model), when they are both identified from zigzag model tests, and also to investigate how this affects the generalization.
+This paper investigates whether the PI model is more physically correct than a physics-uninformed model (PU model) when they are both identified from zigzag model tests and studies how this affects the generalization.
 To evaluate the physical correctness, a wind-powered pure car carrier (wPCC) test case is studied. 
-This ship has much larger rudders than conventional ships -- to improve the sailing performance -- 
-which increases the demand for a physically correct rudder modelling.
+This ship has much larger rudders than conventional ships---to improve the sailing performance---
+which increases the demand for physically correct rudder modeling.
 
 A brief description of the workflow of this research is shown in \autoref{fig:methodology}.
-The PI and PU models are identified on free sailing model tests \citep{alexandersson_wpcc_2024} via inverse dynamics \citep{faber_inverse_2018} and regression (ID regression). To assess the physical correctness, a reference model is established, where the PI model is instead identified on a VCT dataset. This reference model -- which is based on CFD -- is assumed to be a sufficiently correct representation of the real ship model physics.
-Verification and comparisons between the models are carried out on the free sailing model tests. The generalization of the models are then studied on an idealized wind condition.
+The PI and PU models are identified on free sailing model tests \citep{alexandersson_wpcc_2024} via inverse dynamics (ID) \citep{faber_inverse_2018} and regression. To assess the physical correctness, a reference model is established, where the PI model is instead identified on a VCT dataset. This reference model, based on CFD, is assumed to be a sufficiently correct representation of the ship's physics.
+Verification and comparisons between the models are carried out on the free sailing model tests. The generalization of the models is then studied on an idealized wind condition.
 %
 \begin{figure}[h]
   \centering
@@ -72,6 +72,6 @@ Verification and comparisons between the models are carried out on the free sail
   \label{fig:methodology}
 \end{figure}
 
-The left of the paper is organized as follows; The proposed PI model is first presented together with the PU 
- model in \autoref{sec:ship_models}, while some mathematical details of the models are given in the appendix. 
-The developed methodology framework to identify parameters within the PI model is described in \autoref{sec:methodology} -- including the VCT regression, and the inverse dynamics. The case study ship is briefly described in \autoref{sec:case_study}, as well as some known parameters of the ship's manoeuvring model. Results for the wPCC are presented in \autoref{sec:results} together with another identification with the KVLCC2 test case, followed by some key conclusions of this research in \autoref{sec:conclusions}.
+The remainder of this paper is organized as follows: The proposed PI model is first presented together with the PU 
+ model in \autoref{sec:ship_models}, while mathematical details of the models are given in the appendix. 
+\autoref{sec:methodology} describes the developed methodology framework to identify parameters within the PI model, including VCT-- and ID--regressions. The case study ship is briefly described in \autoref{sec:case_study}, along with known parameters of the ship’s manoeuvring model. \autoref{sec:results} provides the results for the wPCC. Results for the KVLCC2 test case are also presented, followed by key conclusions of this research in \autoref{sec:conclusions}.

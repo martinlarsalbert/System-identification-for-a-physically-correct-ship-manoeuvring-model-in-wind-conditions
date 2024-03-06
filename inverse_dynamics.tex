@@ -1,13 +1,13 @@
-Inverse dynamics (ID) is a widely used technique within robotics \citep{faber_inverse_2018}; It can be used to estimate the total forces acting on a ship during motions. The technique can be applied on data from a free model manoeuvring tests or real ship manoeuvres. 
-Estimations of the total damping forces can be solved from the manoeuvring model kinematic equations  (\autoref{eq:X} to \autoref{eq:N}). These equations require that the mass, added mass, and the full state of the ship is known -- so that data on the position and orientation of the ship as well as the higher states: velocities, and accelerations, are known.
-However, in the model tests used in this paper, only the position and orientation of the ship model where measured;
-The higher states where thus estimated with an extended Kalman filter (EKF) -- where the manoeuvring model was used as the predictor \citep{alexandersson_system_2022}.
+ID is a widely used technique within robotics \citep{faber_inverse_2018}. It can be used to estimate the total forces acting on a ship during motion. The technique can be applied to data from free-model manoeuvring tests or real ship manoeuvres. 
+Estimations of the total damping forces can be solved from the manoeuvring model kinematic equations  (\autoref{eq:X}--\autoref{eq:N}). These equations require that the mass, added mass, and full state of the ship are known so that data on the position and orientation of the ship, as well as the higher states, e.g., velocities and accelerations, are known.
+However, in the model tests used in this paper, only the position and orientation of the ship model were measured.
+The higher states were thus estimated using an extended Kalman filter (EKF), where the manoeuvring model was used as the predictor \citep{alexandersson_system_2022}.
 
-The parameter estimations are defined as a linear regression problem (\autoref{eq:regression}) -- one for each degree of freedom. 
+The parameter estimations are defined as a linear regression problem (\autoref{eq:regression})---one for each degree of freedom. 
 \begin{equation}\label{eq:regression}
-\begin{split}y = X\gamma + \epsilon\end{split}
+\begin{split}y = \mathbf{X}\gamma + \epsilon\end{split}
 \end{equation}
-How the label vector \(y\) and the feature matrix \(X\) are calculated differs for the PU model and the PI model; For the PU model the rudder model is data driven and is thus included in the regression; But for the PI model, the semi-empirical rudder model is deterministic and is thus not included in the regression, as seen in \autoref{eq:X_H_estimation_abkowitz} for the PU model and in \autoref{eq:X_H_estimation_PISM} for the PI model, where \textbullet\ represents the degree of freedoms ($X,Y,N$).
+The calculations for the label vector \(y\) and the feature matrix \(\textbf{X}\) differ for the PU and PI models. The PU model has a data-driven rudder model and is thus included in the regression (\autoref{eq:X_H_estimation_abkowitz}). On the other hand, in the PI model, the semi-empirical rudder model is deterministic and thus not included in the regression (\autoref{eq:X_H_estimation_PISM}). 
 \begin{equation}
     \label{eq:X_H_estimation_abkowitz}
     y = (\bullet)_D
@@ -16,8 +16,9 @@ How the label vector \(y\) and the feature matrix \(X\) are calculated differs f
     \label{eq:X_H_estimation_PISM}
     y = (\bullet)_H = (\bullet)_D - (\bullet)_R
 \end{equation}
-For example, the regression of the surge degree of freedom label \(y\) can be calculated using the inverse dynamics force (\autoref{eq:label}). 
-The feature matrix \(X\) and coefficient vector $\gamma$ are expressed from the model damping force polynomials as seen in \autoref{eq:features} and \autoref{eq:gamma}, where $\delta^2$, and $X_{\delta\delta}$ are removed for the PI model.
+where \textbullet\ represents the degrees of freedom ($X,Y,N$).
+For example, the regression of the surge degree of freedom label \(y\) can be calculated using the ID force (\autoref{eq:label}). 
+The feature matrix \(\textbf{X}\) and coefficient vector $\gamma$ are expressed from the model damping force polynomials (\autoref{eq:features} and \autoref{eq:gamma}), where $\delta^2$ and $X_{\delta\delta}$ are removed for the PI model.
 \begin{equation}\label{eq:label}
 \begin{split}\displaystyle X_D = - X_{\dot{u}} \dot{u}' + \dot{u}' m' - m' r'^{2} x_{G'} - m' r' v'\end{split}
 \end{equation}
@@ -27,11 +28,11 @@ The feature matrix \(X\) and coefficient vector $\gamma$ are expressed from the 
 \begin{equation}\label{eq:gamma}
 \begin{split}\displaystyle \gamma = \left[\begin{matrix}X_{0}\\X_{u}\\(X_{\delta\delta})\\X_{rr}\\X_{vv}\\X_{vr}\end{matrix}\right]\end{split}
 \end{equation}
-The hydrodynamic derivatives in the \(\gamma\) vector are estimated with ordinary least squares (OLS) multiple linear regression.
-In this regression, the hydrodynamic derivatives are treated as Gaussian random variables. The hydrodynamic derivatives in the manoeuvring model are usually estimated as the mean value of each regressed random variable, which is the most likely estimate.
+The hydrodynamic derivatives in the \(\gamma\) vector are estimated with OLS multiple linear regression.
+In this regression, the hydrodynamic derivatives are treated as Gaussian random variables, and in the manoeuvring model, they are usually estimated as the mean value of each regressed random variable, the most likely value.
 
-It is more important to have very accurate values of mass and added masses when inverse dynamics is employed to a physics informed model, compared to a completely data driven model.
-The data driven model can give good simulations result even if the mass and added masses are wrong -- if the forces are equally wrong -- since the erroneous mass will cancel in Newtons second law of motion as seen in \autoref{eq:Fma} and \autoref{eq:cancel}, where $\epsilon$ is the mass error.
+Accurate mass and added mass values are more critical when employing ID in a physics-informed model than in a completely data-driven model.
+The data-driven model can give good simulation results even if the mass and added masses are wrong---if the forces are equally wrong---since the erroneous masses cancel in Newton's second law of motion, as in \autoref{eq:Fma} and \autoref{eq:cancel}, where $\epsilon$ is the mass error.
 \begin{equation}
     \label{eq:Fma}
     F = (m+\epsilon) \cdot a
@@ -40,7 +41,7 @@ The data driven model can give good simulations result even if the mass and adde
     \label{eq:cancel}
     a = \frac{F}{m+\epsilon} = \frac{(m+\epsilon) \cdot a}{m+\epsilon}
 \end{equation}
-When a deterministic force $F_R$ is introduced in the PI model however, the acceleration contribution $a_R$ of this force will be wrong -- if the mass is wrong (\autoref{eq:mass_scaling}). Having correct mass values therefore becomes all the more important.
+When a deterministic force $F_R$ is introduced in the PI model, however, the acceleration contribution $a_R$ of this force is wrong if the mass is wrong (\autoref{eq:mass_scaling}). Therefore, having correct mass values becomes crucial.
 \begin{equation}
     \label{eq:mass_scaling}
     a_R = \frac{F_R}{m+\epsilon}
