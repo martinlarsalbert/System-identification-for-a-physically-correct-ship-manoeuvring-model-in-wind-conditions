@@ -1,10 +1,12 @@
-The ship's kinematics are expressed at midship 
-in the surge $X$, sway $Y$, and yaw $N$ degrees of freedom (see \autoref{fig:reference_frames}) described by \autoref{eq:X}--\autoref{eq:N}, where $X_D$, $Y_D$, and $N_D$ are the $X$, $Y$, and $N$ damping forces and moment, respectively. Note that these equations have the added mass coupling terms, $Y_{\dot{r}}$ and $N_{\dot{v}}$, which are neglected in the MMG model.
+The ship's kinematics are expressed amidship in a ship fixed reference frame, rotated around the Earth fixed axis $x_0$ by the heading angle \(\Psi\). Forces and motions are expressed in the surge $X$, sway $Y$, and yaw $N$ degrees of freedom as shown in \autoref{fig:reference_frames}. 
+$X_D,Y_D,N_D$ and $u,v,r$ are the damping forces, moment and velocities in $X,Y,N$, respectively.
+The total velocity is defined by the magnitude \(V\) and drift angle \(\beta\). The rudder angle of the two rudders is denoted by \(\delta\).
+The kinematics are described by \autoref{eq:X}--\autoref{eq:N}. These equations have the added mass coupling terms, $Y_{\dot{r}}$ and $N_{\dot{v}}$, which are neglected in the MMG model.
 %
 \begin{figure}[h]
     \centering
     \includesvg{figures/reference_frames.svg}
-    \caption{Reference frames.}
+    \caption{Reference frames}
     \label{fig:reference_frames}
 \end{figure}
 %
