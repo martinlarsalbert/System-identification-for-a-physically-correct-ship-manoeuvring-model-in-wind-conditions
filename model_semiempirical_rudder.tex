@@ -94,6 +94,17 @@ For a nonstalling rudder, the lift coefficient $C_L$ is calculated using \autore
 \end{equation}
 The effective aspect ratio $AR_e$ accounts for the mirror image effect when the rudder is flush with the hull, and it is typically assumed to be twice the geometric aspect ratio $AR_g$ (\autoref{eq:AR_e_semiempirical} and \autoref{eq:AR_g_semiempirical}) \citep{hughes_tempest_2011}.
 However, The wPCC rudder is not flush with the hull, so a gap is created between the rudder and rudder horn at larger rudder angles, reducing the pressure difference between the high- and low-pressure sides in the upper part of the rudder. \citet{matusiak_dynamics_2021} proposed that the gap effect can be modeled as a reduced aspect ratio. Instead, this paper opts for a more straightforward approach based on experience. A factor $\lambda_{gap}$ is introduced, calculated according to \autoref{eq:lambda_gap_semiempirical}. The gap effect is only activated above a threshold rudder angle $\delta_{lim}$, and the strength of the gap effect is modeled by a factor $s$, as in \autoref{fig:gap}.
+%
+\begin{equation}
+    \label{eq:AR_g_semiempirical}
+    \input{equations/mathematical_model_kinetics.AR_g_semiempirical}
+\end{equation}
+%
+\begin{equation}
+    \label{eq:AR_e_semiempirical}
+    \input{equations/mathematical_model_kinetics.AR_e_semiempirical}
+\end{equation}
+%
 \begin{equation}
     \label{eq:lambda_gap_semiempirical}
     \input{equations/mathematical_model_kinetics.lambda_gap_semiempirical}
@@ -104,27 +115,19 @@ However, The wPCC rudder is not flush with the hull, so a gap is created between
     \caption{Rudder lift is reduced by the gap between the rudder and rudder horn for larger rudder angles.}
     \label{fig:gap}
 \end{figure}
+
 The lift slope of the rudder $\frac{\partial C_L}{\partial \alpha}$ is calculated using \autoref{eq:dC_L_dalpha_semiempirical}, where $a_0$ is the section lift curve slope (\autoref{eq:a_0_semiempirical}) and $\Omega$ is the sweep angle of the quarter chord line \citep{lewis_principles_1989}.
 \begin{equation}
     \label{eq:dC_L_dalpha_semiempirical}
     \input{equations/mathematical_model_kinetics.dC_L_dalpha_semiempirical}
 \end{equation}
 %
-\begin{equation}
-    \label{eq:AR_e_semiempirical}
-    \input{equations/mathematical_model_kinetics.AR_e_semiempirical}
-\end{equation}
-%
-\begin{equation}
-    \label{eq:AR_g_semiempirical}
-    \input{equations/mathematical_model_kinetics.AR_g_semiempirical}
-\end{equation}
 %
 \begin{equation}
     \label{eq:a_0_semiempirical}
     \input{equations/mathematical_model_kinetics.a_0_semiempirical}
 \end{equation}
-
+%
 Additionally, a small nonlinear part to $C_L$ is modeled by the cross-flow drag coefficient $C_{DC}$, which is calculated for a rudder with squared tip using \autoref{eq:C_D_crossflow_semiempirical}, where the taper ratio $\lambda$ is the ratio between the chords at the tip and the root of the rudder (\autoref{eq:lambda__semiempirical}) \citep{hughes_tempest_2011}. 
 \begin{equation}
     \label{eq:C_D_crossflow_semiempirical}
