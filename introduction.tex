@@ -33,7 +33,7 @@ Most of the simulations (as shown in the keywords) were based on the model in \c
 % * question       <------
 % * continuation?
 The regressors of the data-driven ship manoeuvring models are often strongly linearly dependent. This multicollinearity is a well-known issue in parameter identification that may lead to parameter drift and poor generalization. The parameters are thus mathematically correct but physically incorrect \citep{luo_parameter_2016-1}. 
-An example of generalization is when a model identified on calm water data is exposed to wind, where a drift angle is needed to maintain a straight course. This wind state is rare in calm water manoeuvring tests, where the drift angle is almost exclusively accompanied by yaw rate (see \autoref{fig:phase_portrait}); 
+An example of generalization that is discussed in the present paper is when a model identified on calm water data is exposed to wind, where a drift angle is needed to maintain a straight course. This wind state is rare in calm water manoeuvring tests, where the drift angle is almost exclusively accompanied by yaw rate (see \autoref{fig:phase_portrait}); 
 Thus, the regression has problems when distinguishing between these quantities.
 % Wengang fixes a better figure here...
 %This drifting (side forces) is rarely investigated as shown in %\autoref{fig:pub_overview}.
@@ -55,13 +55,13 @@ Using more informative data or simplifying the model when possible, thereby redu
 
 However, more remedies are needed. Therefore, this paper proposes a physics-informed manoeuvring model (PI model), which features a new semi-empirical rudder model based on semi-empirical formulas from the literature.
 
-This paper investigates whether the PI model is more physically correct than a physics-uninformed model (PU model) when they are both identified from zigzag model tests and studies how this affects the generalization.
+This paper investigates whether the PI model is more physically correct than a physics-uninformed model (PU model) when they are both identified from zigzag model tests. It is also studied how the lack of physical correctness may impact the model generalization.
 To evaluate the physical correctness, a wind-powered pure car carrier (wPCC) test case is studied. 
 This ship has much larger rudders than conventional ships---to improve the sailing performance---
-which increases the demand for physically correct rudder modeling.
+which increases the demand for physically correct rudder modeling. The generalization of the models is studied in an idealized wind state.
 
 A brief description of the workflow of this research is shown in \autoref{fig:methodology}.
-The PI and PU models are identified on free sailing model tests \citep{alexandersson_wpcc_2024} via inverse dynamics (ID) \citep{faber_inverse_2018} and regression. To assess the physical correctness, a reference model is established, where the PI model is instead identified on a VCT dataset. This reference model, based on CFD, is assumed to be a sufficiently correct representation of the ship's physics.
+The PI and PU models are identified on free sailing model tests \citep{alexandersson_system_2022,alexandersson_wpcc_2024} via inverse dynamics (ID) \citep{faber_inverse_2018} and regression. To assess the physical correctness, a reference model is established, where the PI model is instead identified on a VCT dataset. This reference model, based on CFD, is assumed to be a sufficiently correct representation of the ship's physics.
 Verification and comparisons between the models are carried out on the free sailing model tests. The generalization of the models is then studied on an idealized wind condition.
 %
 \begin{figure}[h]
