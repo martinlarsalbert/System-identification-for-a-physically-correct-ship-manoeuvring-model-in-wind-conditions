@@ -7,7 +7,7 @@ The parameter estimations are defined as a linear regression problem (\autoref{e
 \begin{equation}\label{eq:regression}
 \begin{split}y = \mathbf{X}\gamma + \epsilon\end{split}
 \end{equation}
-The calculations for the label vector \(y\) and the feature matrix \(\textbf{X}\) differ for the PU and PI models. The PU model has a data-driven rudder model and is thus included in the regression (\autoref{eq:X_H_estimation_abkowitz}). On the other hand, in the PI model, the semi-empirical rudder model is deterministic and thus not included in the regression (\autoref{eq:X_H_estimation_PISM}). 
+The calculations for the label vector \(y\) and the feature matrix \(\textbf{X}\) differ for the PU and PI models. The PU model has a data-driven rudder model so that the entire damping forces $X_D,Y_D,N_D$ are included in the regression (\autoref{eq:X_H_estimation_abkowitz}). On the other hand, in the PI model, the semi-empirical rudder model is deterministic and is excluded from the regression (\autoref{eq:X_H_estimation_PISM}). 
 \begin{equation}
     \label{eq:X_H_estimation_abkowitz}
     y = (\bullet)_D
