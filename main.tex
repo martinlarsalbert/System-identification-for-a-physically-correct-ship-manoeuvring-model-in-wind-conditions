@@ -151,7 +151,7 @@
 %textwidth in inches: \printinunitsof{in}\prntlen{\textwidth} \newline
 %textheight in inches: \printinunitsof{in}\prntlen{\textheight}
 %% main text
-
+%\newpage
 \section{Nomenclature}
 \label{sec:introduction}
 \begin{table}[h]
@@ -161,13 +161,13 @@
     %\caption{Semi-empirical rudder parameters (SI units) in model scale.}
     \label{tab:other_parameters}
     \pgfplotstabletypeset[col sep=comma, column type=r,
-    columns/LaTeX/.style={column type=l,string type,column name=~},
-    columns/LaTeX1/.style={column type=l,string type, column name=~},
-    columns/LaTeX2/.style={column type=l,string type, column name=~},
+    columns/LaTeX/.style={column type=r,string type,column name=~},
+    columns/LaTeX1/.style={column type=r,string type, column name=~},
+    columns/LaTeX2/.style={column type=r,string type, column name=~},
     %columns/LaTeX3/.style={column type=l,string type, column name=~},
-    columns/Description/.style={column type=l,string type,column name=~},
-    columns/Description1/.style={column type=l,string type, column name=~},
-    columns/Description2/.style={column type=l,string type, column name=~},
+    columns/Description/.style={column type=p{3.3cm},string type,column name=~},
+    columns/Description1/.style={column type=p{3.3cm},string type, column name=~},
+    columns/Description2/.style={column type=p{3.3cm},string type, column name=~},
     %columns/Description3/.style={column type=l,string type, column name=~},
     %every head row/.style={before row=\hline,after row=\hline},
     %every last row/.style={after row=\hline}
