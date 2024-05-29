@@ -151,6 +151,47 @@
 %textwidth in inches: \printinunitsof{in}\prntlen{\textwidth} \newline
 %textheight in inches: \printinunitsof{in}\prntlen{\textheight}
 %% main text
+
+
+\begin{table}[h]
+    \centering
+    \caption{Semi-empirical rudder parameters (SI units) in model scale.}
+    \label{tab:other_parameters}
+    \pgfplotstabletypeset[col sep=comma, column type=r,
+    columns/LaTeX/.style={column type=l,string type,column name=Par.},
+    columns/LaTeX1/.style={column type=l,string type, column name=Par.},
+    columns/LaTeX2/.style={column type=l,string type, column name=Par.},
+    columns/LaTeX3/.style={column type=l,string type, column name=Par.},
+    columns/Description/.style={column type=l,string type,column name=~},
+    columns/Description1/.style={column type=l,string type, column name=~},
+    columns/Description2/.style={column type=l,string type, column name=~},
+    columns/Description3/.style={column type=l,string type, column name=~},
+    every head row/.style={before row=\hline,after row=\hline},
+    every last row/.style={after row=\hline}
+    ]{tables/mathematical_model_kinetics.nomenclature.csv}
+\end{table}
+
+
+%\begin{table}[h]
+%    \centering
+%    \caption{Semi-empirical rudder parameters (SI units) in model scale.}
+%    \label{tab:other_parameters}
+%    \pgfplotstabletypeset[col sep=comma, column type=r,
+%    columns/Parameter/.style={column type=l,string type,column name=Par.},
+%    columns/Parameter1/.style={column type=l,string type, column name=Par.},
+%    columns/Parameter2/.style={column type=l,string type, column name=Par.},
+%    columns/Value/.style={column type=r, column name=~},
+%    columns/Value1/.style={column type=r, column name=~},
+%    columns/Value2/.style={column type=r, column name=~},
+%    columns/Unit/.style={column type=l,string type, column name=~},
+%    columns/Unit1/.style={column type=l,string type, column name=~},
+%    columns/Unit2/.style={column type=l,string type, column name=~},
+%    every head row/.style={before row=\hline,after row=\hline},
+%    every last row/.style={after row=\hline}
+%    ]{tables/result_models.other_parameters.csv}
+%\end{table}
+
+
 \section{Introduction}
 \label{sec:introduction}
 \input{introduction}
