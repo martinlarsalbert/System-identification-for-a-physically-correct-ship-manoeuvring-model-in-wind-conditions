@@ -1,35 +1,36 @@
 LaTeX,Description,LaTeX1,Description1,LaTeX2,Description2
-$\alpha$,Rudder angle of attack,$C_{D0 C}$,Initial drag coeff. covered,$s$,Rudder gap coefficient
-$\alpha_{f}$,Rudder inflow angle,$C_{D0 tune}$,Initial drag coeff. tune,$T$,Thrust
-$\delta$,Rudder angle,$C_{D0 U}$,Initial drag coeff. uncovered,$u$,Surge vel.
-$\delta_{lim}$,Rudder gap limit,$C_{DC}$,Rudder cross-flow drag,$v$,Sway vel.
-$\dot{r}$,Yaw acceleration,$C_{F C}$,Friction coeff. covered,$V_{\infty}$,Prop. slipstream
-$\dot{u}$,Surge acceleration,$C_{F U}$,Friction coeff. uncovered,$V_{A}$,Apparent vel.
-$\dot{v}$,Sway acceleration,$C_{L}$,Lift coeff.,$V_{R C}$,Rudder vel. covered
-$\gamma$,Prop. induced angle,$c_{r}$,Rudder root choord,$V_{R U}$,Rudder vel. uncovered
-$\gamma_{0}$,Rudder initial inflow,$C_{Th}$,Thrust coeff.,$V_{R x C}$,Axial vel. covered
-$\gamma_{g}$,Geometric inflow angle,$c_{t}$,Rudder tip choord,$V_{R x U}$,Axial vel. uncovered
-$\kappa_{r \gamma g}$,$\kappa_r$ nonlinear,$d$,lift diminished variable,$V_{R y}$,Rudder transverse vel.
-$\kappa_{r tot}$,$\kappa_r$ total,$D_{R}$,Rudder drag,$V_{x corr}$,Turbulent mixing
-$\kappa_{r}$,Yaw rate flow straightening,$dC_{L dalpha}$,Lift slope,$V_{x C}$,No turbulent mixing
-$\kappa_{v \gamma g}$,$\kappa_v$ nonlinear,$e_{0}$,Oswald efficiency factor,$V_{x U}$,No turbulent mixing
-$\kappa_{v tot}$,$\kappa_v$ total,$f$,lift diminished variable,$w_{f}$,Taylor wake
-$\kappa_{v}$,Drift flow straightening,$I_{z}$,Yaw mass intertia,$x$,Prop. to rudder
-$\lambda_{gap}$,Rudder gap effec,$L_{R C}$,Lift covered part,$X_{\dot{u}}$,Surge added mass
-$\lambda_{R}$,limited radius of the prop. slipstream,$L_{R U}$,Lift uncovered part,$X_{D}$,Surge damping force
-$\lambda_{}$,Rudder taper ratio,$L_{R}$,Rudder lift,$x_{G}$,Center of gravity
-$\nu$,Kinematic viscosity,$m$,Ship mass,$x_{H}$,Yaw rudder interaction
-$\Omega$,Rudder sweep angle,$N_{\dot{r}}$,Yaw added mass,$X_{H}$,Hull surge force
-$\rho$,Water density,$N_{\dot{v}}$,Yaw added mass,$X_{P}$,Prop. surge force
+$\alpha$,Rudder angle of attack,$C_{D0 tune}$,Initial drag coeff. tune,$T$,Thrust
+$\alpha_{f}$,Rudder inflow angle,$C_{D0 U}$,Initial drag coeff. uncovered,$u$,Surge vel.
+$\delta$,Rudder angle,$C_{DC}$,Rudder cross-flow drag,$v$,Sway vel.
+$\delta_{lim}$,Rudder gap limit,$C_{F C}$,Friction coeff. covered,$V_{\infty}$,Prop. slipstream
+$\dot{r}$,Yaw acceleration,$C_{F U}$,Friction coeff. uncovered,$V_{A}$,Apparent vel.
+$\dot{u}$,Surge acceleration,$C_{gap}$,,$V_{R C}$,Rudder vel. covered
+$\dot{v}$,Sway acceleration,$C_{L}$,Lift coeff.,$V_{R U}$,Rudder vel. uncovered
+$\gamma$,Prop. induced angle,$c_{r}$,Rudder root choord,$V_{R x C}$,Axial vel. covered
+$\gamma_{0}$,Rudder initial inflow,$C_{Th}$,Thrust coeff.,$V_{R x U}$,Axial vel. uncovered
+$\gamma_{g}$,Geometric inflow angle,$c_{t}$,Rudder tip choord,$V_{R y}$,Rudder transverse vel.
+$\kappa_{r \gamma g}$,$\kappa_r$ nonlinear,$d$,lift diminished variable,$V_{x corr}$,Turbulent mixing
+$\kappa_{r tot}$,$\kappa_r$ total,$D_{R}$,Rudder drag,$V_{x C}$,No turbulent mixing
+$\kappa_{r}$,Yaw rate flow straightening,$dC_{L dalpha}$,Lift slope,$V_{x U}$,No turbulent mixing
+$\kappa_{v \gamma g}$,$\kappa_v$ nonlinear,$e_{0}$,Oswald efficiency factor,$w_{f}$,Taylor wake
+$\kappa_{v tot}$,$\kappa_v$ total,$f$,lift diminished variable,$x$,Prop. to rudder
+$\kappa_{v}$,Drift flow straightening,$I_{z}$,Yaw mass intertia,$X_{\dot{u}}$,Surge added mass
+$\lambda_{gap}$,Rudder gap effec,$L_{R C}$,Lift covered part,$X_{D}$,Surge damping force
+$\lambda_{R}$,limited radius of the prop. slipstream,$L_{R U}$,Lift uncovered part,$x_{G}$,Center of gravity
+$\lambda_{}$,Rudder taper ratio,$L_{R}$,Rudder lift,$x_{H}$,Yaw rudder interaction
+$\nu$,Kinematic viscosity,$m$,Ship mass,$X_{H}$,Hull surge force
+$\Omega$,Rudder sweep angle,$N_{\dot{r}}$,Yaw added mass,$X_{P}$,Prop. surge force
+$\rho$,Water density,$N_{\dot{v}}$,Yaw added mass,$X_{R}$,Rudder surge force
 $a_{0}$,Section lift curve slope,$N_{D}$,Yaw damping moment,$x_{R}$,Rudder lever
-$a_{H}$,Sway rudder interaction,$N_{H}$,Hull yawing moment,$X_{R}$,Rudder surge force
-$A_{R C}$,Rudder area covered,$N_{P}$,Prop. yawing moment,$X_{T}$,Thrust deduction
-$A_{R U}$,Rudder area uncovered,$N_{RHI}$,Rudder hull interaction,$Y_{\dot{r}}$,Sway added mass
-$A_{R}$,Rudder area,$N_{R}$,Rudder yawing moment,$Y_{\dot{v}}$,Sway added mass
-$AR_{e}$,Effective aspect ratio,$r$,Yaw rate,$Y_{D}$,Sway damping force
-$AR_{g}$,Geometric aspect ratio,$r_{0}$,Prop. radius,$Y_{H}$,Hull sway force
-$b_{R}$,Rudder span,$r_{\Delta}$,Turbulent mixing,$y_{p}$,Propeller lever
-$c$,Rudder chord,$r_{\infty}$,Prop. slipstream,$Y_{P}$,Propeller sway force
-$C_{D C}$,Drag coeff. covered,$r_{x}$,Prop. slipstream at rudder,$Y_{RHI}$,Rudder hull interaction
-$C_{D tune}$,Drag coeff. tunnig,$Re_{F C}$,Reynold number covered,$Y_{R}$,Rudder sway force
-$C_{D U}$,Drag coeff. uncovered,$Re_{F U}$,Reynold number uncovered,$y_{R}$,Rudder lever
+$a_{H}$,Sway rudder interaction,$N_{H}$,Hull yawing moment,$X_{T}$,Thrust deduction
+$A_{R C}$,Rudder area covered,$N_{P}$,Prop. yawing moment,$Y_{\dot{r}}$,Sway added mass
+$A_{R U}$,Rudder area uncovered,$N_{RHI}$,Rudder hull interaction,$Y_{\dot{v}}$,Sway added mass
+$A_{R}$,Rudder area,$N_{R}$,Rudder yawing moment,$Y_{D}$,Sway damping force
+$AR_{e}$,Effective aspect ratio,$r$,Yaw rate,$Y_{H}$,Hull sway force
+$AR_{g}$,Geometric aspect ratio,$r_{0}$,Prop. radius,$y_{p}$,Propeller lever
+$b_{R}$,Rudder span,$r_{\Delta}$,Turbulent mixing,$Y_{P}$,Propeller sway force
+$c$,Rudder chord,$r_{\infty}$,Prop. slipstream,$Y_{RHI}$,Rudder hull interaction
+$C_{D C}$,Drag coeff. covered,$r_{x}$,Prop. slipstream at rudder,$Y_{R}$,Rudder sway force
+$C_{D tune}$,Drag coeff. tunnig,$Re_{F C}$,Reynold number covered,$y_{R}$,Rudder lever
+$C_{D U}$,Drag coeff. uncovered,$Re_{F U}$,Reynold number uncovered,,
+$C_{D0 C}$,Initial drag coeff. covered,$s$,Rudder gap coefficient,,
