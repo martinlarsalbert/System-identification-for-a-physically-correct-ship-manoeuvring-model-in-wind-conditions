@@ -5,44 +5,48 @@ The higher states were thus estimated using an extended Kalman filter (EKF), whe
 
 The parameter estimations are defined as a linear regression problem (\autoref{eq:regression})---one for each degree of freedom. 
 \begin{equation}\label{eq:regression}
-\begin{split}y = \mathbf{X}\gamma + \epsilon\end{split}
+\begin{split}y = \mathbf{X}\zeta + \epsilon\end{split}
 \end{equation}
-The calculations for the label vector \(y\) and the feature matrix \(\textbf{X}\) differ for the PU and PI models. The PU model has a data-driven rudder model so that the entire damping forces $X_D,Y_D,N_D$ are included in the regression (\autoref{eq:X_H_estimation_abkowitz}). On the other hand, in the PI model, the semi-empirical rudder model is deterministic and is excluded from the regression (\autoref{eq:X_H_estimation_PISM}). 
+The calculations for the label vector \(y\) and the feature matrix \(\textbf{X}\) differ for the PU and PI models. The PU model has a data-driven rudder model so that the entire damping forces $X_D,Y_D,N_D$ are included in the regression (\autoref{eq:X_H_estimation_abkowitz}). 
 \begin{equation}
     \label{eq:X_H_estimation_abkowitz}
     y = (\bullet)_D
 \end{equation}
+where \textbullet\ represents the degrees of freedom ($X,Y,N$).
+On the other hand, in the PI model, the deterministic semi-empirical rudder model is excluded from the regression (\autoref{eq:X_H_estimation_PISM}). 
 \begin{equation}
     \label{eq:X_H_estimation_PISM}
     y = (\bullet)_H = (\bullet)_D - (\bullet)_R
 \end{equation}
-where \textbullet\ represents the degrees of freedom ($X,Y,N$).
 For example, the regression of the surge degree of freedom label \(y\) can be calculated using the ID force (\autoref{eq:label}). 
-The feature matrix \(\textbf{X}\) and coefficient vector $\gamma$ are expressed from the model damping force polynomials (\autoref{eq:features} and \autoref{eq:gamma}), where $\delta^2$ and $X_{\delta\delta}$ are removed for the PI model.
+The feature matrix \(\textbf{X}\) and coefficient vector $\zeta$ are expressed from the model damping force polynomials (\autoref{eq:features} and \autoref{eq:gamma}), where $\delta^2$ and $X_{\delta\delta}$ are removed for the PI model.
+
 \begin{equation}\label{eq:label}
-\begin{split}\displaystyle X_D = - X_{\dot{u}} \dot{u}' + \dot{u}' m' - m' r'^{2} x_{G'} - m' r' v'\end{split}
+X_D = - X_{\dot{u}} \dot{u}' + \dot{u}' m' - m' r'^{2} x_{G'} - m' r' v'
 \end{equation}
 \begin{equation}\label{eq:features}
-\begin{split}\displaystyle X = \left[\begin{matrix}1 & u' & (\delta^{2}) & r'^{2} & v'^{2} & r' v'\end{matrix}\right]\end{split}
+\mathbf{X} = \begin{bmatrix} 1 & u' & (\delta^{2}) & r'^{2} & v'^{2} & r' v' \end{bmatrix}
 \end{equation}
+
 \begin{equation}\label{eq:gamma}
-\begin{split}\displaystyle \gamma = \left[\begin{matrix}X_{0}\\X_{u}\\(X_{\delta\delta})\\X_{rr}\\X_{vv}\\X_{vr}\end{matrix}\right]\end{split}
+\zeta = \begin{bmatrix} X_{0} & X_{u} & (X_{\delta\delta}) & X_{rr} & X_{vv} & X_{vr} \end{bmatrix}
 \end{equation}
+
 The hydrodynamic derivatives in the \(\gamma\) vector are estimated with OLS multiple linear regression.
 In this regression, the hydrodynamic derivatives are treated as Gaussian random variables, and in the manoeuvring model, they are usually estimated as the mean value of each regressed random variable, the most likely value.
 
 Accurate mass and added mass values are more critical when employing ID in a physics-informed model than in a completely data-driven model.
-The data-driven model can give good simulation results even if the mass and added masses are wrong---if the forces are equally wrong---since the erroneous masses cancel in Newton's second law of motion, as in \autoref{eq:Fma} and \autoref{eq:cancel}, where $\epsilon$ is the mass error.
+The data-driven model can give good simulation results even if the mass and added masses are wrong---if the forces are equally wrong---since the erroneous masses cancel in Newton's second law of motion, as in \autoref{eq:Fma} and \autoref{eq:cancel}, where $\epsilon_m$ is the mass error.
 \begin{equation}
     \label{eq:Fma}
-    F = (m+\epsilon) \cdot a
+    F = (m+\epsilon_m) \cdot a
 \end{equation}
 \begin{equation}
     \label{eq:cancel}
-    a = \frac{F}{m+\epsilon} = \frac{(m+\epsilon) \cdot a}{m+\epsilon}
+    a = \frac{F}{m+\epsilon_m} = \frac{(m+\epsilon_m) \cdot a}{m+\epsilon_m}
 \end{equation}
 When a deterministic force $F_R$ is introduced in the PI model, however, the acceleration contribution $a_R$ of this force is wrong if the mass is wrong (\autoref{eq:mass_scaling}). Therefore, having correct mass values becomes crucial.
 \begin{equation}
     \label{eq:mass_scaling}
-    a_R = \frac{F_R}{m+\epsilon}
+    a_R = \frac{F_R}{m+\epsilon_m}
 \end{equation}
