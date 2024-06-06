@@ -12,3 +12,18 @@ Filtered data from one of the zigzag test with the covariance varied by SNR=0.1,
         \label{fig:SNR_sensitivity.accelerations}
     \end{center}
 \end{figure}
+
+\begin{table}[h]
+    \centering
+    \caption{Added masses in prime system units.}
+    \label{tab:added_masses}
+    \pgfplotstabletypeset[col sep=comma, column type=c,
+    columns/Xudot/.style={column name=$X_{\dot{u}}$},
+    columns/Yvdot/.style={column name=$Y_{\dot{v}}$},
+    columns/Yrdot/.style={column name=$Y_{\dot{r}}$},
+    columns/Nvdot/.style={column name=$N_{\dot{v}}$},
+    columns/Nrdot/.style={column name=$N_{\dot{r}}$},
+    every head row/.style={before row=\hline,after row=\hline},
+    every last row/.style={after row=\hline}
+    ]{tables/SNR_sensitivity.pivot}
+\end{table}
