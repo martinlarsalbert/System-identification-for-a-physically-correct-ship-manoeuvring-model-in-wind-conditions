@@ -1,8 +1,14 @@
-
+The sensitivity of the ID regression was studied for the PU and PI models, to see how sensitive they are to small changes in the data.
+The model test data was filtered with EKF:s with different covariance matrices of the process noise \textbf{Q} and observation noise \textbf{R}. The observation noise \textbf{R} was varied by changing the signal to noise ratio (SNR) according to \autoref{eq:SNR}, where a larger SNR gives as smaller \textbf{R} so that the EKF thereby relies more on the model test data than the predictor model.
+\begin{equation}
+    \label{eq:SNR}
+    \mathbf{R} = \frac{\mathbf{Q}}{SNR}
+\end{equation}
+Filtered data from one of the zigzag test with the covariance varied by SNR=0.1, 1, and 10 are shown in \autoref{fig:SNR_sensitivity.accelerations}. SNR=10 relies more on the data and therefore contains more of the measurement noise.
 \begin{figure}[h]
     \begin{center}
         \includesvg{figures/SNR_sensitivity.accelerations.svg}
-        \caption{Decomposition of hull forces and moments during a zigzag20/20 test for parameters related to drift, yaw rate the prediction models.}
-        \label{fig:ID_regression_N_decomposition}
+        \caption{Kalman filtered yaw and sway accelerations with varying covariance, indicated by the signal to noise ratio (SNR).}
+        \label{fig:SNR_sensitivity.accelerations}
     \end{center}
 \end{figure}
