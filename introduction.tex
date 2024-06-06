@@ -11,14 +11,14 @@ Even if the sea is flawlessly modeled, long-term predictions with high accuracy 
 With the other drawbacks of CFD in manoeuvring---such as high computational costs---data-driven models have become an attractive alternative or complement, with an increased number of publications in the past 10--15 years, %(shown in Fig.\ref{fig:pub_overview})
 especially within the field of autonomous ships \citep{ahmed_survey_2023}, where predicting  ship trajectories is critical to avoid collisions. 
 
-Relevant paper keywords and their connections to the most recent research activities related to ship maneuvering modeling are presented in \autoref{fig:pub_overview}, where the circle size indicates how often the keywords occurred in the research articles. These papers claim their proposed regression-based methods can estimate the hydrodynamic coefficients of a ship’s maneuvering system accurately. However, most of the regression methods assume the exact “physical” model is known, i.e., the regression is based on “simulation” data, as indicated in \autoref{fig:pub_overview}, where the large circles of “simulation” and “maneuvering simulation” are directly connected with others.
-Most of the simulations (as shown in the keywords) were based on the model in \citet{fossen_handbook_2021}, such as the Gaussian process regression method in \citet{xue_system_2020} and the support vector machine method in \citet{wang_identification_2019} and \citet{wang_parameter_2021}. Recently, the support vector machine and neural network methods have also been used to identify the parameters of ship dynamic models using data from benchmark model tests with well-known ship maneuverability (e.g., SIMMAN, SHOPERA), as in \citet{wang_kernel-based_2020} and \citet{wakita_neural_2021}. The identified maneuvering models were validated by comparing their capabilities for trajectory prediction with either simulated or well-controlled model test results. However, the model accuracies in describing the ship’s kinetics, e.g., various forces acting on ships, was rarely mentioned. Nevertheless, such dynamic performance is essential to determine model feasibility for the application of a ship’s operation in real sea environments, i.e., with drifting caused by wind and current.
+%Relevant paper keywords and their connections to the most recent research activities related to ship maneuvering modeling are presented in \autoref{fig:pub_overview}, where the circle size indicates how often the keywords occurred in the research articles. These papers claim their proposed regression-based methods can estimate the hydrodynamic coefficients of a ship’s maneuvering system accurately. However, most of the regression methods assume the exact “physical” model is known, i.e., the regression is based on “simulation” data, as indicated in \autoref{fig:pub_overview}, where the large circles of “simulation” and “maneuvering simulation” are directly connected with others.
+%Most of the simulations (as shown in the keywords) were based on the model in \citet{fossen_handbook_2021}, such as the Gaussian process regression method in \citet{xue_system_2020} and the support vector machine method in \citet{wang_identification_2019} and \citet{wang_parameter_2021}. Recently, the support vector machine and neural network methods have also been used to identify the parameters of ship dynamic models using data from benchmark model tests with well-known ship maneuverability (e.g., SIMMAN, SHOPERA), as in \citet{wang_kernel-based_2020} and \citet{wakita_neural_2021}. The identified maneuvering models were validated by comparing their capabilities for trajectory prediction with either simulated or well-controlled model test results. However, the model accuracies in describing the ship’s kinetics, e.g., various forces acting on ships, was rarely mentioned. Nevertheless, such dynamic performance is essential to determine model feasibility for the application of a ship’s operation in real sea environments, i.e., with drifting caused by wind and current.
 %%
-\begin{figure}[h]
-  \includegraphics[width=\textwidth]{figures/keywords.png}
-  \caption{Research topics within the field of ship maneuverability system identification.}
-  \label{fig:pub_overview}
-\end{figure}
+%\begin{figure}[h]
+%  \includegraphics[width=\textwidth]{figures/keywords.png}
+%  \caption{Research topics within the field of ship maneuverability system identification.}
+%  \label{fig:pub_overview}
+%\end{figure}
 %%
 %fication_1976} to develop a linear manoeuvring model that utilized manually recorded data in 1969 aboard the Atlantic Song freighter with Kalman filter (KF) and maximum likelihood estimation. 
 %a_system_2015}, a 3 degree of freedom model by \citet{shi_identification_2009}, and a recursive EKF by \citet{alexandersson_system_2022}.
@@ -32,7 +32,9 @@ Most of the simulations (as shown in the keywords) were based on the model in \c
 % * gap?
 % * question       <------
 % * continuation?
-The regressors of the data-driven ship manoeuvring models are often strongly linearly dependent. This multicollinearity is a well-known issue in parameter identification that may lead to parameter drift and poor generalization. The parameters are thus mathematically correct but physically incorrect \citep{luo_parameter_2016-1}. 
+The regressors of the data-driven ship manoeuvring models are often strongly linearly dependent. 
+In the beginning of a turning manoeuvre, forces are only generated by the rudder; But very soon after, the ship will also have a yaw rate and drift angle, so that force is also generated at the hull surface. The total force acting on the ship is often used as the dependent variable in the regression, especially when the force from the rudder cannot be measured or estimated. The dependent variable is thus the sum of hull and rudder force, so that hull and rudder coefficients become strongly linearly dependent in the manoeuvre regression.
+This multicollinearity is a well-known issue in parameter identification that may lead to parameter drift and poor generalization. The parameters are thus mathematically correct but physically incorrect \citep{luo_parameter_2016-1}. 
 An example of generalization that is discussed in the present paper is when a model identified on calm water data is exposed to wind, where a drift angle is needed to maintain a straight course. This wind state is rare in calm water manoeuvring tests, where the drift angle is almost exclusively accompanied by yaw rate (see \autoref{fig:phase_portrait}); 
 Thus, the regression has problems when distinguishing between these quantities.
 % Wengang fixes a better figure here...
@@ -53,9 +55,9 @@ Using more informative data or simplifying the model when possible, thereby redu
 % * stating the value of present research?
 % * article structure?                      <--
 
-However, more remedies are needed. Therefore, this paper proposes a physics-informed manoeuvring model (PI model), which features a new semi-empirical rudder model based on semi-empirical formulas from the literature.
+However, more remedies are needed. Therefore, this paper proposes a physics-informed manoeuvring model (PI model), which features a new semi-empirical rudder model to estimate the rudder forces, so that the rudder and hull forces can be separated in the regression, which reduces the multicollinearity.
 
-This paper investigates whether the PI model is more physically correct than a physics-uninformed model (PU model) when they are both identified from zigzag model tests. It is also studied how the lack of physical correctness may impact the model generalization.
+This paper investigates whether the PI model is more physically correct than a physics-uninformed model (PU model) when they are both identified from zigzag model tests. It is also studied how the lack of physical correctness may impact the model generalization. The sensitivity to small changes in the data is also studied for the PI and PU models.
 To evaluate the physical correctness, a wind-powered pure car carrier (wPCC) test case is studied. 
 This ship has much larger rudders than conventional ships---to improve the sailing performance---
 which increases the demand for physically correct rudder modeling. The generalization of the models is studied in an idealized wind state.

@@ -1,10 +1,10 @@
 The sensitivity of the ID regression was studied for the PU and PI models, to see how sensitive they are to small changes in the data.
-The model test data was filtered with EKF:s with different covariance matrices of the process noise \textbf{Q} and observation noise \textbf{R}. The observation noise \textbf{R} was varied by changing the signal to noise ratio (SNR) according to \autoref{eq:SNR}, where a larger SNR gives as smaller \textbf{R}, so that the EKF thereby relies more on the model test data than the predictor model.
+The model test data was filtered with EKF:s with different covariance matrices of the process noise \textbf{Q} and observation noise \textbf{R}. The observation noise \textbf{R} was varied by changing the signal to noise ratio (SNR) according to \autoref{eq:SNR}, where a larger SNR gives a smaller \textbf{R}, so that the EKF thereby relies more on the model test data than the predictor model.
 \begin{equation}
     \label{eq:SNR}
     \mathbf{R} = \frac{\mathbf{Q}}{SNR}
 \end{equation}
-Filtered data from one of the zigzag test with the covariance varied by SNR=0.1, 1, and 10 are shown in \autoref{fig:SNR_sensitivity.accelerations}. SNR=10 relies more on the data and therefore contains more of the measurement noise.
+Accelerations of the filtered data from one of the zigzag tests with the covariance varied by SNR=0.1, 1, and 10, are shown in \autoref{fig:SNR_sensitivity.accelerations}. SNR=10 relies more on the data and therefore contains more of the measurement noise.
 \begin{figure}[h]
     \begin{center}
         \includesvg{figures/SNR_sensitivity.accelerations.svg}
@@ -12,7 +12,7 @@ Filtered data from one of the zigzag test with the covariance varied by SNR=0.1,
         \label{fig:SNR_sensitivity.accelerations}
     \end{center}
 \end{figure}
-The PI and PU models were identified on the model test data filter variations. The identified hull coefficients are shown in \autoref{tab:pivot}.
+Identified hull coefficients from the data filter variations are shown in \autoref{tab:pivot}.
 \begin{table}[h]
     \centering
     \caption{Identified hull coefficients for the PI and PU models identified on EKF filtered data with varying signal to noise ratio (SNR).}
@@ -23,22 +23,24 @@ The PI and PU models were identified on the model test data filter variations. T
     every last row/.style={after row=\hline}
     ]{tables/SNR_sensitivity.pivot.csv}
 \end{table}
+Large differences was observed for the PU model, especially in the identified yaw coefficients ${N}'_r,{N}'_v$ (also shown in \autoref{fig:SNR}) where ${N}'_v$ even has the wrong sign for SNR=0.1, and SNR=1.0. The identified values of the PI model is more stable during the variations. Th PI model is therefore more robust and less sensitive to small variations in the data.
 \begin{figure}
     \centering
     \begin{subfigure}[b]{0.49\textwidth}
         \centering
         \includesvg[width=\textwidth]{figures/SNR_sensitivity.Nr.svg}
-        \caption{Yaw rates.}
-        \label{fig:vct_circle}
+        \caption{${N}'_r$.}
+        \label{fig:SNR_sensitivity.Nr}
     \end{subfigure}
     \vfill
     \begin{subfigure}[b]{0.49\textwidth}
         \centering
-        \includesvg[width=\textwidth]{figures/SNR_sensitivity.Nr.sv}
-        \caption{Drift angles.}
-        \label{fig:vct_drift_angle}
+        \includesvg[width=\textwidth]{figures/SNR_sensitivity.Nv.svg}
+        \caption{${N}'_v$.}
+        \label{fig:SNR_sensitivity.Nv}
     \end{subfigure}
     
-    \caption{Comparison between the VCT data ($+$) and predictions with the reference model (lines) (expressed in the prime system $\times 1000$) for total damping force $D$ (red), hull force $H$ (green), and rudder forces $R$ (blue)}
-    \label{fig:vct}
+    \caption{Identified yaw hull coefficients for the PI and PU models identified on EKF filtered
+data with varying signal to noise ratio (SNR).}
+    \label{fig:SNR}
 \end{figure}
