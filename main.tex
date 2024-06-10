@@ -175,6 +175,33 @@
 \end{table}
 \FloatBarrier
 
+\section*{Abbreviations}
+\label{sec:introduction}
+\begin{table}[h]
+    \centering
+    %\footnotesize
+    \scriptsize
+    %\caption{Semi-empirical rudder parameters (SI units) in model scale.}
+    \label{tab:abbreviations}
+    \begin{tabular}{l l}
+
+    CFD & Computational fluid dynamics \\
+    CMT & Captive model tests \\
+    ID & Inverse dynamics \\
+    MMG & Manoeuvring modeling group \\
+    OLS & Ordinary least-square \\
+    PI model & Physics informed  model \\
+    PU model & Physics uninformed  model \\
+    RHI & Rudder hull interaction \\
+    VCT & Virtual captive tests \\
+    WASP & Wind-assisted ship propulsion \\
+    wPCC & Wind powered car carrier \\
+    SNR & Signal to noise ratio \\
+    \end{tabular}
+        
+\end{table}
+\FloatBarrier
+
 \section{Introduction}
 \label{sec:introduction}
 \input{introduction}
@@ -234,23 +261,24 @@
 \section{Results}
 \label{sec:results}
 \input{result}
+\FloatBarrier
 %
-\subsection{Predictions of VCT}
+\subsection{The reference model}
 \label{sec:result_VCT}
 \input{result_VCT}
 \FloatBarrier
 %
-\subsection{Predictions of manoeuvring tests}
+\subsection{The physical correctness of the identified models}
 \label{sec:result_MDL}
 \input{result_MDL}
 \FloatBarrier
 %
-\subsection{Predictions of an idealized wind state}
+\subsection{Model generalization}
 \label{sec:idealized_wind_state}
 \input{result_wind_state}
 \FloatBarrier
 %
-\subsection{Sensitivity analysis}
+\subsection{Parameter drift}
 \label{sec:sensitivity}
 \input{sensitivity_analysis}
 \FloatBarrier

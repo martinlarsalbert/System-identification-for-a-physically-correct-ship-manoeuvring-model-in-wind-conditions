@@ -1,4 +1,4 @@
-The sensitivity of the ID regression was studied for the PU and PI models, to see how sensitive they are to small changes in the data.
+The parameter drift of the PU and PI models was studied in a sensitivity analysis, to see how sensitive the models are to small changes in the data.
 The model test data was filtered with EKF:s with different covariance matrices of the process noise \textbf{Q} and observation noise \textbf{R}. The observation noise \textbf{R} was varied by changing the signal to noise ratio (SNR) according to \autoref{eq:SNR}, where a larger SNR gives a smaller \textbf{R}, so that the EKF thereby relies more on the model test data than the predictor model.
 \begin{equation}
     \label{eq:SNR}
