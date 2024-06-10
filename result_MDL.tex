@@ -1,4 +1,4 @@
-Closed-loop simulations with the control logic of the zigzag test were used to predict the model test experiments. Comparisons of these predictions are shown in \autoref{fig:closed_loop_zigzag10} and \autoref{fig:closed_loop_zigzag20}. The drift angle $\beta$, heading angle $\psi$, and yaw rate $r$ are in good agreement with the experiments for all the models, especially the heading, which is the most critical in zigzag tests. However, the PU model exhibits a faster response time.
+The physical correctness of the PI and PU models was assessed by comparisons between the model test experiments and closed-loop simulations as shown in \autoref{fig:closed_loop_zigzag10} and \autoref{fig:closed_loop_zigzag20}. The drift angle $\beta$, heading angle $\psi$, and yaw rate $r$ are in good agreement with the experiments for all the models, especially the heading, which is the most critical in zigzag tests. However, the PU model exhibits a faster response time.
 
 \begin{figure}
     \centering
@@ -30,7 +30,7 @@ Closed-loop simulations with the control logic of the zigzag test were used to p
 %    \caption{Results from a zigzag20/20 model test compared with closed loop simulations.}
 %    \label{fig:closed_loop_zigzag20}
 %\end{figure}
-ID comparisons are shown in \autoref{fig:ID_zigzag10} for the zigzag10/10 and in \autoref{fig:ID_zigzag20} for the zigzag20/20, providing more detailed information about the forces and moments involved during the manoeuvres. The models predict the forces and moments for the estimated state of the experiment. Thus, all models predict the same state in contrast to simulations, where the states may differ as the solutions begin to deviate.    
+Comparisons of the inverse dynamics forces are shown in \autoref{fig:ID_zigzag10} for the zigzag10/10 and in \autoref{fig:ID_zigzag20} for the zigzag20/20. This comparison provides more detailed information about the forces and moments involved during the manoeuvres; All models predict the same state in contrast to simulations, where the states may differ as the solutions begin to deviate.    
 The total yawing moments $N_D$ agree well for all models and the experimental data. For the total sway force $Y_R$, the PU model predicts a slightly higher force.  
 
 Furthermore, the reference and PI models predict the same rudder yawing moment $N_R$ since they use the same deterministic semi-empirical rudder model; the yawing moments from the hull $N_H$ are, therefore, also similar for these models. On the other hand, the rudder yawing moment from the PU model is very different. The regression has thus also yielded very different yawing moments from the hull $N_H$ so that the total yawing moment is correct. This can also be seen in the identified ${Y_v}',{N_v}',{N_r}'$ parameter values in \autoref{tab:parameters}. 
@@ -58,4 +58,4 @@ However, the parameter decomposition of the PU model is completely different, wh
         \label{fig:ID_regression_N_decomposition}
     \end{center}
 \end{figure}
-The following section further investigates the possible implications of this physically incorrect decomposition.
+How this physically incorrect decomposition affects the model generalization is studied in the next section.

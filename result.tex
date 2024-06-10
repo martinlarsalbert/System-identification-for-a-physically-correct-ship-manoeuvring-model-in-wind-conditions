@@ -1,4 +1,10 @@
-The parameters within the models (see \autoref{tab:parameters}) were identified with regression from VCT for the reference model and ID regression for the PU and the PI models. 
+The hydrodynamic derivatives within the PI and PU models were identified with inverse dynamics regression (\autoref{sec:inverse_dynamics}) and the reference model was identified by regression on a VCT dataset (\autoref{sec:VCT_regression}). The identified values are shown in \autoref{tab:parameters}. 
+
+In order to establish the the reference model, a comparison with the underlying VCT data is first presented in \autoref{sec:result_VCT}. The reference model is then used to assess the physical correctness of the identified PI and PU models in \autoref{sec:result_MDL}. 
+The generalization is then studied on an idealized wind state in \autoref{sec:idealized_wind_state}.
+The parameter drift is studied in a sensitivity analysis in \autoref{sec:sensitivity}. 
+Lastly, results from an additional test case is also briefly studied in \autoref{sec:result_KVLCC2_HMRI} to see how the PI model behaves for a completely different ship type.
+
 \begin{table}[h]
     \centering
     \caption{Identified hull coefficients in prime system units.}
@@ -9,6 +15,3 @@ The parameters within the models (see \autoref{tab:parameters}) were identified 
     every last row/.style={after row=\hline}
     ]{tables/result_models.parameters.csv}
 \end{table}
-
-This section presents the validations of these identified models. The reference model is compared with the VCT data in \autoref{sec:result_VCT}. All models are compared with the manoeuvring model tests \citep{alexandersson_system_2022,alexandersson_wpcc_2024} in \autoref{sec:result_MDL} and with an idealized wind condition in \autoref{sec:wind_state}.
-Predictions for the KVLCC2---a completely different test case---are also presented in \autoref{sec:result_KVLCC2_HMRI}.

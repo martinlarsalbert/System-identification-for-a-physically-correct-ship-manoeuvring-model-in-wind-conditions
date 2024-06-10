@@ -1,8 +1,10 @@
-A similar investigation was also conducted for the KVLCC2 test case. The PI and PU models were identified with ID regression on the zigzag10/10 and zigzag20/10 model tests to port and starboard. The model test data were measured from the Hamburg ship model basin (HSVA) for the SIMMAN2008 workshop \citep{stern_experience_2011}.
+A similar but much briefer investigation was conducted for the KVLCC2 test case, to see if similar trends could be observed for the PI and PU models. The models were identified with ID regression on the zigzag10/10 and zigzag20/10 model tests to port and starboard. The model test data were measured from the Hamburg ship model basin (HSVA) for the SIMMAN2008 workshop \citep{stern_experience_2011}.
 The MMG wake model was added with coefficient values per \citet{yasukawa_introduction_2015}.
 The identified prediction models were compared with captive model tests (CMTs) measured at the Hyundai Maritime Research Institute (HMRI) for the SIMMAN2014 workshop \citep{ittc_final_2017}. A comparison for the drift angle variation is shown in \autoref{fig:KVLCC2_HMRI}. 
 Similar trends to the wPCC in the idealized wind state are evident. The PI model predicts total sway force and yawing moment values that are closer to those of the CMT than those of the PU model, as shown in \autoref{fig:KVLCC2_HMRI_D}.
-This can be explained by the PU model's inability to identify the correct rudder forces, as shown in \autoref{fig:KVLCC2_HMRI_R}.
+This can be explained by the PU model's inability to identify the correct rudder forces, as shown in \autoref{fig:KVLCC2_HMRI_R}. 
+The difference between the reference CMT and the PI model is larger for the KVLCC2 than what was observed in the corresponding comparison for the wPCC (\autoref{fig:result_wind_state}).
+The KVLCC2 has only one center rudder compared to the twin rudders of the wPCC and is also a more blunt ship. It is possible that the rudder flow is thus more complicated so that the semi-empirical rudder model presented in this paper is less accurate.
 %
 \begin{figure}
     \centering

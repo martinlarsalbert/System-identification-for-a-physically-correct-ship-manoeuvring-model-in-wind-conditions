@@ -4,23 +4,25 @@
 %
 %The objective of this paper was to investigate if the PI model is physically more correct than a physics uninformed model (PU model), when they are both identified from zigzag model tests, and also to investigate how this affects the generalization.
 This paper investigated whether introducing a semi-empirical rudder model to form a physics-informed manoeuvring model (PI model) would give a more physically correct model -- with better generalization.
-Three identified models were studied: the PI and PU models, identified on two zigzag tests, and the reference model, identified on VCT data.
+The PI model was identified on two zigzag model tests. The identified model was compared to a similar physics-uninformed model (PU model) and a physically correct reference model to assess: the parameter drift, model generalization and the physical correctness. 
 
 %_________________________________________________________
 %Move 2: Summarizing and reporting key results. (oblig.)
-All identified models are mathematically correct since they predicted the model tests with satisfactory agreement.
-The reference model is the most physically correct since it predicted both the model tests and VCT accurately.
+All the identified models were found to be mathematically correct since they predicted the model tests with satisfactory agreement.
+The reference model is the most physically correct model since it predicted both the model tests and VCT accurately.
 The PU model predicted significantly different forces and moments, thus considered physically incorrect; 
 The regression yielded an incorrect decomposition between the hull and rudder forces and drift angle-- and yaw rate--dependent coefficients.
 Potential problems with the incorrect force decomposition of the PU model were shown in the lack of generalization of an artificial wind state, where the forces and moments had substantial errors.
-On the other hand, the PI model predicted very similar forces compared to the reference model for the model tests and can, therefore, be considered a more physically correct model.
+On the other hand, the PI model predicted very similar forces compared to the reference model for the model tests and can, therefore, be considered a more physically correct model. 
+The PI model also has much less parameter drift than the PU model, which was shown in a sensitivity analysis. The models were identified on the model test data with varying levels of filtering, where the PU model was found to be much more sensitive to these small variations.
+
 %_________________________________________________________
 %Move 3: Commenting on key results (making claims, explaining the results,
 %comparing the new work with previous studies, offering
 %alternative explanations) (oblig.)
-Introducing a semi-empirical rudder model seems to have guided the identification toward a more physically correct model, with lower multicollinearity and better generalization from calm water zigzag tests to wind conditions.
+Introducing a semi-empirical rudder model seems to have guided the identification toward a more physically correct and robust model, with lower multicollinearity and better generalization from calm water zigzag tests to wind conditions.
 
-The PI and PU models were also identified with ID regression on zigzag model tests for the KVLCC2 test case, presenting similar trends. The PI model gave more physically correct predictions than the PU model compared to CMTs, indicating that the conclusions from this paper are not exclusive for WASP ships, such as the wPCC, but also applicable for more conventional ships, such as the KVLCC2, especially if they have large superstructures that generate drift angles from wind.
+The PI and PU models were also identified with ID regression on zigzag model tests for the KVLCC2 test case, presenting similar trends. The PI model gave more physically correct predictions than the PU model compared to CMTs, indicating that the conclusions from this paper are not exclusive for WASP ships, such as the wPCC, but also applicable for more conventional ships, such as the KVLCC2. There were however larger disagreements for the KVLCC2 than the wPCC, which indicates that there may be some room for improvement of the proposed physics informed model, to better describe the hydrodynamics for other types of ships.   
 
 %_________________________________________________________
 %Move 4: Stating the limitations of the study
