@@ -787,7 +787,8 @@
          id="text1-8-7"><tspan
            x="20.310547"
            y="52.912085"
-           id="tspan17">Physical </tspan><tspan
+           id="tspan17">Physical 
+</tspan><tspan
            x="20.310547"
            y="59.422499"
            id="tspan18">correctness</tspan></text>
@@ -835,10 +836,11 @@
          id="text2"><tspan
            x="20.310547"
            y="52.912085"
-           id="tspan19">Parameter </tspan><tspan
+           id="tspan19">Parameter
+</tspan><tspan
            x="20.310547"
            y="59.422499"
-           id="tspan20">drift</tspan></text>
+           id="tspan20"> drift</tspan></text>
       <path
          style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:none;stroke-width:0.26378;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers fill stroke;stop-color:#000000;stop-opacity:1"
          sodipodi:type="inkscape:offset"
